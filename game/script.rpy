@@ -28,6 +28,8 @@ label start:
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
+    "Hello world!"
+
     # This ends the game.
 
     return
