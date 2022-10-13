@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/intro.rpy", line 38: expected statement.
+    ??? "[first_name] [last_name], right?"
+    ^
+
+File "game/intro.rpy", line 42: expected statement.
+    ??? "Theodore Guydon, at your service. I’ll be your secretary during your time at ISAAC."
+    ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Thu Oct 13 00:45:28 2022
