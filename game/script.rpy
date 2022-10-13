@@ -6,6 +6,9 @@ define mc = Character("Me")
 define pluto = Character("Pluto", who_color="#ff75d8")
 define theo = Character("Theo")
 
+# TODO: Implement hashmap/dictionary for MC's pronouns
+
+# TODO: Implement variables for characters' affinities towards the MC
 
 # The game starts here.
 label start:
