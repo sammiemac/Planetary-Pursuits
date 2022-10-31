@@ -6,10 +6,19 @@ define mc = Character("Me")
 define pluto = Character("Pluto", who_color="#ff75d8")
 define theo = Character("Theo")
 
+python:
 # TODO: Implement hashmap/dictionary for MC's pronouns
-
+# Code: Choice 1 when prompted by the game would designate pronouns as he/him/his, 2 would be she/her/hers, 3 would be they/them/their.
+# Set pronoun choice to either 1 2 or 3 whenever the prompt comes up mid game.
+# Refer to pronouns in the script using this syntax: subjectPronouns['choice number']
+    pronounChoice = 0
+    subjectPronouns = {1: he, 2: she, 3: they}
+    objectPronouns = {1: him, 2: her, 3: them}
+    possPronouns = {1: his, 2: hers, 3: theirs}
+    possAdjectives = {1: his, 2: hers, 3: their}
 # TODO: Implement variables for characters' affinities towards the MC
-
+    plutoAff = 0
+    theoAff = 0
 # The game starts here.
 label start:
 
