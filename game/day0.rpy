@@ -14,12 +14,21 @@ label day0:
     "I pick up my nametag. It reads: "
 
     python:
-        first_name = renpy.input("What's your first name?")
+        first_name = renpy.input("Please enter your first name.")
         first_name = first_name.strip() or "Taylor"
 
     python:
-        last_name = renpy.input("What's your last name?")
+        last_name = renpy.input("Please enter your last name.")
         last_name = last_name.strip() or "Nova"
+
+    menu:
+        "Please select your pronouns."
+        "He/Him/His":
+            $ pronounChoice = 1
+        "She/Her/Hers":
+            $ pronounChoice = 2
+        "They/Them/Theirs":
+            $ pronouncHoice = 3
 
     "{i}[last_name[0]]., [first_name], Planetary Diplomat at the International Space Aeronautics and Astronomy Center.{/i}"
 
@@ -87,13 +96,13 @@ label day0:
         "{i}Huh, didn’t expect a government-issued secretary to have so much sass.{/i}"
 
     menu:
-        "You’d do best to stop talking to me like that, Guydon.":
+        "\"You’d do best to stop talking to me like that, Guydon.\"":
             jump calm_down
-        "Yeah, and I wish some of that scholarship money went towards getting you a razor.":
+        "\"Yeah, and I wish some of that scholarship money went towards getting you a razor.\"":
             jump calm_down
-        "Sorry, did we get off on a bad foot?":
+        "\"Sorry, did we get off on a bad foot?\"":
             jump chin_up
-        "Huh?":
+        "\"Huh?\"":
             jump chin_up
 
     label calm_down:

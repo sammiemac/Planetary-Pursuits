@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/day0.rpy", line 2: expected statement.
-    menu2_choice = false
-                 ^
+File "game/day0.rpy", line 30: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "They/Them/Theirs"
+                      ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Nov  1 01:46:44 2022
+Tue Nov  1 01:59:37 2022
