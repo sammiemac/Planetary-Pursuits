@@ -2,11 +2,58 @@
 # Intro scene
 label day0:
 
-    # TODO: Implement the intro scene
+    #scene bg black
 
-    # TODO: Section one, from "MAIN CHARACTER (MC)" to "INT. MC'S HOME - BEDROOM - MORNING"
+    "My body feels light, like a feather in the air. I try to observe my surroundings, but… there are none to observe. Everything is dark. Fear is the first thing that rises in my throat, but it quickly dissipates, leaving me empty, at peace."
 
-    # TODO: Section two, from "INT. MC’S HOME - BEDROOM - MORNING" to "INT. THEGUY’S SEDAN"
+    "I close my eyes, and I let the wind carry me. Then, I feel something warm, the sun’s heat, followed by a slight chill passing by, like a cool autumn breeze that tousles my hair. And then, I feel like I've landed, like the wind has placed me gingerly on the ground."
+
+    "I open my eyes."
+
+    scene bg space:
+        xalign 0.5
+        yalign 0.5
+        zoom 0.5
+    with dissolve
+
+    "I look around me, my surroundings suddenly lit up by a vast universe. I'm standing on a comet as it flies through space, as if it's giving me a tour of the galaxy. I can see all the planets of our solar system; from Mars, to Jupiter, even Pluto. And of course, our Earth. It's beautiful. A satellite passes by me, slowly beeping away."
+
+    "Satellite" "{i}*Beep. Beep. Beep.*{/i}"
+
+    "{i}Why does that sound familiar?{/i}"
+
+    "Satellite" "{i}*Beep! Beep! Beep!*{/i}"
+
+    "{i}Now that I mention it, it isn’t passing by - at least, it isn’t anymore.{/i}"
+
+    "Satellite" "{i}*BEEP. BEEP. BEEP.*{/i}"
+
+    "{i}Okay, that’s a little too close for comfo-!{/i}"
+
+    "Satellite" "{i}*BEEP! BEEP! BEEP!*{/i}"
+
+    #scene bg black
+
+    #scene bg bedroom with dissolve
+
+    "I sit up straight, a rush of cold hitting me immediately thanks to the sweat on the collar of my pajama shirt. I look to the source of beeping: it’s coming from my cell phone, laying there idly as it charges on my nightstand."
+
+    mc "6:16… 16 minutes past the alarm…"
+
+    menu:
+        "\"Oh, well that’s better than usual.\"":
+            $ menu1_choice = True
+
+        "\"Huh? 16 minutes?!\"":
+            $ menu1_choice = False
+    
+    if menu1_choice:
+        "{i}Well, there’s no point in continuing to lay down here. Not like I can go back to bed with this sweat on my back.{/i}"
+    else:
+        "{i}I shouldn’t be late for work if I start getting ready now…{/i}"
+
+    #scene bg bedroom with dissolve
+
     "{i}Alright, I'm as ready as I'll ever be. Uniform and everything...{/i}"
 
     "{i}Oh! Almost forgot my nametag.{/i}"
@@ -42,7 +89,8 @@ label day0:
 
     "I look around, making a last-second sweep to make sure I have everything that I need on me. With everything seemingly taken care of, I head out."
 
-    #scene outside mc house
+    #scene bg outside house
+
     "Outside, a tall man sporting sunglasses, a black suit, and a full beard stands upright in front of a black sedan. Upon seeing me, he opens the passenger seat door and gestures for me to go in, his expression stoic."
 
     show theo test:
@@ -63,7 +111,6 @@ label day0:
 
     "Theodore" "Pleasure's mine."
 
-    # TODO: Section three, from "INT. THEGUY’S SEDAN" to "EXT. ISAAC BUILDING - MORNING"
     scene bg theo sedan
 
     "I sigh and look outside the window, down at the water underneath the bridge we’re currently stuck on. I was wondering as to why the ride over was scheduled so early: the reason was right in front of me, manifested in the miles-long line of cars in our way."
@@ -85,14 +132,14 @@ label day0:
     label nervous:
         "Theodore" "That’s what they get for hiring an astronomy major and not a PR or an IR one."
 
-        jump menu1_done
+        jump menu2_done
 
     label excited_or_confident:
         "Theodore" "I’m surprised, considering most of you Astronomy majors are more likely to get caught talking to a planet than a person."
 
-        jump menu1_done
+        jump menu2_done
 
-    label menu1_done:
+    label menu2_done:
         "{i}Huh, didn’t expect a government-issued secretary to have so much sass.{/i}"
 
     menu:
@@ -110,18 +157,18 @@ label day0:
 
         "Theodore" "Hey, hey. Calm down. I’m just messing with you. No need for formalities, you can just call me Theo."
 
-        $ menu2_choice = True
+        $ menu3_choice = True
 
-        jump menu2_done
+        jump menu3_done
 
     label chin_up:
         "Theodore sighs, a bit of his bravado leaving him."
 
         "Theodore" "Hey, chin up, I’m just messing with you, boss. And you can call me Theo if that’s better for you."
 
-        $ menu2_choice = False
+        $ menu3_choice = False
 
-        jump menu2_done
+        jump menu3_done
 
     label menu2_done:
         "{i}Alright, Theo...{/i}"
@@ -130,7 +177,7 @@ label day0:
 
     mc "What did you end up majoring in, then?"
 
-    if menu2_choice:
+    if menu3_choice:
         theo "Not some bitch shit like astronomy, that’s what."
     else:
         theo "I bounced between a couple. Psychology, kinesiology, theatre. Landed on business management at the end of it all."
