@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/day0.rpy", line 30: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "They/Them/Theirs"
-                      ^
+The label menu2_done is defined twice, at File "game/day0.rpy", line 142:
+    label menu2_done:
+and File "game/day0.rpy", line 173:
+    label menu2_done:
 
-Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Nov  1 01:59:37 2022
+
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Tue Nov  1 13:19:44 2022

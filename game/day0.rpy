@@ -170,7 +170,7 @@ label day0:
 
         jump menu3_done
 
-    label menu2_done:
+    label menu3_done:
         "{i}Alright, Theo...{/i}"
 
     theo "I didn’t mean anything by the astronomy major stuff, by the way. Few of my friends studied the same thing, it’s the only reason I ended up working something like this."
