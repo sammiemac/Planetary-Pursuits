@@ -1,6 +1,6 @@
 
 # Intro scene
-label day0:
+label intro1:
 
     #scene bg black
 
@@ -46,7 +46,7 @@ label day0:
 
         "\"Huh? 16 minutes?!\"":
             $ menu1_choice = False
-    
+
     if menu1_choice:
         "{i}Well, there’s no point in continuing to lay down here. Not like I can go back to bed with this sweat on my back.{/i}"
     else:
