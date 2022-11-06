@@ -34,7 +34,7 @@ label start:
     with dissolve
 
     # This shows a character sprite.
-    show pluto test
+    show pluto neutral
 
     # These display lines of dialogue.
     pluto "You've created a new Ren'Py game."
@@ -43,7 +43,7 @@ label start:
 
     "Hello world!"
 
-    # This calls the intro.rpy scene
+    # This calls the intro1.rpy scene
     call intro1
 
     # This ends the game.

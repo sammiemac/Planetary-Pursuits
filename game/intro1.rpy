@@ -191,3 +191,15 @@ label intro1:
     theo "Would you look at that? Traffic’s letting up."
 
     "As Theo’s words pull me out of my thoughts and back into real life, I start to feel the car begin to move once more."
+
+    # show bg isaac ext
+
+    theo "Alright, boss. Here’s your stop."
+
+    "Ahead of me is the eleven story tall International Space Aeronautics and Astronomy Center. A shiver crawls down my spine. Whether that’s due to the imposing size of the building or the weight of my upcoming task slowly settling in is unclear."
+
+    theo "You head in first. I’ll get this thing parked and meet you in the lobby."
+
+    "I nod and leave the car, my eyes still on the building in front of me. It gets larger and larger as I cross the plaza in front of it and approach its entrance."
+
+    call intro2
