@@ -34,10 +34,18 @@ label start:
     with dissolve
 
     # This shows a character sprite.
-    show pluto neutral
+    show pluto neutral:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
 
     # These display lines of dialogue.
     pluto "You've created a new Ren'Py game."
+
+    show pluto flustered:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
 
     pluto "Once you add a story, pictures, and music, you can release it to the world!"
 

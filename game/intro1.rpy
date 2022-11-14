@@ -42,15 +42,10 @@ label intro1:
 
     menu:
         "\"Oh, well that’s better than usual.\"":
-            $ menu1_choice = True
+            "{i}Well, there’s no point in continuing to lay down here. Not like I can go back to bed with this sweat on my back.{/i}"
 
         "\"Huh? 16 minutes?!\"":
-            $ menu1_choice = False
-
-    if menu1_choice:
-        "{i}Well, there’s no point in continuing to lay down here. Not like I can go back to bed with this sweat on my back.{/i}"
-    else:
-        "{i}I shouldn’t be late for work if I start getting ready now…{/i}"
+            "{i}I shouldn’t be late for work if I start getting ready now…{/i}"
 
     #scene bg bedroom with dissolve
 
@@ -123,61 +118,48 @@ label intro1:
 
     menu:
         "Nervous: \"I have no clue how this is going to go.\"":
-            jump nervous
+            "Theodore" "That’s what they get for hiring an astronomy major and not a PR or an IR one."
         "Excited: \"I get to be one of the first people to talk to these… planets.\"":
-            jump excited_or_confident
+            "Theodore" "I’m surprised, considering most of you Astronomy majors are more likely to get caught talking to a planet than a person."
         "Confident: \"One Small step for man, one big step, for my bank account.\"":
-            jump excited_or_confident
+            "Theodore" "I’m surprised, considering most of you Astronomy majors are more likely to get caught talking to a planet than a person."
 
-    label nervous:
-        "Theodore" "That’s what they get for hiring an astronomy major and not a PR or an IR one."
-
-        jump menu2_done
-
-    label excited_or_confident:
-        "Theodore" "I’m surprised, considering most of you Astronomy majors are more likely to get caught talking to a planet than a person."
-
-        jump menu2_done
-
-    label menu2_done:
-        "{i}Huh, didn’t expect a government-issued secretary to have so much sass.{/i}"
+    "{i}Huh, didn’t expect a government-issued secretary to have so much sass.{/i}"
 
     menu:
         "\"You’d do best to stop talking to me like that, Guydon.\"":
-            jump calm_down
+            "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
+
+            "Theodore" "Hey, hey. Calm down. I’m just messing with you. No need for formalities, you can just call me Theo."
+
+            $ calm_down = True
         "\"Yeah, and I wish some of that scholarship money went towards getting you a razor.\"":
-            jump calm_down
+            "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
+
+            "Theodore" "Hey, hey. Calm down. I’m just messing with you. No need for formalities, you can just call me Theo."
+
+            $ calm_down = True
         "\"Sorry, did we get off on a bad foot?\"":
-            jump chin_up
+            "Theodore sighs, a bit of his bravado leaving him."
+
+            "Theodore" "Hey, chin up, I’m just messing with you, boss. And you can call me Theo if that’s better for you."
+
+            $ calm_down = False
         "\"Huh?\"":
-            jump chin_up
+            "Theodore sighs, a bit of his bravado leaving him."
 
-    label calm_down:
-        "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
+            "Theodore" "Hey, chin up, I’m just messing with you, boss. And you can call me Theo if that’s better for you."
 
-        "Theodore" "Hey, hey. Calm down. I’m just messing with you. No need for formalities, you can just call me Theo."
+            $ calm_down = False
 
-        $ menu3_choice = True
 
-        jump menu3_done
-
-    label chin_up:
-        "Theodore sighs, a bit of his bravado leaving him."
-
-        "Theodore" "Hey, chin up, I’m just messing with you, boss. And you can call me Theo if that’s better for you."
-
-        $ menu3_choice = False
-
-        jump menu3_done
-
-    label menu3_done:
-        "{i}Alright, Theo...{/i}"
+    "{i}Alright, Theo...{/i}"
 
     theo "I didn’t mean anything by the astronomy major stuff, by the way. Few of my friends studied the same thing, it’s the only reason I ended up working something like this."
 
     mc "What did you end up majoring in, then?"
 
-    if menu3_choice:
+    if calm_down:
         theo "Not some bitch shit like astronomy, that’s what."
     else:
         theo "I bounced between a couple. Psychology, kinesiology, theatre. Landed on business management at the end of it all."
