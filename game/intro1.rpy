@@ -2,7 +2,8 @@
 # Intro scene
 label intro1:
 
-    #scene bg black
+    scene bg black
+    play music "audio/OST_Spaced_Out.mp3" volume 0.3
 
     "My body feels light, like a feather in the air. I try to observe my surroundings, but… there are none to observe. Everything is dark. Fear is the first thing that rises in my throat, but it quickly dissipates, leaving me empty, at peace."
 
@@ -24,25 +25,73 @@ label intro1:
     
     "A satellite passes by me, slowly beeping away."
 
+    image satellite far:
+        "satellite.png"
+        xalign 0.5
+        yalign 0.5
+        zoom 0.25
+    show satellite far
+    with dissolve
+
+    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.02
+
     "Satellite" "{i}*Beep. Beep. Beep.*{/i}"
 
     "{i}Why does that sound familiar?{/i}"
+
+    image satellite close:
+        "satellite.png"
+        xalign 0.5
+        yalign 0.5
+        zoom 0.5
+    show satellite close
+    with dissolve
+
+    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.05
 
     "Satellite" "{i}*Beep! Beep! Beep!*{/i}"
 
     "{i}Now that I mention it, it isn’t passing by - at least, it isn’t anymore.{/i}"
 
+    image satellite closer:
+        "satellite.png"
+        xalign 0.5
+        yalign 0.5
+        zoom 1.5
+    show satellite closer
+    with dissolve
+
+    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.1
+
     "Satellite" "{i}*BEEP. BEEP. BEEP.*{/i}"
 
     "{i}Okay, that’s a little too close for comfo-!{/i}"
 
+    image satellite closest:
+        "satellite.png"
+        xalign 0.5
+        yalign 0.5
+        zoom 3.5
+    show satellite closest
+    with dissolve
+
+    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.2
+
     "Satellite" "{i}*BEEP! BEEP! BEEP!*{/i}"
 
-    #scene bg black
+    scene bg black
+    stop music
+    #play sound "SFX_crash.wav"
 
-    #scene bg bedroom with dissolve
+    mc "AHHHHHHHH--!!!"
+
+    scene bg bedroom with dissolve
 
     "I sit up straight, a rush of cold hitting me immediately thanks to the sweat on the collar of my pajama shirt. I look to the source of beeping: it’s coming from my cell phone, laying there idly as it charges on my nightstand."
+
+    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.05
+
+    #show phone
 
     mc "6:16… 16 minutes past the alarm…"
 
@@ -52,8 +101,16 @@ label intro1:
 
         "\"Huh? 16 minutes?!\"":
             "{i}I shouldn’t be late for work if I start getting ready now…{/i}"
+    
+    scene bg black with dissolve
 
-    #scene bg bedroom with dissolve
+    #play sound "SFX_change_clothes.wav"
+
+    "After a quick shower to wash off that cold sweat, I put on the clothes I had set aside last night: the uniform for the new place I'm working at. I gathered up the rest of my belongings and checked myself out in the mirror."
+
+    scene bg bedroom with dissolve
+
+    play music "audio/OST_Retrograding_With_You.mp3" volume 0.1
 
     "{i}Alright, I'm as ready as I'll ever be. Uniform and everything...{/i}"
 
@@ -94,15 +151,19 @@ label intro1:
 
     "Outside, a tall man sporting sunglasses, a black suit, and a full beard stands upright in front of a black sedan. Upon seeing me, he opens the passenger seat door and gestures for me to go in, his expression stoic."
 
-    show theo test:
+    show theo neutral with dissolve:
         xalign 0.5
-        yalign 0.5
-        zoom 0.25
-    play music "audio/theo-theme.mp3" fadein 2 volume 0.25
+        yalign 0.005
+        zoom 0.60
 
     "???" "[first_name] [last_name], right?"
 
     "I nod."
+
+    show theo smile:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
 
     "???" "Theodore Guydon, at your service. I’ll be your secretary during your time at ISAAC."
 
@@ -112,46 +173,85 @@ label intro1:
 
     "Theodore" "Pleasure's mine."
 
-    scene bg theo sedan
+    stop music fadeout 2
+
+    scene bg theo sedan with dissolve
+
+    hide theo with dissolve
+
+    play music "audio/OST_Mr_Secretary_You_Have_A_Call.mp3" fadein 0.5 volume 0.1
 
     "I sigh and look outside the window, down at the water underneath the bridge we’re currently stuck on. I was wondering as to why the ride over was scheduled so early: the reason was right in front of me, manifested in the miles-long line of cars in our way."
 
-    show theo test:
+    show theo neutral with dissolve:
         xalign 0.5
-        yalign 0.5
-        zoom 0.25
+        yalign 0.005
+        zoom 0.60
+    
     "Theodore" "So, how’re you feelin’?"
 
     menu:
         "Nervous: \"I have no clue how this is going to go.\"":
+
             "Theodore" "That’s what they get for hiring an astronomy major and not a PR or an IR one."
+
         "Excited: \"I get to be one of the first people to talk to these… planets.\"":
+
             "Theodore" "I’m surprised, considering most of you Astronomy majors are more likely to get caught talking to a planet than a person."
+
         "Confident: \"One Small step for man, one big step, for my bank account.\"":
+
             "Theodore" "I’m surprised, considering most of you Astronomy majors are more likely to get caught talking to a planet than a person."
 
     "{i}Huh, didn’t expect a government-issued secretary to have so much sass.{/i}"
 
     menu:
         "\"You’d do best to stop talking to me like that, Guydon.\"":
+
+            show theo smile:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
             "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
 
             "Theodore" "Hey, hey. Calm down. I’m just messing with you. No need for formalities, you can just call me Theo."
 
             $ calm_down = True
+
         "\"Yeah, and I wish some of that scholarship money went towards getting you a razor.\"":
+
+            show theo smile:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
             "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
 
             "Theodore" "Hey, hey. Calm down. I’m just messing with you. No need for formalities, you can just call me Theo."
 
             $ calm_down = True
+
         "\"Sorry, did we get off on a bad foot?\"":
+
+            show theo sweat:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
             "Theodore sighs, a bit of his bravado leaving him."
 
             "Theodore" "Hey, chin up, I’m just messing with you, boss. And you can call me Theo if that’s better for you."
 
             $ calm_down = False
+
         "\"Huh?\"":
+
+            show theo sweat:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
             "Theodore sighs, a bit of his bravado leaving him."
 
             "Theodore" "Hey, chin up, I’m just messing with you, boss. And you can call me Theo if that’s better for you."
@@ -161,32 +261,70 @@ label intro1:
 
     "{i}Alright, Theo...{/i}"
 
+    show theo neutral:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
     theo "I didn’t mean anything by the astronomy major stuff, by the way. Few of my friends studied the same thing, it’s the only reason I ended up working something like this."
 
     mc "What did you end up majoring in, then?"
 
     if calm_down:
+
+        show theo smile:
+            xalign 0.5
+            yalign 0.005
+            zoom 0.60
+
         theo "Not some bitch shit like astronomy, that’s what."
+
     else:
+        
         theo "I bounced between a couple. Psychology, kinesiology, theatre. Landed on business management at the end of it all."
 
     theo "Either way, I ended up working for ISAAC. Buddy said a position opened up here, good paying. I barely fit the requirements and got the job anyways."
+
+    hide theo with dissolve
 
     "I nod, still processing this introduction to my secretary. The last bit about not feeling qualified, though, I can relate to. I only got this job because I was on the team that worked on the technology that allowed us to bring these planets to life."
 
     "So it {i}is{/i} weird that I got this job. I’m just some amateur astronomer, fresh out of my studies, out of a project I only participated in for my senior thesis. I was contacted by ISAAC that summer, and here I am now."
 
+    show theo neutral with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
     theo "Would you look at that? Traffic’s letting up."
+
+    hide theo with dissolve
 
     "As Theo’s words pull me out of my thoughts and back into real life, I start to feel the car begin to move once more."
 
-    # show bg isaac ext
+    stop music fadeout 2
+
+    show bg isaac ext with dissolve
+
+    show theo neutral with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
 
     theo "Alright, boss. Here’s your stop."
 
+    hide theo with dissolve
+
     "Ahead of me is the eleven story tall International Space Aeronautics and Astronomy Center. A shiver crawls down my spine. Whether that’s due to the imposing size of the building or the weight of my upcoming task slowly settling in is unclear."
 
+    show theo neutral with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
     theo "You head in first. I’ll get this thing parked and meet you in the lobby."
+
+    hide theo with dissolve
 
     "I nod and leave the car, my eyes still on the building in front of me. It gets larger and larger as I cross the plaza in front of it and approach its entrance."
 

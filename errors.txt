@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/intro2.rpy", line 251: reached end of line when expecting ':'.
-    if theo_donut "Theo swallows the piece of donut in his mouth before nodding."
-                                                                                 ^
+File "game/intro1.rpy", line 309: expected end of line
+    stop music fadeou 0.1
+               ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Nov 27 21:37:28 2022
+Sun Nov 27 22:52:19 2022
