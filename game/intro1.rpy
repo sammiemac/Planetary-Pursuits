@@ -16,7 +16,13 @@ label intro1:
         zoom 0.5
     with dissolve
 
-    "I look around me, my surroundings suddenly lit up by a vast universe. I'm standing on a comet as it flies through space, as if it's giving me a tour of the galaxy. I can see all the planets of our solar system; from Mars, to Jupiter, even Pluto. And of course, our Earth. It's beautiful. A satellite passes by me, slowly beeping away."
+    "I look around me, my surroundings suddenly lit up by a vast universe. I'm standing on a comet as it flies through space, as if it's giving me a tour of the galaxy." 
+    
+    "I can see all the planets of our solar system; from Mars, to Jupiter, even Pluto. And of course, our Earth."
+    
+    "It's beautiful." 
+    
+    "A satellite passes by me, slowly beeping away."
 
     "Satellite" "{i}*Beep. Beep. Beep.*{/i}"
 

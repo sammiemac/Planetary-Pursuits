@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label menu2_done is defined twice, at File "game/day0.rpy", line 142:
-    label menu2_done:
-and File "game/day0.rpy", line 173:
-    label menu2_done:
+File "game/intro2.rpy", line 251: reached end of line when expecting ':'.
+    if theo_donut "Theo swallows the piece of donut in his mouth before nodding."
+                                                                                 ^
 
-
-Ren'Py Version: Ren'Py 8.0.2.22081402
-Tue Nov  1 13:19:44 2022
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sun Nov 27 21:37:28 2022

@@ -1,10 +1,12 @@
 ﻿# The script of the game goes in this file.
 
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 define mc = Character("Me")
 define pluto = Character("Pluto", who_color="#ff75d8")
 define theo = Character("Theo")
+
 
 python:
 # TODO: Implement hashmap/dictionary for MC's pronouns
@@ -19,6 +21,8 @@ python:
 # TODO: Implement variables for characters' affinities towards the MC
     plutoAff = 0
     theoAff = 0
+
+
 # The game starts here.
 label start:
 
