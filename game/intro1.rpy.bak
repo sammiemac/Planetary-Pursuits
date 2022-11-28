@@ -328,4 +328,4 @@ label intro1:
 
     "I nod and leave the car, my eyes still on the building in front of me. It gets larger and larger as I cross the plaza in front of it and approach its entrance."
 
-    call intro2 from _call_intro2
+    call intro2

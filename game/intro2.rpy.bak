@@ -558,6 +558,6 @@ label intro2:
 
     menu:
         "Ask if she wants to learn more about the device.":
-            call intro2a from _call_intro2a
+            call intro2a
         "Ask how she could levitate.":
-            call intro2b from _call_intro2b
+            call intro2b

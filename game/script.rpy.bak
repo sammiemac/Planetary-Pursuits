@@ -56,7 +56,7 @@ label start:
     "Hello world!"
 
     # This calls the intro1.rpy scene
-    call intro1 from _call_intro1
+    call intro1
 
     # This ends the game.
     return
