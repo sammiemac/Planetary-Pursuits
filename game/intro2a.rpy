@@ -100,9 +100,9 @@ label intro2a:
     theo "You know I have to be with you for that, right?"
 
     menu:
-        "I forgot, to be honest.":
+        "\"I forgot, to be honest.\"":
             pass
-        "It’ll be fine.":
+        "\"It’ll be fine.\"":
             pass
     
     "Theo sighs as we enter the elevator. It seems like all the scans were only to get in, as all he has to do this time is press the ground floor button and the elevator doors close."
@@ -114,3 +114,5 @@ label intro2a:
     theo "Just calling what I’m seeing."
 
     "We’re back at the lobby when the elevator doors open again, and I’m left alone with my thoughts as Theo goes to fetch the car to bring me back home."
+
+    call pluto_date1

@@ -26,36 +26,7 @@ python:
 # The game starts here.
 label start:
 
-    # Leaving this here as a simple guide to how to get started on implementing these scenes.
-    # We will remove them when we're more comfortable with programming in Ren'Py
-    # - Sam
-
-    # This shows a background.
-    scene bg space:
-        xalign 0.5
-        yalign 0.5
-        zoom 0.5
-    with dissolve
-
-    # This shows a character sprite.
-    show pluto neutral:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
-
-    # These display lines of dialogue.
-    pluto "You've created a new Ren'Py game."
-
-    show pluto flustered:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
-
-    pluto "Once you add a story, pictures, and music, you can release it to the world!"
-
-    "Hello world!"
-
-    # This calls the intro1.rpy scene
+    # This starts the game with the intro1.rpy scene
     call intro1 from _call_intro1
 
     # This ends the game.
