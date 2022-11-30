@@ -160,10 +160,7 @@ label intro1:
 
     "I nod."
 
-    show theo smile:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show theo smile
 
     "???" "Theodore Guydon, at your service. I’ll be your secretary during your time at ISAAC."
 
@@ -176,8 +173,6 @@ label intro1:
     stop music fadeout 2
 
     scene bg theo sedan with dissolve
-
-    hide theo with dissolve
 
     play music "audio/OST_Mr_Secretary_You_Have_A_Call.mp3" fadein 0.5 volume 0.1
 
@@ -208,10 +203,7 @@ label intro1:
     menu:
         "\"You’d do best to stop talking to me like that, Guydon.\"":
 
-            show theo smile:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show theo smile
 
             "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
 
@@ -221,10 +213,7 @@ label intro1:
 
         "\"Yeah, and I wish some of that scholarship money went towards getting you a razor.\"":
 
-            show theo smile:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show theo smile
 
             "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
 
@@ -234,10 +223,7 @@ label intro1:
 
         "\"Sorry, did we get off on a bad foot?\"":
 
-            show theo sweat:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show theo sweat
 
             "Theodore sighs, a bit of his bravado leaving him."
 
@@ -247,10 +233,7 @@ label intro1:
 
         "\"Huh?\"":
 
-            show theo sweat:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show theo sweat
 
             "Theodore sighs, a bit of his bravado leaving him."
 
@@ -261,10 +244,7 @@ label intro1:
 
     "{i}Alright, Theo...{/i}"
 
-    show theo neutral:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show theo neutral
 
     theo "I didn’t mean anything by the astronomy major stuff, by the way. Few of my friends studied the same thing, it’s the only reason I ended up working something like this."
 
@@ -272,10 +252,7 @@ label intro1:
 
     if calm_down:
 
-        show theo smile:
-            xalign 0.5
-            yalign 0.005
-            zoom 0.60
+        show theo smile
 
         theo "Not some bitch shit like astronomy, that’s what."
 

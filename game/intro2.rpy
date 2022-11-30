@@ -44,29 +44,20 @@ label intro2:
 
     "{i}When I saw “President” in the email communications, I thought they meant the President of ISAAC, not Renee Whitaker Jiang, President of the United States…{/i}"
 
-    show theo sweat:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show theo sweat
 
     theo "Yeah. I’m, uh, legally obligated to remind you of that part. I’ll be giving her progress reports, that sort of thing."
 
     menu:
         "\"Got it. Anything else?\"":
 
-            show theo neutral:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show theo neutral
 
             theo "Nothing I’m legally bound to say. We’re kind of charting new territory here, so it’s up to you to set the standard. Just... handle it how you think you should. ISAAC didn’t choose you for nothin’."
 
         "\"Honestly, Theo? I had no idea...\"":
 
-            show theo neutral:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show theo neutral
 
             theo "I get it. Government communications are a lot vaguer than I thought they would be going into this job. I guess this whole communicating with planets thing is... a shot in the dark for everyone involved."
 
@@ -91,10 +82,7 @@ label intro2:
 
     "As he takes his hand off the door, he reaches into his pocket and pulls out a key before holding it out to me."
 
-    show theo smile:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show theo smile
 
     theo "Honor’s all yours."
 
@@ -119,24 +107,15 @@ label intro2:
 
     "I nod, my eyes still on the machine in front of me. It’s strange to see it in a setting like this, but I can already tell operating it will be a breeze."
 
-    show theo sweat:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show theo sweat
 
     theo "You’re looking at this like it’s a beauty but it just looks like something out of some sci-fi video game to me."
 
-    show theo smile:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show theo smile
 
     "Theo crosses his arms and chuckles. However, as I start reaching for some of the device’s implements, his expression becomes more stoic."
 
-    show theo neutral:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show theo neutral
 
     theo "Once you start that thing up, I’m legally obligated to leave the room, as to not affect your communications with the planets. So if you’ve got any burning questions, hit me with them."
 
@@ -150,19 +129,13 @@ label intro2:
         menu:
             "\"Any specific way I should handle things?\"" if not already_asked_1:
 
-                show theo smile:
-                    xalign 0.5
-                    yalign 0.005
-                    zoom 0.60
+                show theo smile
                 
                 "Theo laughs."
 
                 theo "If there was an agenda, I would have told you by now. Just... be yourself. As Disney as that fucking sounds. Just don’t immediately tank our relations with them and we should be in the clear."
 
-                show theo neutral:
-                    xalign 0.5
-                    yalign 0.005
-                    zoom 0.60
+                show theo neutral
 
                 theo "Anything else?"
 
@@ -198,21 +171,16 @@ label intro2:
 
                 "His stoic expression becomes a smirk, then a hearty laugh."
 
-                show theo smile:
-                    xalign 0.5
-                    yalign 0.005
-                    zoom 0.60
+                show theo smile
 
                 theo "It’s a work expense, so it’s basically given to me. Anything else?"
 
                 $ already_asked_4 = True
 
-                show theo neutral:
-                    xalign 0.5
-                    yalign 0.005
-                    zoom 0.60
+                show theo neutral
 
                 jump theo_question
+
             "\"I don’t have anything else.\"":
 
                 theo "Then break a leg, boss."
@@ -222,6 +190,8 @@ label intro2:
     "With that, Theo leaves, and I’m alone in the booth. With Theo gone, the room is completely silent, aside from the hum of the lights above my head."
 
     "There’s nothing left to do but get the Astroplacation device running."
+
+    stop music fadeout 2
 
     "It comes naturally to me, just like how the Professor taught me."
 
@@ -247,6 +217,8 @@ label intro2:
 
     "Looking down on me is a brown-skinned girl, both of her hands cupped over her face. Above those hands are a pair of bespectacled, widened gray eyes, along with a mop of gray hair topped by a heart-shaped cowlick."
 
+    play music "audio/OST_A_Thawing_Heart.mp3" fadein 0.5 volume 0.07
+
     show pluto flustered with dissolve:
         xalign 0.5
         yalign 0.005
@@ -265,10 +237,7 @@ label intro2:
 
             "The stranger moves her extended hand behind her back and shies away as I get up."
     
-    show pluto shy:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show pluto shy
 
     "Female Stranger" "Sorry about that, I-I didn’t mean for that to happen..."
 
@@ -295,19 +264,13 @@ label intro2:
 
         "\"Pluto.\"":
 
-            show pluto joy:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show pluto joy
 
             "The stranger nods, a small smile gracing her lips."
 
             pluto "Mhm."
 
-    show pluto neutral:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show pluto neutral
 
     "She looks down at her feet and does a little bow."
 
@@ -317,19 +280,13 @@ label intro2:
 
     pluto "..."
 
-    show pluto shy:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show pluto shy
 
     "Pluto starts glancing around a bit, silently taking in her surroundings."
 
     mc "So you’re... the actual planet Pluto. Right?"
 
-    show pluto neutral:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show pluto neutral
 
     "She nods, her focus returning to me. There’s a bout of silence before she goes to pick up the chair that I just fell out of. As she moves to do that, there’s a knock at the door."
 
@@ -362,28 +319,19 @@ label intro2:
     menu:
         "A friend of mine.":
 
-            show pluto neutral:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show pluto neutral
 
             "Pluto nods, seeming a bit relieved."
 
         "My secretary.":
 
-            show pluto shy:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show pluto shy
 
             "Pluto nods."
 
         "Just my lackey.":
 
-            show pluto flustered:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show pluto flustered
 
             "Pluto looks to me, then towards the door, then back to me, her glasses slightly fogged."
     
@@ -404,10 +352,7 @@ label intro2:
 
     mc "Hey, Pluto, just... give me a second, okay? And don’t... don’t touch anything in here."
 
-    show pluto shy:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show pluto shy
 
     pluto "Oh, o-okay."
 
@@ -445,10 +390,7 @@ label intro2:
 
         "\"Theo, we need to talk.\"":
 
-            show theo sweat:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show theo sweat
 
             "Theo sighs, lowering the donuts as if the offer was now rescinded."
 
@@ -460,19 +402,13 @@ label intro2:
 
     if theo_donut:
 
-        show theo neutral:
-            xalign 0.5
-            yalign 0.005
-            zoom 0.60
+        show theo neutral
 
         "Theo swallows the piece of donut in his mouth before nodding."
 
     else: 
 
-        show theo neutral:
-            xalign 0.5
-            yalign 0.005
-            zoom 0.60
+        show theo neutral
 
         "Theo looks at me blankly before wrapping one of the donuts in a napkin and pocketing it."
 
@@ -509,10 +445,7 @@ label intro2:
 
         "\"Can I still have the donut?\"" if not theo_donut:
 
-            show theo smile:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show theo smile
 
             theo "Sure."
             
@@ -545,10 +478,7 @@ label intro2:
 
     "I gesture to the Astroplacation device next to her. It still hums ever so slightly."
 
-    show pluto shy:
-        xalign 0.5
-        yalign 0.005
-        zoom 0.60
+    show pluto shy
 
     pluto "Oh, I-I’m sorry, I probably should have got that..."
 
