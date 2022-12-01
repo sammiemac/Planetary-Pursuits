@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/intro1.rpy", line 309: expected end of line
-    stop music fadeou 0.1
-               ^
+File "game/intro1.rpy", line 286: end of line expected.
+    centered "{b}{color=#ffffff}[[8:32 AM] INTERNATIONAL SPACE AERONAUTICS AND ASTRONOMY CENTER{/b}{/color}" color ffffff
+                                                                                                             ^
 
-Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Nov 27 22:52:19 2022
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Wed Nov 30 15:49:33 2022
