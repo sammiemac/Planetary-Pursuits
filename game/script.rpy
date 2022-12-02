@@ -29,6 +29,7 @@ label start:
     call intro1 from _call_intro1
     call intro2 from _call_intro2
     call pluto_date1
+    call demo
 
     # This ends the game.
     return
