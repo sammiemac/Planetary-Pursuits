@@ -1,44 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script call
-    call intro1 from _call_intro1
-  File "game/intro1.rpy", line 308, in script call
-    call intro2 from _call_intro2
-  File "game/intro2.rpy", line 5, in script
-    centered "[8:32 AM] INTERNATIONAL SPACE AERONAUTICS AND ASTRONOMY CENTER"
-IndexError: tuple index out of range
+  File "game/intro2.rpy", line 3, in script
+    label intro2:
+Exception: Could not find return label (u'game/intro1.rpy', 1668398102, 357).
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 30, in script call
-    call intro1 from _call_intro1
-  File "game/intro1.rpy", line 308, in script call
-    call intro2 from _call_intro2
-  File "game/intro2.rpy", line 5, in script
-    centered "[8:32 AM] INTERNATIONAL SPACE AERONAUTICS AND ASTRONOMY CENTER"
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\character.py", line 1253, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\character.py", line 1172, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\character.py", line 1152, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\substitutions.py", line 278, in substitute
-    s = formatter.vformat(s, (), kwargs) # type: ignore
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\substitutions.py", line 168, in get_field
-    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 225, in get_value
-IndexError: tuple index out of range
+  File "game/intro2.rpy", line 3, in script
+    label intro2:
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'game/intro1.rpy', 1668398102, 357).
 
-Windows-10-10.0.22621 AMD64
-Ren'Py 8.0.2.22081402
+Windows-10-10.0.19041
+Ren'Py 7.4.11.2266
 Planetary Pursuits ver.0.1
-Wed Nov 30 15:42:37 2022
+Fri Dec  2 00:49:55 2022

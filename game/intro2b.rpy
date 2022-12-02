@@ -192,6 +192,8 @@ label intro2b:
 
     "The machine roars to life as I say that, drowning out my words a little bit. Eventually, the roar becomes a drone, then the drone becomes a hum, and then the hum becomes silence."
 
+    stop music fadeout 2
+
     "I look around. I’m alone in the room."
 
     "That is, until..."
@@ -239,5 +241,3 @@ label intro2b:
     hide theo with dissolve
 
     "We’re back at the lobby when the elevator doors open again, and I’m left alone with my thoughts as Theo goes to fetch the car to bring me back home."
-
-    call pluto_date1

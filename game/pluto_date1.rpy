@@ -8,6 +8,8 @@ label pluto_date1:
 
     show bg isaac ext with dissolve
 
+    play music "audio/OST_Retrograding_With_You.mp3" volume 0.1
+
     "After a few days to give Pluto time to settle in, I got ready for our scheduled date per our agreement. Naturally, Theo as my secretary also acted as the designated escort and driver, as embarrassing as it was to be chauffeured to my date."
 
     "Theo waited in the car while I went to knock on Pluto’s door. From the other side, muffled panic and rummaging could be heard until finally an out-of-breath Pluto answered the door."
@@ -28,11 +30,15 @@ label pluto_date1:
 
             mc "No, it's true! It's something only you could pull off."
 
-            show pluto flustered
+            show pluto neutral
+
+            $ renpy.notify("Pluto liked your compliment.")
             
             pluto "O-oh, thanks..."
 
             $ dress_complement = True
+
+            $ pluto_aff += 1
 
         "Stay quiet.":
 
@@ -54,6 +60,8 @@ label pluto_date1:
 
             show pluto shy
 
+            $ renpy.notify("Pluto looks uncomfortable.")
+
             pluto "I-I'm sorry, I'm not too familiar with Earth's customs yet, figures I'd mess up already."
 
             mc "Actually, I was just making a joke... I didn't mean to offend you."
@@ -63,6 +71,8 @@ label pluto_date1:
             "{i}Well that was terrible, way to go me...{/i}"
 
             $ dress_complement = False
+
+            $ pluto_aff -= 1
 
     scene bg black with dissolve
 
@@ -86,7 +96,7 @@ label pluto_date1:
                 yalign 0.005
                 zoom 0.60
 
-            pluto "Y-yea."
+            pluto "Y-yeah."
 
             hide pluto with dissolve
 
@@ -97,16 +107,18 @@ label pluto_date1:
     
     "Defeated, I likewise resort to staring out the window."
 
-    scene bg ice rink ext with fadein
+    scene bg ice rink ext with fade:
+        xalign 0.5
+        zoom 0.16
+
+    "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
+
+    "{i}She probably doesn’t like crowds too much.{/i}"
 
     show pluto shy with dissolve:
         xalign 0.5
         yalign 0.005
         zoom 0.60
-
-    "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
-
-    "{i}She probably doesn’t like crowds too much.{/i}"
 
     mc "It’s a weekday, so there shouldn’t be too many people."
     
@@ -116,7 +128,9 @@ label pluto_date1:
 
     hide pluto with dissolve
 
-    "The lobby is primarily filled with couples, barely any families who are likely on vacation, and what looks to be professionals since they have their own personal pair of skates brandished with sponsorships. Despite this, there are hardly any people, most of which are leaving and those who aren’t are still strapping on their skates."
+    "The lobby is primarily filled with couples, barely any families who are likely on vacation, and what looks to be professionals since they have their own personal pair of skates brandished with sponsorships."
+    
+    "Despite this, there are hardly any people, most of which are leaving and those who aren’t are still strapping on their skates."
 
     "Pluto’s eyes dart around the room at every sound with a sense of disillusionment and a hint of curiosity. But at the sight of the affirmed small number of people, she relaxes most of the tension in her body, still maintaining some air of nervousness."
 
@@ -149,21 +163,27 @@ label pluto_date1:
             xalign 0.5
             yalign 0.005
             zoom 0.60
+
+        $ renpy.notify("Pluto seems happy with the compliment.")
         
         pluto "T-thank you."
     
     else:
 
-        show pluto neutral with dissolve:
+        show pluto flustered with dissolve:
             xalign 0.5
             yalign 0.005
             zoom 0.60
+        
+        $ renpy.notify("Pluto seems embarassed about the compliment.")
 
         pluto "O-oh, thanks."
     
-    scene bg ice rink int with fadein
+    scene bg ice rink int with fade
 
-    "We sit on one of the nearby benches to tie on our skates. Pluto watches me put them on, then tries to replicate the action herself, albeit much slower. For a solid three minutes, she struggles to tie a knot with the shoelaces and is clearly getting to the point of being both embarrassed and defeated."
+    "We sit on one of the nearby benches to tie on our skates. Pluto watches me put them on, then tries to replicate the action herself, albeit much slower."
+    
+    "For a solid three minutes, she struggles to tie a knot with the shoelaces and is clearly getting to the point of being both embarrassed and defeated."
 
     "Unable to observe her self-torture any longer, I bend over to help her."
 
@@ -174,7 +194,7 @@ label pluto_date1:
 
     pluto "N-no you don’t have to, i-it’s alright."
 
-    show pluto cry
+    show pluto shy
 
     pluto "I know I’m a burden..."
 
@@ -184,15 +204,20 @@ label pluto_date1:
 
     mc "It might be a little hard for you to walk in them, so if you want you can hold onto me until you get used to it."
 
-    show pluto shy
-
     pluto "N-no it’s okay. I don’t want to slow you down."
 
     "She keeps her eyes to the floor with a tight lip. Still a bit worried, I make sure to glance at her every now and then as we make our way to the ice rink."
 
-    scene bg ice rink with dissolve
+    stop music fadeout 2
+
+    scene bg ice rink with dissolve:
+        xalign 0.5
+        yalign 1.0
+        zoom 1.5
 
     "An instant gush of frigid air hits us as soon as we enter and I pull my coat closer."
+
+    play music "audio/OST_A_Thawing_Heart.mp3" fadein 0.5 volume 0.1
 
     "{i}I haven't been to an ice rink since I was a kid, were they always this cold?{/i}"
 
@@ -208,6 +233,8 @@ label pluto_date1:
     "For now though, I decide not to make a comment on it."
 
     #play sound "<from 0 to 2.5>audio/SFX_ice_skate.wav" volume 0.05
+
+    hide pluto with dissolve
 
     "With wobbled newborn fawn legs, I guide Pluto and myself to the perimeter of the rink for support. The once twinkle she had immediately fades in turn for muffled panic as she struggles to even stand on the ice."
 
@@ -281,12 +308,16 @@ label pluto_date1:
                 xalign 0.5
                 yalign 0.005
                 zoom 0.60
+            
+            $ renpy.notify("Pluto seems upset.")
 
             pluto "..."
 
             "{i}I just made it worse.{/i}"
 
             "Pluto manages to stand back up without much trouble."
+
+            $ pluto_aff -= 1
 
             $ help_up = False
 
@@ -305,11 +336,19 @@ label pluto_date1:
 
             mc "That’s embarrassing... Now I’m even more sorry for you being stuck with me."
 
+            show pluto neutral
+
+            $ renpy.notify("Pluto feels a lot better.")
+
             pluto "It’s alright, I could say the same about myself."
 
             mc "Well, now we’re both on the ground so I guess we’re equal now."
 
+            show pluto joy
+
             "Still smiling to ourselves, we slowly get back on our feet."
+
+            $ pluto_aff += 1
 
             $ help_up = True
 
@@ -321,10 +360,14 @@ label pluto_date1:
                 xalign 0.5
                 yalign 0.005
                 zoom 0.60
+            
+            $ renpy.notify("Pluto seems uncomfortable.")
 
             pluto "I-I’m alright..."
 
             "{i}I just made it worse.{/i}"
+
+            $ pluto_aff -= 1
 
             $ help_up = False
 
@@ -351,11 +394,9 @@ label pluto_date1:
 
     pluto "O-oh, sure."
 
-    scene bg ice rink int with fadein
+    scene bg ice rink int with fade
 
     "Well, that was an experience. Skating had left both Pluto and I more exhausted than we wanted to admit, a break was more than needed. Suddenly, a familiar noise began to fill the building; its source coming from the outside."
-
-    play music "audio/OST_Ice_Cream_Jingle.mp3" fadein 0.5 volume 0.01
 
     menu:
         "Take Pluto and investigate the noise.":
@@ -375,14 +416,22 @@ label pluto_date1:
                 xalign 0.5
                 yalign 0.005
                 zoom 0.60
+            
+            $ renpy.notify("Pluto appreciates you asking.")
 
             pluto "O-oh! I’m not sure, but I am a bit curious..."
 
             show pluto neutral
 
             "Pluto seemed a bit taken back by my question, but still eager in her own way."
+
+            $ pluto_aff += 1
     
-    scene bg ice rink ext with fadein
+    stop music fadeout 2
+    
+    scene bg ice rink ext with fade:
+        xalign 0.5
+        zoom 0.16
 
     play music "audio/OST_Ice_Cream_Jingle.mp3" fadein 0.5 volume 0.05
 
@@ -399,15 +448,19 @@ label pluto_date1:
     
     pluto "There's so many people... there's kids, parents, and even..."
 
-    pluto "{i}*GASP!*{/i}"
+    pluto "{i}*gasp*{/i}"
 
     "I look over to see what has caused Pluto to be in a state of disarray, and I find the culprit."
+
+    hide pluto with dissolve
 
     show dog with dissolve
     
     "A dog sitting near a bench, right across from the ice cream truck, with the owner weaning a pair of sunglasses and eating an ice cream sandwich."
 
     "The dog was a fluffy golden retriever, medium sized, tongue out as it attempted to cool itself off from the hot sun."
+
+    hide dog with dissolve
 
     "Pluto's eyes were quickly shifting up from the floor, back to the dog, then back to the floor. She seemed to be interested in the dog, but was unsure of what to do. I give her a gentle tap on the shoulder to get her attention."
 
@@ -461,7 +514,7 @@ label pluto_date1:
 
             show pluto shy
 
-            pluto "I- I’m not sure I could pull that off."
+            pluto "I-I’m not sure I could pull that off."
 
             mc "Don’t worry! Look, there are a group of kids petting the dog already, I’m sure the owner won’t mind."
 
@@ -486,9 +539,12 @@ label pluto_date1:
 
             "Pluto’s eyes light up as she reaches down to pet the excited dog."
 
-            show pluto joy with dissolve on right
+            show pluto joy:
+                linear 0.5 xalign 0.875
 
-            show dog with dissolve on left
+            show dog with dissolve:
+                xalign 0.125
+                yalign 1.0
 
             pluto "Hehe, what a good boy!"
 
@@ -496,18 +552,18 @@ label pluto_date1:
 
             "The two share a close moment of friendship as Pluto has a big smile on her face, eventually standing back up, satisfied."
 
-            hide pluto with dissolve
-
             hide dog with dissolve
 
-            show pluto joy with dissolve:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show pluto joy:
+                linear 0.5 xalign 0.5
+            
+            $ renpy.notify("Pluto looks really happy.")
 
             pluto "That was nice, thank you."
 
             "Whether she was thanking me or the dog owner, I’m not sure."
+
+            $ pluto_aff += 1
 
         "Ask the dog owner if Pluto can pet the dog.":
 
@@ -538,9 +594,12 @@ label pluto_date1:
 
             "Pluto’s eyes light up as she hears the owner's response and comes over, reaching down to pet the excited dog."
 
-            show pluto joy with dissolve on right
+            show pluto joy:
+                linear 0.5 xalign 0.875
 
-            show dog with dissolve on left
+            show dog with dissolve:
+                xalign 0.125
+                yalign 1.0
 
             pluto "Hehe, what a good boy!"
 
@@ -548,16 +607,421 @@ label pluto_date1:
 
             "The two share a close moment of friendship as Pluto has a big smile on her face, eventually standing back up, satisfied."
 
-            hide pluto with dissolve
-
             hide dog with dissolve
 
-            show pluto joy with dissolve:
-                xalign 0.5
-                yalign 0.005
-                zoom 0.60
+            show pluto joy:
+                linear 0.5 xalign 0.5
+
+            $ renpy.notify("Pluto looks really happy.")
 
             pluto "That was nice, thank you."
 
             "Whether she was thanking me or the dog owner, I’m not sure."
+
+            $ pluto_aff += 1
+    
+    hide pluto with dissolve
+    
+    "Suddenly, a rowdy group of children catches Pluto’s attention. They’re crowding around an ice cream wagon as they tug on their parents’ shins with desperate pleas."
+
+    "Despite her clear curiosity, she glances around and tries to avoid eye contact with the vendor and myself in an attempt to gain the confidence to speak up."
+
+    show pluto shy with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
+    pluto "... How does ice cream taste?"
+
+    mc "Huh?"
+
+    pluto "I’ve never had it before... Is it really worth being that excited over?"
+
+    "In a weird way, Pluto seems almost... jealous of them?"
+
+    mc "For kids, yeah. It’s sort of like candy in the sense of sugary junk food, but more in the form of a cold dairy treat. It comes in all kinds of flavors and shapes."
+
+    show pluto flustered
+
+    pluto "Really?"
+
+    mc "Speaking of ice cream, did you want to try some?"
+
+    show pluto joy
+
+    pluto "Sure."
+
+    hide pluto with dissolve
+
+    "It’s a hot day, getting some ice cream for the both of us would be nice, but..."
+
+    "Choosing what ice cream to buy can be overwhelming for her with the amount of choices. I should probably..."
+
+    menu:
+        "Buy Pluto the dog-shaped ice cream.":
+
+            show ice cream dog with dissolve:
+                xalign 0.5
+                yalign 0.375
+                zoom 0.375
+
+            "Since she seems to like dogs, I decide to buy her the dog shaped ice cream."
+
+            hide ice cream dog with dissolve
+
+            "I talk to the stern looking ice cream man and get two ice cream cones."
+
+            mc "Here you go Pluto, one dog shaped ice cream, chocolate flavored."
+
+            show pluto flustered with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
+            "Pluto grabs the now melting ice cream and stares intently, at a loss for words."
+
+            show pluto chopper with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 1.0
+
+            pluto "NOOOO!!! I WILL NEVER COMMIT DOGICIDE!!!"
+
+            "Pluto is in shambles and breaks down crying. I forgot that she still isn't used to Earth’s customs."
+
+            "This draws the attention of everyone around us, making matters even worse. I attempt to comfort her and quickly grab the ice cream."
+
+            mc "There there, it’s ok... It’s not actually a dog, see? No dogs were hurt in the making of this ice cream."
+
+            show pluto cry with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
+            pluto "{i}*sniffle*{/i} R-really?"
+
+            mc "Yeah, of course! So there’s no need to cry anymore, okay?"
+
+            show pluto neutral
+
+            $ renpy.notify("Pluto is slightly traumatized.")
+
+            pluto "A-alright, but I think I won't be eating any ice cream for a while."
+
+            mc "Me neither..."
+
+            $ pluto_aff -= 1
+
+        "Buy Pluto the blue hedgehog ice cream with a smiley face and the gumball eyes.":
+
+            show ice cream sonic with dissolve:
+                xalign 0.5
+                yalign 0.25
+                zoom 0.25
+
+            "The gumball-face ice cream is a classic, anyone would like this."
+
+            hide ice cream sonic with dissolve
+
+            "I talk to the stern looking ice cream man and get the blue hedgehog on a stick."
+
+            mc "Here you go Pluto, one blueberry hedgehog ice cream with gumball eyes."
+
+            show pluto flustered with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+            
+            "Pluto grabs the now melting ice cream and stares intently, seeming a bit confused."
+
+            show pluto neutral
+
+            pluto "Thank you... I didn’t know the animals on earth looked so funny."
+
+            mc "What do you mean? It's just a normal-- Oh..."
+
+            "It just dawned upon me that today is a very hot day, and the sun has melted the hedgehog into a funky looking slime with droopy gumball eyes."
+
+            mc "Oh wow, I’m really sorry about that, I didn't realize it would melt so fast. Maybe I can get you a new one..."
+
+            show pluto joy
+
+            pluto "Hehe! No, I like it."
+
+            "Pluto licks the melting ice cream."
+
+            show pluto flustered
+
+            $ renpy.notify("Pluto really liked the ice cream.")
+            
+            pluto "Wow, it's really good! I’m glad I got to try it."
+
+            show pluto joy
+
+            mc "Hahaha! Ice cream never fails to make any day better."
+
+            $ pluto_aff += 1
+
+        "Buy Pluto a popsicle of her choice.":
+
+            mc "Pluto, What's your favorite flavor?"
+
+            show pluto flustered with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
+            pluto "Oh, that’s an interesting question. There are so many, but if I had to choose... maybe strawberry?"
+
+            mc "You got it!"
+
+            hide pluto with dissolve
+
+            "I talk to the stern looking ice cream man and ask for one strawberry popsicle."
+
+            mc "Here you go Pluto, one strawberry popsicle."
+
+            show pluto flustered with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
+            "Pluto grabs the popsicle and stares intently, seeming a bit confused."
+
+            pluto "Is ice cream supposed to be frozen solid like this?"
+
+            mc "Actually, it’s a popsicle, so it's not quite an ice cream. But it tastes great all the same. You can think of it as the cousin to ice cream."
+
+            mc "With a bit more confidence in her eyes, Pluto tastes the popsicle."
+
+            show pluto joy
+
+            $ renpy.notify("Pluto really liked the popsicle.")
+
+            pluto "Mmm, it's really good and tastes like strawberries! I’m glad I got to try it."
+
+            mc "A good popsicle never fails to make the day better."
+
+            $ pluto_aff += 1
+
+        "Let Pluto order for herself.":
+
+            mc "Hey Pluto, why don’t you try ordering an ice cream from the ice cream truck? They have all kinds of flavors from your basic vanilla to more berry themed ones."
+
+            show pluto flustered with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+            
+            pluto "Oh, okay. I've never ordered an ice cream before, but I think I can do it."
+
+            hide pluto with dissolve
+
+            "Pluto goes up to the stern looking ice cream man and seems to tense up with her words being little louder than a whisper."
+
+            show pluto shy with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
+            pluto "H-hi... I w-w-would like..."
+
+            "Ice Cream Man" "Wha?! I can't hear you, speak  up! I don't got all day."
+
+            show pluto cry
+
+            pluto "A-ah! Sorry, I’ll... just take vanilla..."
+
+            hide pluto with dissolve
+
+            "Defeated, Pluto reluctantly takes the vanilla ice cream cone which was clearly not her first choice, but her default option nevertheless."
+
+            "Pluto proceeds to taste her disappointing ice cream."
+
+            show pluto neutral with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+            
+            pluto "Hmm, it's not bad... I would have preferred another flavor like strawberry, but I’ll take what I can get."
+
+            mc "Yeah, ice cream is ice cream, no matter the flavor. I wouldn't worry about the details."
+
+            pluto "Mhm, I think I feel better already. Ice cream really is an Earth specialty."
+
+            show pluto shy
+
+            $ renpy.notify("Pluto is slightly embarrassed.")
+            
+            pluto "I don’t think I will try another one anytime soon, though."
+
+            mc "Fair enough."
+
+            $ pluto_aff -= 1
+    
+    hide pluto with dissolve
+
+    "I notice Theo waiting in the sedan nearby, it looks like it's time to wrap up the date and head home."
+
+    stop music fadeout 2
+
+    scene bg theo sedan with fade
+
+    play music "audio/OST_Mr_Secretary_You_Have_A_Call.mp3" fadein 0.5 volume 0.1
+
+    "The moment we enter the car, Pluto huddles up next to the car door and locks her eyes on the passing scenery. I glance between her and Theo, who tries to egg me on through the rearview mirror."
+    
+    "Finally gathering the courage to ask her if she enjoyed herself, I see her eyes shut in the reflection of the window."
+
+    "{i}She must’ve been exhausted, since she hasn’t really explored Earth before.{/i}"
+
+    "I exhale my underlying exhaustion."
+
+    show theo neutral with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
+    theo "Long day?"
+
+    mc "Yep..."
+
+    theo "So? How was it? Since I have to report back and all."
+
+    if pluto_aff > 3:
+
+        $ renpy.notify("You feel like today was successful.")
+        
+        mc "I think it went alright. As far as I can tell I feel like she had fun, but it’ll be awhile before she gets comfortable with me I think."
+
+        show theo smile
+
+        theo "Then I guess either you or me should start arranging another date huh? If you ever need a lady’s man for help, I’m your guy."
+
+        mc "I get it, you’re married."
+
+        theo "And happily too. Maybe that’ll be you someday, but for now you’ll be the astronomy major with your head in the stars."
+
+        mc "Yeah, yeah shove it."
+
+        "Theo and I exchange a smirk all in good fun."
+
+    elif pluto_aff == 3:
+
+        $ renpy.notify("You feel like today could be better.")
+
+        mc "I’ll probably have to talk to her some more, I can’t really tell how she feels right now."
+
+        theo "She seems like a hard nut to crack, I’d probably give it some time."
+
+        mc "I can tell. I’ll still try though. It’s my job after all."
+
+        show theo smile
+
+        theo "Don’t sound so defeated, it was just the first date. I’m sure the second one will go better now that you’ve got a better grasp on how to talk to her."
+    
+    elif pluto_aff < 3:
+
+        $ renpy.notify("You feel like today was rough.")
+
+        mc "I really messed that up... I don’t know if she’s going to want to help our mission at all, honestly..."
+
+        show theo sweat
+
+        theo "Come on man, you were the negotiator! For the sake of both of our jobs I hope that you can pull something together."
+
+        mc "I do too..."
+    
+    scene bg isaac ext with fade
+
+    "The car ride continued in silence for some time, before finally arriving in front of the ISAAC building."
+
+    "Pluto reluctantly opens her eyes after a gentle nudge on the shoulder from me. Pluto, still half asleep, mumbles some incoherent words before following along with me and Theo into the building."
+
+    "After a long day in each other's company, I feel as if the two of us have come to know each other a little bit better."
+    
+    "Moments before we part, something comes to mind that I just have to get off my chest."
+
+    mc "P-Pluto!"
+
+    show pluto flustered with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+    
+    pluto "Y-yes?"
+
+    mc "I have something I need to tell you. The truth is..."
+
+    menu:
+        "I love you!":
+
+            "[[{i}A loud car drives by and completely drowns out what you were trying to say. You feel as if the writing gods did not want you to make this choice yet...{/i}]"
+
+            show pluto shy
+
+            pluto "Sorry, I didn't catch that..."
+
+            if pluto_aff > 3:
+
+                show pluto joy
+
+                pluto "But today was really fun."
+            
+            else:
+
+                show pluto neutral
+
+                "Pluto gives a small nod and shyly waves her hand."
+
+        "Today was a lot of fun.":
+
+            if pluto_aff > 3:
+
+                show pluto joy
+
+                pluto "Y-yeah, it was! Thank you..."
+            
+            else:
+
+                show pluto neutral
+
+                "Pluto gives a small nod and shyly waves her hand."
+
+
+        "The moon is made of cheese.":
+
+            pluto ". . ."
+
+            pluto "I knew it."
+
+            pluto "That explains so much..."
+
+            if pluto_aff > 3:
+
+                show pluto joy
+
+                "Pluto giggles to herself."
+
+                pluto "Thanks for today. It was really fun."
+            
+            else:
+
+                show pluto neutral
+
+                "Pluto gives a small nod and shyly waves her hand."
+    
+    show pluto neutral
+
+    if pluto_aff > 3:
+
+        pluto "See you next time, [first_name]!"
+    
+    else:
+
+        pluto "Goodbye, [first_name]."
+
+    "Pluto leaves in a hurry, no doubt tripping on her dress, somewhere out of sight."
+
+
 

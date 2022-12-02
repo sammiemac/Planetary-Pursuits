@@ -5,8 +5,11 @@
 # name of the character.
 define mc = Character("Me")
 define pluto = Character("Pluto", who_color="#ff75d8")
-define theo = Character("Theo")
+define theo = Character("Theo", who_color="#e68627")
 
+# Declare player's affinites
+default theo_aff = 0
+default pluto_aff = 0
 
 python:
 # TODO: Implement hashmap/dictionary for MC's pronouns
@@ -18,16 +21,14 @@ python:
     objectPronouns = {1: him, 2: her, 3: them}
     possPronouns = {1: his, 2: hers, 3: theirs}
     possAdjectives = {1: his, 2: hers, 3: their}
-# TODO: Implement variables for characters' affinities towards the MC
-    plutoAff = 0
-    theoAff = 0
-
 
 # The game starts here.
 label start:
 
     # This starts the game with the intro1.rpy scene
     call intro1 from _call_intro1
+    call intro2 from _call_intro2
+    call pluto_date1
 
     # This ends the game.
     return

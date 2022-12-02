@@ -83,7 +83,7 @@ label intro1:
 
     mc "AHHHHHHHH--!!!"
 
-    scene bg bedroom with fadein
+    scene bg bedroom with fade
 
     "I sit up straight, a rush of cold hitting me immediately thanks to the sweat on the collar of my pajama shirt. I look to the source of beeping: it’s coming from my cell phone, laying there idly as it charges on my nightstand."
 
@@ -100,13 +100,13 @@ label intro1:
         "\"Huh? 16 minutes?!\"":
             "{i}I shouldn’t be late for work if I start getting ready now…{/i}"
     
-    scene bg black with fadein
+    scene bg black with fade
 
     #play sound "SFX_change_clothes.wav"
 
     "After a quick shower to wash off that cold sweat, I put on the clothes I had set aside last night: the uniform for the new place I'm working at. I gathered up the rest of my belongings and checked myself out in the mirror."
 
-    scene bg bedroom with fadein
+    scene bg bedroom with fade
 
     play music "audio/OST_Retrograding_With_You.mp3" volume 0.1
 
@@ -145,7 +145,8 @@ label intro1:
 
     "I look around, making a last-second sweep to make sure I have everything that I need on me. With everything seemingly taken care of, I head out."
 
-    scene bg house outside with fadein
+    scene bg house outside with fade:
+        zoom 0.5
 
     "Outside, a tall man sporting sunglasses, a black suit, and a full beard stands upright in front of a black sedan. Upon seeing me, he opens the passenger seat door and gestures for me to go in, his expression stoic."
 
@@ -170,13 +171,13 @@ label intro1:
 
     stop music fadeout 2
 
-    scene bg theo sedan with fadein
+    scene bg theo sedan with fade
 
     play music "audio/OST_Mr_Secretary_You_Have_A_Call.mp3" fadein 0.5 volume 0.1
 
     "I sigh and look outside the window, down at the water underneath the bridge we’re currently stuck on. I was wondering as to why the ride over was scheduled so early: the reason was right in front of me, manifested in the miles-long line of cars in our way."
 
-    show theo neutral with dissolve:
+    show theo neutral at right with dissolve:
         xalign 0.5
         yalign 0.005
         zoom 0.60
@@ -279,7 +280,7 @@ label intro1:
 
     stop music fadeout 2
 
-    show bg isaac ext with fadein
+    show bg isaac ext with fade
 
     show theo neutral with dissolve:
         xalign 0.5
@@ -302,5 +303,3 @@ label intro1:
     hide theo with dissolve
 
     "I nod and leave the car, my eyes still on the building in front of me. It gets larger and larger as I cross the plaza in front of it and approach its entrance."
-
-    call intro2 from _call_intro2
