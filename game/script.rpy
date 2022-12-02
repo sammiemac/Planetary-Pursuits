@@ -28,8 +28,8 @@ label start:
     # This starts the game with the intro1.rpy scene
     call intro1 from _call_intro1
     call intro2 from _call_intro2
-    call pluto_date1
-    call demo
+    call pluto_date1 from _call_pluto_date1
+    call demo from _call_demo
 
     # This ends the game.
     return
