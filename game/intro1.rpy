@@ -3,6 +3,7 @@
 label intro1:
 
     scene bg black
+
     play music "audio/OST_Spaced_Out.mp3" volume 0.3
 
     "My body feels light, like a feather in the air. I try to observe my surroundings, but… there are none to observe. Everything is dark. Fear is the first thing that rises in my throat, but it quickly dissipates, leaving me empty, at peace."
@@ -11,11 +12,10 @@ label intro1:
 
     "I open my eyes."
 
-    scene bg space:
+    scene bg space with dissolve:
         xalign 0.5
         yalign 0.5
         zoom 0.5
-    with dissolve
 
     "I look around me, my surroundings suddenly lit up by a vast universe. I'm standing on a comet as it flies through space, as if it's giving me a tour of the galaxy." 
     
@@ -30,8 +30,7 @@ label intro1:
         xalign 0.5
         yalign 0.5
         zoom 0.25
-    show satellite far
-    with dissolve
+    show satellite far with dissolve
 
     play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.02
 
@@ -44,8 +43,7 @@ label intro1:
         xalign 0.5
         yalign 0.5
         zoom 0.5
-    show satellite close
-    with dissolve
+    show satellite close with dissolve
 
     play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.05
 
@@ -58,8 +56,7 @@ label intro1:
         xalign 0.5
         yalign 0.5
         zoom 1.5
-    show satellite closer
-    with dissolve
+    show satellite closer with dissolve
 
     play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.1
 
@@ -72,20 +69,21 @@ label intro1:
         xalign 0.5
         yalign 0.5
         zoom 3.5
-    show satellite closest
-    with dissolve
+    show satellite closest with dissolve
 
     play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.2
 
     "Satellite" "{i}*BEEP! BEEP! BEEP!*{/i}"
 
     scene bg black
+
     stop music
+
     #play sound "SFX_crash.wav"
 
     mc "AHHHHHHHH--!!!"
 
-    scene bg bedroom with dissolve
+    scene bg bedroom with fadein
 
     "I sit up straight, a rush of cold hitting me immediately thanks to the sweat on the collar of my pajama shirt. I look to the source of beeping: it’s coming from my cell phone, laying there idly as it charges on my nightstand."
 
@@ -102,13 +100,13 @@ label intro1:
         "\"Huh? 16 minutes?!\"":
             "{i}I shouldn’t be late for work if I start getting ready now…{/i}"
     
-    scene bg black with dissolve
+    scene bg black with fadein
 
     #play sound "SFX_change_clothes.wav"
 
     "After a quick shower to wash off that cold sweat, I put on the clothes I had set aside last night: the uniform for the new place I'm working at. I gathered up the rest of my belongings and checked myself out in the mirror."
 
-    scene bg bedroom with dissolve
+    scene bg bedroom with fadein
 
     play music "audio/OST_Retrograding_With_You.mp3" volume 0.1
 
@@ -147,7 +145,7 @@ label intro1:
 
     "I look around, making a last-second sweep to make sure I have everything that I need on me. With everything seemingly taken care of, I head out."
 
-    #scene bg outside house
+    scene bg house outside with fadein
 
     "Outside, a tall man sporting sunglasses, a black suit, and a full beard stands upright in front of a black sedan. Upon seeing me, he opens the passenger seat door and gestures for me to go in, his expression stoic."
 
@@ -172,7 +170,7 @@ label intro1:
 
     stop music fadeout 2
 
-    scene bg theo sedan with dissolve
+    scene bg theo sedan with fadein
 
     play music "audio/OST_Mr_Secretary_You_Have_A_Call.mp3" fadein 0.5 volume 0.1
 
@@ -281,7 +279,7 @@ label intro1:
 
     stop music fadeout 2
 
-    show bg isaac ext with dissolve
+    show bg isaac ext with fadein
 
     show theo neutral with dissolve:
         xalign 0.5
