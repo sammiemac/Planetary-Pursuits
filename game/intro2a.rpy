@@ -116,6 +116,12 @@ label intro2a:
 
     "I look around. I’m alone in the room."
 
+    #A 33% chance of the Mars encounter happening.
+    $ mars_encounter = renpy.random.randint(1, 3)
+    if mars_encounter is 1:
+        $ meet_mars = True
+        call mars
+
     "That is, until..."
 
     show theo smile with dissolve:

@@ -187,6 +187,12 @@ label intro2:
 
     hide theo with dissolve
 
+    #A 33% chance of the Jupiter encounter happening.
+    $ jupiter_encounter = renpy.random.randint(1, 3)
+    if jupiter_encounter is 1:
+        $ meet_jupiter = True
+        call jupiter
+
     "With that, Theo leaves, and I’m alone in the booth. With Theo gone, the room is completely silent, aside from the hum of the lights above my head."
 
     "There’s nothing left to do but get the Astroplacation device running."
