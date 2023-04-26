@@ -4,6 +4,10 @@ label pluto_date1:
 
     scene bg black with dissolve
 
+    play sound "audio/SFX_Transition_Scene.mp3" volume 0.2
+
+    pause 2
+
     centered "{b}{color=#ffffff}A few days later, around noon...{/b}{/color}"
 
     show bg isaac ext with dissolve

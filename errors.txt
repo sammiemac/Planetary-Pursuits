@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/intro2.rpy", line 222: expecting name after dot.
-    play sound "audio/SFX_click.wav" volume 0.0.3
-                                                ^
+File "game/pluto_date1.rpy", line 9: Line is indented, but the preceding play sound statement statement does not expect a block. Please check this line's indentation.
+    pause 1
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Apr 26 00:53:29 2023
+Wed Apr 26 01:13:08 2023

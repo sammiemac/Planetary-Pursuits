@@ -202,6 +202,8 @@ label intro2b:
         $ meet_mars = True
         call mars
 
+    stop music fadeout 2
+
     "That is, until..."
 
     show theo smile with dissolve:
@@ -210,6 +212,10 @@ label intro2b:
         zoom 0.60
 
     theo "How’d it go, boss?"
+
+    play music "audio/OST_Mission_ISAAC.mp3" volume 0.02
+
+    play sound "audio/SFX_Door_Slam_1.mp3" volume 0.05
 
     "Theo opens the door to the room with a smile. He’s got a journal in his hand, where I can see bullet points but can’t make out any of the words that follow them."
 
@@ -246,4 +252,8 @@ label intro2b:
 
     hide theo with dissolve
 
+    show bg isaac lobby with dissolve
+
     "We’re back at the lobby when the elevator doors open again, and I’m left alone with my thoughts as Theo goes to fetch the car to bring me back home."
+
+    stop music fadeout 2

@@ -12,6 +12,8 @@ label mars:
 
     "I turn around and am quickly surprised to meet a short, orange-skinned, red-haired girl with a smug grin and…. Is that… camo shorts?"
 
+    play music "audio/OST_Retrograding_With_You.mp3" volume 0.1
+
     show mars smug with dissolve:
         xalign 0.5
         yalign 0.005
