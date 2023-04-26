@@ -32,7 +32,7 @@ label intro1:
         zoom 0.25
     show satellite far with dissolve
 
-    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.02
+    play sound "audio/SFX_Satelite_Beep_Slow.mp3" volume 0.02
 
     "Satellite" "{i}*Beep. Beep. Beep.*{/i}"
 
@@ -45,7 +45,7 @@ label intro1:
         zoom 0.5
     show satellite close with dissolve
 
-    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.05
+    play sound "audio/SFX_Satelite_Beep_Med.mp3" volume 0.02
 
     "Satellite" "{i}*Beep! Beep! Beep!*{/i}"
 
@@ -58,7 +58,7 @@ label intro1:
         zoom 1.5
     show satellite closer with dissolve
 
-    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.1
+    play sound "audio/SFX_Satelite_Beep_Fast.mp3" volume 0.05
 
     "Satellite" "{i}*BEEP. BEEP. BEEP.*{/i}"
 
@@ -71,7 +71,7 @@ label intro1:
         zoom 3.5
     show satellite closest with dissolve
 
-    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.2
+    play sound "audio/SFX_Satelite_Beep_Fast.mp3" volume 0.1
 
     "Satellite" "{i}*BEEP! BEEP! BEEP!*{/i}"
 
@@ -87,7 +87,7 @@ label intro1:
 
     "I sit up straight, a rush of cold hitting me immediately thanks to the sweat on the collar of my pajama shirt. I look to the source of beeping: it’s coming from my cell phone, laying there idly as it charges on my nightstand."
 
-    play sound "<from 0 to 2.5>audio/SFX_alarm.wav" volume 0.05
+    play sound "audio/SFX_Alarm.mp3" volume 0.02
 
     #show phone
 
@@ -170,6 +170,12 @@ label intro1:
     "Theodore" "Pleasure's mine."
 
     stop music fadeout 2
+
+    scene bg black with fade
+
+    play sound "audio/SFX_Drive_Away_1.mp3" volume 0.1
+
+    pause 2.0
 
     scene bg theo sedan with fade
 
@@ -279,6 +285,14 @@ label intro1:
     "As Theo’s words pull me out of my thoughts and back into real life, I start to feel the car begin to move once more."
 
     stop music fadeout 2
+
+    scene bg black with fade
+
+    play sound "audio/SFX_Drive_Away_1_Cut.mp3" volume 0.1
+
+    queue sound "audio/SFX_Car_Door_1.mp3" volume 0.1
+
+    pause 3.0
 
     show bg isaac ext with fade
 
