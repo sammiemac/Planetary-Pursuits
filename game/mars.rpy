@@ -176,8 +176,151 @@ label mars:
 
     mars "MINESWEEPER BABY!!!"
 
-    "[[{i}THAT'S RIGHT!{/i} We're pivoting to new gameplay, babey!]"
+    "[[... is what Mars would've said.]"
 
-    "[[The better the score, the better the date!]]"
+    hide mars with dissolve
 
-    jump minesweeper_game
+    "[[But due to some odd circumstance, the Minesweeper game didn't happen. As if some outside force, like a god or even a programmer, tried their damndest to get it to work, but just couldn't.]"
+    
+    "[[Maybe they messed up writing the code somewhere. Maybe the tutorial they were following was wrong or outdated. Hell, maybe even the universe could not allow it to happen.]"
+
+    "[[Instead, some outside force will decide the outcome of this \"game.\" Random chance, a name pulled out of a hat. And that result is...]"
+
+    #A 33% chance of getting a Good, Neutral, or Bad outcome.
+    $ mars_outcome = renpy.random.randint(1, 3)
+    if mars_outcome is 1:
+        jump outcome_good
+    elif mars_outcome is 2:
+        jump outcome_neutral
+    elif mars_outcome is 3:
+        jump outcome_bad
+
+    label outcome_good:
+
+        $ renpy.notify("Mars is impressed by your Minesweeper skillz.")
+
+        show mars smug with dissolve:
+            xalign 0.5
+            yalign 0.005
+            zoom 0.5
+
+        mars "{i}Exxplosssion!!!{/i} That date was the bomb! Same time next week?"
+
+        mc "Honestly, I think I am a little tired from such intense Minesweeping. I might need to take a rain check on that one. Maybe next semester instead?"
+
+        show mars tired
+
+        mars "Awww, but waiting is boooring... Oh well, I guess I can wait. I know it will be an even better date next time!"
+
+        "The thought of a hard and eventual expert level difficulty of Minesweeper scares me to no end... It looks like I have a lot of training to do."
+
+        show mars neutral
+
+        mc "Haha yeah, I'm looking forward to it, too."
+        
+        mars "Well then---"
+
+        hide mars with dissolve
+
+        "Mars quickly runs up to me... and gives me a kiss on the cheek."
+
+        show mars neutral with dissolve:
+            xalign 0.5
+            yalign 0.005
+            zoom 0.5
+        
+        mars "See you next time! Tell Pluto I said hi!"
+
+        hide mars with dissolve
+
+        "And just like that, she's already running off to who knows where."
+
+        mc "That girl really has limitless energy..."
+
+        jump mars_encounter_end
+
+    label outcome_neutral:
+
+        $ renpy.notify("Mars nods approvingly at your Minesweeper game.")
+
+        show mars neutral with dissolve:
+            xalign 0.5
+            yalign 0.005
+            zoom 0.5
+        
+        mars "Your Minesweeper skills need some work, but they were alright. I give it a solid 7/10!"
+
+        mc "I didn't know this turned into some kind of game show, but I am pretty tired from that intense Minesweeping."
+
+        "{i}I may have to brush up on my skills for any future dates if I don’t want to make fool of myself..."
+
+        mars "Mhm! I can picture the next date already: you, reaching a new highscore under my direct tutelage..."
+        
+        show mars smug
+
+        mars "From now on, it's nonstop training!"
+
+        "Somehow, the thought of that scares me more than clearing out bombs..."
+
+        show mars neutral
+
+        mc "I’ll be looking forward to next time."
+
+        mars "Well then---"
+
+        hide mars with dissolve
+
+        "Mars quickly runs up to me... and gives me a tight hug."
+
+        show mars neutral with dissolve:
+            xalign 0.5
+            yalign 0.005
+            zoom 0.5
+        
+        mars "See you next time! Tell Pluto I said hi!"
+
+        hide mars with dissolve
+
+        "And just like that, she's already running off to who knows where."
+
+        mc "That girl really has limitless energy..."
+        
+        jump mars_encounter_end
+    
+    label outcome_bad:
+
+        $ renpy.notify("Mars cringes at your lack of Minesweeper rizz.")
+
+        show mars tired with dissolve:
+            xalign 0.5
+            yalign 0.005
+            zoom 0.5
+        
+        mars "That date really \"blew up\" in your face."
+
+        mc "I'll admit, it was not my best showing of skills."
+
+        mars "Well then---"
+
+        hide mars with dissolve
+
+        "Mars quickly runs up to me... and gives me a pity pat on my back."
+
+        show mars neutral with dissolve:
+            xalign 0.5
+            yalign 0.005
+            zoom 0.5
+        
+        mars "I'm sure you'll do better next time! Tell Pluto I said hi!"
+
+        hide mars with dissolve
+
+        "And just like that, she's already running off to who knows where."
+
+        mc "That girl really has limitless energy..."
+
+        jump mars_encounter_end
+    
+    label mars_encounter_end:
+
+        "And now, I find myself alone in this room. Again."

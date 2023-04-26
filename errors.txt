@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/minesweeper.rpy", line 109: invalid character '—' (U+2014)
-                x = int(x) — 1 
-                            ^
+File "game/mars.rpy", line 303: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    mars "Well then---"
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Mar 31 23:43:18 2023
+Wed Apr 26 00:13:50 2023
