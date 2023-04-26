@@ -12,7 +12,7 @@ label pluto_date1:
 
     show bg isaac ext with dissolve
 
-    play music "audio/OST_Retrograding_With_You.mp3" volume 0.1
+    play music "audio/SFX_Birds_1.mp3" volume 0.1
 
     "After a few days to give Pluto time to settle in, I got ready for our scheduled date per our agreement. Naturally, Theo as my secretary also acted as the designated escort and driver, as embarrassing as it was to be chauffeured to my date."
 
@@ -78,11 +78,19 @@ label pluto_date1:
 
             $ pluto_aff -= 1
 
+    "I escorted Pluto over to Theo's car, and then my trusted secretary began driving us off to our \"date.\""
+
     scene bg black with dissolve
 
-    #play sound "<from 0 to 2.5>audio/SFX_car_door.wav" volume 0.02
+    play sound "audio/SFX_Car_Door_1.mp3" volume 0.1
+
+    queue sound "audio/SFX_Drive_Away_1.mp3" volume 0.1
+
+    pause 2
     
     scene bg theo sedan with dissolve
+
+    play music "audio/OST_Mr_Secretary_You_Have_A_Call.mp3" fadein 0.5 volume 0.1
 
     "A normal job usually has people deal with customers, selling and buying, working with computers or machines, and mine... has me going on a date with a celestial body."
 
@@ -111,11 +119,21 @@ label pluto_date1:
     
     "Defeated, I likewise resort to staring out the window."
 
+    scene bg black with dissolve
+
+    play sound "audio/SFX_Drive_Away_1_Cut.mp3" volume 0.1
+
+    queue sound "audio/SFX_Car_Door_1.mp3" volume 0.1
+
+    pause 2
+
     scene bg ice rink ext with fade:
         xalign 0.5
         zoom 0.16
 
     "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
+
+    queue sound "<loop 0.1>audio/SFX_Crowd_Talking_Long.mp3" volume 0.1
 
     "{i}She probably doesn’t like crowds too much.{/i}"
 
@@ -217,7 +235,7 @@ label pluto_date1:
     scene bg ice rink with dissolve:
         xalign 0.5
         yalign 1.0
-        zoom 1.5
+        zoom 1.2
 
     "An instant gush of frigid air hits us as soon as we enter and I pull my coat closer."
 
@@ -552,6 +570,8 @@ label pluto_date1:
 
             pluto "Hehe, what a good boy!"
 
+            play sound "audio/SFX_Dog_2.mp3" volume 0.1
+
             "Dog" "Borf!"
 
             "The two share a close moment of friendship as Pluto has a big smile on her face, eventually standing back up, satisfied."
@@ -606,6 +626,8 @@ label pluto_date1:
                 yalign 1.0
 
             pluto "Hehe, what a good boy!"
+
+            play sound "audio/SFX_Dog_2.mp3" volume 0.1
 
             "Dog" "Borf!"
 
@@ -869,6 +891,14 @@ label pluto_date1:
 
     stop music fadeout 2
 
+    scene bg black with dissolve
+
+    play sound "audio/SFX_Car_Door_1.mp3" volume 0.1
+
+    queue sound "audio/SFX_Drive_Away_1.mp3" volume 0.1
+
+    pause 2
+
     scene bg theo sedan with fade
 
     play music "audio/OST_Mr_Secretary_You_Have_A_Call.mp3" fadein 0.5 volume 0.1
@@ -923,6 +953,8 @@ label pluto_date1:
         show theo smile
 
         theo "Don’t sound so defeated, it was just the first date. I’m sure the second one will go better now that you’ve got a better grasp on how to talk to her."
+
+        "The rest of the drive went on in relative silence as I stared out the window."
     
     elif pluto_aff < 3:
 
@@ -935,6 +967,16 @@ label pluto_date1:
         theo "Come on man, you were the negotiator! For the sake of both of our jobs I hope that you can pull something together."
 
         mc "I do too..."
+
+        "The rest of the drive went on with an awkward tension between Theo and I."
+
+    scene bg black with dissolve
+
+    play sound "audio/SFX_Drive_Away_1_Cut.mp3" volume 0.1
+
+    queue sound "audio/SFX_Car_Door_1.mp3" volume 0.1
+
+    pause 3
     
     scene bg isaac ext with fade
 
@@ -1023,7 +1065,7 @@ label pluto_date1:
     
     else:
 
-        pluto "Goodbye, [first_name]."
+        pluto "Bye-bye, [first_name]."
 
     "Pluto leaves in a hurry, no doubt tripping on her dress, somewhere out of sight."
 

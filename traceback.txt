@@ -3,19 +3,29 @@
 While running game code:
   File "game/script.rpy", line 32, in script call
     call pluto_date1 from _call_pluto_date1
-  File "game/pluto_date1.rpy", line 11, in script
-    show bg isaac ext with dissolve
-OSError: Couldn't find file 'audio/SFX_Transition.mp3'.
+  File "game/pluto_date1.rpy", line 136, in script
+    "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+OSError: Couldn't find file 'audio/SFX_Crowd_Talking_Long'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 32, in script call
     call pluto_date1 from _call_pluto_date1
-  File "game/pluto_date1.rpy", line 11, in script
-    show bg isaac ext with dissolve
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1658, in execute
-    renpy.exports.with_statement(trans, paired=paired)
+  File "game/pluto_date1.rpy", line 136, in script
+    "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 891, in execute
+    statement_name("say")
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 47, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
   File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\exports.py", line 1657, in with_statement
     return renpy.game.interface.do_with(trans, paired, clear=clear)
   File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\display\core.py", line 2798, in do_with
@@ -37,9 +47,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/SFX_Transition.mp3'.
+OSError: Couldn't find file 'audio/SFX_Crowd_Talking_Long'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.3.22090809
 Planetary Pursuits ver.0.2
-Wed Apr 26 01:09:06 2023
+Wed Apr 26 01:28:09 2023
