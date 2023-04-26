@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/pluto_date1.rpy", line 686: expected 'simple_expression' not found.
-    zoom 
-         ^
+File "game/minesweeper.rpy", line 109: invalid character '—' (U+2014)
+                x = int(x) — 1 
+                            ^
 
-Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Dec  2 00:42:14 2022
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Fri Mar 31 23:43:18 2023

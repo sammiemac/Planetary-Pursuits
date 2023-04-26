@@ -6,6 +6,7 @@
 define mc = Character("Me")
 define pluto = Character("Pluto", who_color="#ff75d8")
 define theo = Character("Theo", who_color="#e68627")
+define mars = Character("Mars", who_color="#ce3535")
 
 # Declare player's affinites
 default theo_aff = 0

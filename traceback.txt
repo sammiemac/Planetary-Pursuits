@@ -1,22 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/intro2.rpy", line 3, in script
-    label intro2:
-Exception: Could not find return label (u'game/intro1.rpy', 1668398102, 357).
+  File "game/script.rpy", line 31, in script call
+    call intro2 from _call_intro2
+  File "game/intro2.rpy", line 499, in script call
+    call intro2b from _call_intro2b
+  File "game/intro2b.rpy", line 203, in script call
+    call mars
+  File "game/mars.rpy", line 91, in script
+    mars "And beyond! {i}*ba dum tsss*{/i} \[[Is this a reference I'm supposed to understand?! - a confused programmer]]"
+KeyError: "Is this a reference I'm supposed to understand?"
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/intro2.rpy", line 3, in script
-    label intro2:
-  File "renpy/ast.py", line 1567, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "renpy/execution.py", line 710, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'game/intro1.rpy', 1668398102, 357).
+  File "game/script.rpy", line 31, in script call
+    call intro2 from _call_intro2
+  File "game/intro2.rpy", line 499, in script call
+    call intro2b from _call_intro2b
+  File "game/intro2b.rpy", line 203, in script call
+    call mars
+  File "game/mars.rpy", line 91, in script
+    mars "And beyond! {i}*ba dum tsss*{/i} \[[Is this a reference I'm supposed to understand?! - a confused programmer]]"
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\character.py", line 1253, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\character.py", line 1172, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\character.py", line 1152, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: "Is this a reference I'm supposed to understand?"
 
-Windows-10-10.0.19041
-Ren'Py 7.4.11.2266
-Planetary Pursuits ver.0.1
-Fri Dec  2 00:49:55 2022
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.0.3.22090809
+Planetary Pursuits ver.0.2
+Fri Mar 31 23:21:31 2023
