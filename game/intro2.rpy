@@ -2,9 +2,9 @@
 # Intro scene part 2
 label intro2:
     
-    #show bg isaac int with dissolve
+    show bg isaac lobby with dissolve
 
-    play music "audio/OST_Retrograding_With_You.mp3" volume 0.1
+    play music "audio/OST_Mission_ISAAC.mp3" volume 0.02
 
     "{i}So, here I am, the lobby…{/i}"
 
@@ -90,7 +90,7 @@ label intro2:
 
     "{i}Well, here goes nothing.{/i}"
 
-    play sound "<from 0 to 2.5>audio/SFX_click.wav" volume 0.05
+    play sound "audio/SFX_Door_Slam_1.mp3" volume 0.05
 
     scene bg control room with dissolve
 
@@ -188,16 +188,16 @@ label intro2:
     hide theo with dissolve
 
     #A 33% chance of the Jupiter encounter happening.
-    $ jupiter_encounter = renpy.random.randint(1, 3)
-    if jupiter_encounter is 1:
-        $ meet_jupiter = True
-        call jupiter
+    # $ jupiter_encounter = renpy.random.randint(1, 3)
+    # if jupiter_encounter is 1:
+    #     $ meet_jupiter = True
+    #     call jupiter
+
+    stop music fadeout 2
 
     "With that, Theo leaves, and I’m alone in the booth. With Theo gone, the room is completely silent, aside from the hum of the lights above my head."
 
     "There’s nothing left to do but get the Astroplacation device running."
-
-    stop music fadeout 2
 
     "It comes naturally to me, just like how the Professor taught me."
 
@@ -209,11 +209,17 @@ label intro2:
 
     "{i}Oh no. That light shouldn’t be red. That wave should be less violent, the levels here are just completely off…{/i}"
 
+    play sound "audio/SFX_alarm.wav" volume 0.01
+
     "{i}Sirens. Oh, those sirens, that... that might be the worst thing that could happen...{/i}"
 
     "I reach for the emergency shutdown latch and flip it. However, the machine’s initially stable humming begins to heighten, destabilizing until…"
 
+    stop sound
+
     "Calm. Levels return to normal. The intercom to the far left of the device lights up, as if everything was going as planned. I run over to the chair closest to it and put my lips up to the microphone next to the intercom."
+
+    play sound "audio/SFX_click.wav" volume 0.1
 
     mc "Hello? This is [first_name] [last_name] speaking from the International Space Aeronautics and Astronomy center, speaking. "
 
@@ -366,6 +372,8 @@ label intro2:
 
     "I open the door just a crack and slip out as quickly as I can."
 
+    play sound "audio/SFX_Door_Slam_1.mp3" volume 0.05
+
     scene bg isaac hallway with dissolve
 
     show theo smile with dissolve:
@@ -375,10 +383,23 @@ label intro2:
 
     theo "Chocolate or maple?"
 
+    hide theo with dissolve
+
+    show donuts with dissolve:
+        xalign 0.5
+        yalign 0.5
+
     "Right next to the doorway is Theo, leaning on the wall holding out two bar-shaped donuts."
 
     menu:
         "\"Chocolate.\"":
+
+            hide donuts with dissolve
+
+            show theo smile with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
 
             "Theo hands me my choice of donut, then takes a bite of the one remaining."
 
@@ -388,6 +409,13 @@ label intro2:
 
         "\"Maple.\"":
 
+            hide donuts with dissolve
+
+            show theo smile with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
             "Theo hands me my choice of donut, then takes a bite of the one remaining."
             
             theo "You know, these things are actually called long johns. I  never knew that. Anyways, you need something?"
@@ -396,7 +424,12 @@ label intro2:
 
         "\"Theo, we need to talk.\"":
 
-            show theo sweat
+            hide donuts with dissolve
+
+            show theo sweat with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
 
             "Theo sighs, lowering the donuts as if the offer was now rescinded."
 
@@ -464,6 +497,8 @@ label intro2:
     hide theo with dissolve
 
     "With that, I go back into Room 52."
+
+    play sound "audio/SFX_Door_Slam_1.mp3" volume 0.05
 
     scene bg control room with dissolve
 

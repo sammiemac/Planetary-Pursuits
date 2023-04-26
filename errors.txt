@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/mars.rpy", line 303: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    mars "Well then---"
-    ^
+File "game/intro2.rpy", line 222: expecting name after dot.
+    play sound "audio/SFX_click.wav" volume 0.0.3
+                                                ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Apr 26 00:13:50 2023
+Wed Apr 26 00:53:29 2023

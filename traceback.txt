@@ -1,23 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script call
-    call intro1 from _call_intro1
-  File "game/intro1.rpy", line 176, in script
-    scene bg theo sedan with fade
+  File "game/script.rpy", line 31, in script call
+    call intro2 from _call_intro2
+  File "game/intro2.rpy", line 95, in script
+    scene bg control room with dissolve
   File "renpy/common/000window.rpy", line 111, in _window_auto_callback
     _window_hide(auto=True)
   File "renpy/common/000window.rpy", line 101, in _window_hide
     renpy.with_statement(trans)
-OSError: Couldn't find file 'audio/SFX_Drive_Away_1'.
+OSError: Couldn't find file 'audio/SFX_Door_Slam.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 30, in script call
-    call intro1 from _call_intro1
-  File "game/intro1.rpy", line 176, in script
-    scene bg theo sedan with fade
+  File "game/script.rpy", line 31, in script call
+    call intro2 from _call_intro2
+  File "game/intro2.rpy", line 95, in script
+    scene bg control room with dissolve
   File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1537, in execute
     statement_name("scene")
   File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 47, in statement_name
@@ -47,9 +47,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/SFX_Drive_Away_1'.
+OSError: Couldn't find file 'audio/SFX_Door_Slam.mp3'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.3.22090809
 Planetary Pursuits ver.0.2
-Wed Apr 26 00:27:05 2023
+Wed Apr 26 00:50:02 2023

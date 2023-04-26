@@ -102,7 +102,7 @@ label intro1:
     
     scene bg black with fade
 
-    #play sound "SFX_change_clothes.wav"
+    play sound "audio/SFX_Clothes.wav" volume 0.1
 
     "After a quick shower to wash off that cold sweat, I put on the clothes I had set aside last night: the uniform for the new place I'm working at. I gathered up the rest of my belongings and checked myself out in the mirror."
 
