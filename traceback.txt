@@ -1,55 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 32, in script call
-    call pluto_date1 from _call_pluto_date1
-  File "game/pluto_date1.rpy", line 136, in script
-    "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-OSError: Couldn't find file 'audio/SFX_Crowd_Talking_Long'.
+  File "game/intro2.rpy", line 3, in script
+    label intro2:
+Exception: Could not find return label ('game/intro1.rpy', 1668398102, 357).
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 32, in script call
-    call pluto_date1 from _call_pluto_date1
-  File "game/pluto_date1.rpy", line 136, in script
-    "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 891, in execute
-    statement_name("say")
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 47, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\exports.py", line 1657, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\display\core.py", line 2798, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\display\core.py", line 4103, in interact_core
-    renpy.audio.audio.periodic()
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1166, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1144, in periodic_thread_main
-    periodic_pass()
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1086, in periodic_pass
-    c.periodic()
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\audio\audio.py", line 517, in periodic
-    topf = load(filename)
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\audio\audio.py", line 70, in load
-    rv = renpy.loader.load(fn)
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/SFX_Crowd_Talking_Long'.
+  File "game/intro2.rpy", line 3, in script
+    label intro2:
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1782, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\execution.py", line 726, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label ('game/intro1.rpy', 1668398102, 357).
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.3.22090809
 Planetary Pursuits ver.0.2
-Wed Apr 26 01:28:09 2023
+Fri Apr 28 00:37:34 2023

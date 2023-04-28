@@ -980,6 +980,8 @@ label pluto_date1:
     
     scene bg isaac ext with fade
 
+    stop music fadeout 2
+
     "The car ride continued in silence for some time, before finally arriving in front of the ISAAC building."
 
     "Pluto reluctantly opens her eyes after a gentle nudge on the shoulder from me. Pluto, still half asleep, mumbles some incoherent words before following along with me and Theo into the building."
