@@ -1,10 +1,17 @@
+<<<<<<< Updated upstream
 Fri Apr 28 00:37:44 2023
 Windows-10-10.0.22621
 Ren'Py 8.0.3.22090809
+=======
+Wed Dec  7 13:37:20 2022
+Windows-10-10.0.22621
+Ren'Py 8.0.2.22081402
+>>>>>>> Stashed changes
  
 
 Bootstrap to the start of init.init took 0.02s
 Early init took 0.00s
+<<<<<<< Updated upstream
 Loader init took 0.02s
 Loading error handling took 0.02s
 Loading script took 0.06s
@@ -14,10 +21,112 @@ Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\
 Running init code took 0.02s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
+=======
+Loader init took 0.06s
+Loading error handling took 0.13s
+Loading script took 1.28s
+Loading save slot metadata. took 0.07s
+Loading persistent took 0.01s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\samma\\Downloads\\renpy-8.0.2-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.14s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\samma\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'Initialize() = -6.' (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon(TM) Graphics'
+Version: b'4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1598, 899) drawable=(1598, 899)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 44.66s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.04s
+Loading script took 0.20s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\samma\\Downloads\\renpy-8.0.2-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\samma\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'Initialize() = -6.' (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon(TM) Graphics'
+Version: b'4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1598, 899) drawable=(1598, 899)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 67.76s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\samma\\Downloads\\renpy-8.0.2-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+>>>>>>> Stashed changes
 Index archives took 0.00s
 Dump and make backups. took 0.02s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
+<<<<<<< Updated upstream
 Initial gc. took 0.01s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
@@ -25,11 +134,24 @@ nvdrs: Disabled thread optimizations.
 Creating interface object took 0.15s
 Cleaning stores took 0.00s
 Init translation took 0.02s
+=======
+Initial gc. took 0.04s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'Initialize() = -6.' (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+>>>>>>> Stashed changes
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
+<<<<<<< Updated upstream
 Prepare screens took 0.02s
+=======
+Prepare screens took 0.05s
+>>>>>>> Stashed changes
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -40,6 +162,7 @@ Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
+<<<<<<< Updated upstream
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 528.24'
@@ -2198,4 +2321,11 @@ Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 528.24'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+=======
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon(TM) Graphics'
+Version: b'4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1598, 899) drawable=(1598, 899)
+>>>>>>> Stashed changes
 Maximum texture size: 4096x4096
