@@ -30,7 +30,7 @@ define gui.idle_color = u'#aaaaaa'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = u'#888888'
+define gui.idle_small_color = u'#303030'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = u'#660066'

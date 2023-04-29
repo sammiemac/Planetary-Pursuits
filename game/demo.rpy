@@ -14,7 +14,7 @@ label demo:
 
     centered "{b}{color=#ffffff}Writers: \nLouis \nMaryam D. \nDaniel Appel{/b}{/color}" with dissolve
 
-    centered "{b}{color=#ffffff}Artists: \nAlexis M. \nKaley \nNico M.{/b}{/color}" with dissolve
+    centered "{b}{color=#ffffff}Artists: \nAlexis M. \nKaley \nNico M. \nAngie K.{/b}{/color}" with dissolve
 
     centered "{b}{color=#ffffff}Musicians: \nAdrian A.{/b}{/color}" with dissolve
 
