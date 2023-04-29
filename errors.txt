@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/pluto_date2a.rpy", line 148: expected ':' not found.
-    label stop_car
-                  ^
+File "game/pluto_date2a.rpy", line 354: expected statement.
+    pluto
+         ^
 
-Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Apr 28 01:12:52 2023
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Sat Apr 29 14:24:36 2023

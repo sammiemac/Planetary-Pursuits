@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/intro2.rpy", line 3, in script
-    label intro2:
-Exception: Could not find return label ('game/intro1.rpy', 1668398102, 357).
+  File "game/script.rpy", line 33, in script call
+    call pluto_date2a
+  File "game/pluto_date2a.rpy", line 346, in script
+    pltuo "I mean, I think that was more than enough for me..."
+Exception: Sayer 'pltuo' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/intro2.rpy", line 3, in script
-    label intro2:
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1782, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\execution.py", line 726, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label ('game/intro1.rpy', 1668398102, 357).
+  File "game/script.rpy", line 33, in script call
+    call pluto_date2a
+  File "game/pluto_date2a.rpy", line 346, in script
+    pltuo "I mean, I think that was more than enough for me..."
+  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'pltuo' is not defined.
 
 Windows-10-10.0.22621 AMD64
-Ren'Py 8.0.3.22090809
+Ren'Py 8.0.2.22081402
 Planetary Pursuits ver.0.2
-Fri Apr 28 00:37:34 2023
+Sat Apr 29 14:29:00 2023
