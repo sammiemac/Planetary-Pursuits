@@ -27,7 +27,7 @@ label pluto_date2a:
 
     mc "When we get to the ski resort, we’re going to have to make the tough choice between extreme skiing or survival snowboarding."
 
-    show pluto pose think with dissolve:
+    show pluto winter flustered with dissolve:
         xalign 0.5
         yalign 0.005
         zoom 0.60
@@ -42,7 +42,7 @@ label pluto_date2a:
 
     mc "Oh! And I checked the website of this resort the other day, guess what else is here?"
 
-    show pluto flustered
+    show pluto winter flustered
 
     pluto "Huh?"
 
@@ -71,7 +71,7 @@ label pluto_date2a:
 
     pluto "N-no not really... it's just that those activities sound kind of intense and I’m starting to think that there might be a lot of people when we get there..."
     
-    show pluto cry
+    show pluto winter cry
 
     pluto "{size=-5}... too many people..."
 
@@ -83,13 +83,13 @@ label pluto_date2a:
 
             $ pluto_aff -= 1
 
-            show pluto flustered
+            show pluto winter flustered
 
             pluto "A w-weenie?! Like a weenie dog?"
 
             mc "Well no, not exactly. Like a hotdog with bread---"
 
-            show pluto stern
+            show pluto winter stern
 
             pluto "A dog that's hot?"
 
@@ -99,7 +99,7 @@ label pluto_date2a:
 
             pluto "O-oh..."
 
-            show pluto cry
+            show pluto winter cry
 
             pluto "{size=-5}... I guess I am a weenie."
 
@@ -127,11 +127,11 @@ label pluto_date2a:
 
             $ renpy.notify("Pluto appreciates you asking.")
 
-            show pluto flustered
+            show pluto winter flustered
 
             pluto "M-me? I hadn't really thought about it..."
 
-            show pluto pose think
+            show pluto shy
 
             pluto "But if I had to choose, then maybe somewhere more... secluded?"
 
@@ -179,8 +179,7 @@ label pluto_date2a:
 
         mc "To build a snowman of course!"
 
-        show pluto flustered:
-            xalign 0.765
+        show pluto winter flustered
 
         show theo neutral
 
@@ -188,7 +187,7 @@ label pluto_date2a:
 
         mc "That's right! It's basically an activity where we make sculptures made out of snow and ice."
 
-        show pluto neutral
+        show pluto winter neutral
 
         pluto "T-that sounds like fun! I like making things."
 
@@ -198,7 +197,7 @@ label pluto_date2a:
 
         theo "I watched all 25 seasons of Judge Judy, so naturally that makes me the most qualified person here."
 
-        show pluto joy
+        show pluto winter joy
 
         pluto "Okay, I'll do my best!"
 
@@ -248,7 +247,7 @@ label pluto_date2a:
 
                 $ snowman_choice = 1
             
-        show pluto pose think with dissolve:
+        show pluto shy with dissolve:
             xalign 0.5
             yalign 0.005
             zoom 0.60
@@ -257,11 +256,11 @@ label pluto_date2a:
 
         mc "Whoa, are you alright? You haven't moved in the last 3 minutes, your snowman is never going to be built at this rate."
 
-        show pluto flustered
+        show pluto winter flustered
 
         pluto "I got it!"
 
-        show pluto joy
+        show pluto winter joy
 
         pluto "A bit of this here... some of that there..."
 
@@ -291,7 +290,7 @@ label pluto_date2a:
                 
                 mc "He became so powerful, the only thing he was afraid of was losing his power, which eventually, of course, he did."
 
-                show pluto cry
+                show pluto winter cry
 
                 mc "Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep."
                 
@@ -299,7 +298,7 @@ label pluto_date2a:
 
                 mc "He could save others from death, but not himself."
 
-                show pluto stern
+                show pluto winter stern
 
                 pluto "Is it possible to learn this power?"
 
@@ -307,7 +306,7 @@ label pluto_date2a:
 
             "\"How about I recite a poem I wrote for you?\"":
 
-                show pluto flustered
+                show pluto winter flustered
 
                 pluto "Oh, um... Okay, I guess."
 
@@ -317,7 +316,7 @@ label pluto_date2a:
 
                 mc "---Wherefore art thou, Pluto?"
 
-                show pluto flustered
+                show pluto winter flustered
 
                 pluto "I'm right here."
 
@@ -327,21 +326,21 @@ label pluto_date2a:
 
                 mc "Be it books or looks, my thoughts betray me with thine hooks."
 
-                show pluto pose blush
+                show pluto shy
 
                 pluto "{cps=10}{size=-5}... mid..."
 
-                show pluto pose think
+                show pluto winter flustered
 
                 pluto "I-I mean, that was... something else. Interesting, but it was sweet... I think..."
 
                 mc "Thank you, thank you. Perhaps an encore will do nicely?"
 
-                show pluto flustered
+                show pluto winter stern
 
                 pluto "N-no!"
 
-                show pluto neutral
+                show pluto winter neutral
 
                 pluto "I mean, I think that was more than enough for me..."
 
@@ -376,7 +375,7 @@ label pluto_date2a:
 
             "\"Have you found any interesting hobbies to do in your time here?\"":
 
-                show pluto neutral
+                show pluto winter neutral
 
                 pluto "Oh, well there have been a few things I found interesting. There are these little craft activities which I have started to learn a lot about."
 

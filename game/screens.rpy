@@ -27,6 +27,8 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    hover_sound "audio/UI_Sandblock_swipe.mp3"
+    activate_sound "audio/UI_ElecPiano_Confirmation_Slower.mp3"
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -301,7 +303,10 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start"):
+                hover_sound "audio/UI_Sandblock_swipe.mp3"
+                activate_sound "audio/UI_ElecPiano_Jingle.mp3"
+                action Start()
 
         else:
 
@@ -353,6 +358,8 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
+
+    
 
     ## This ensures that any other menu screen is replaced.
     tag menu

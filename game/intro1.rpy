@@ -2,7 +2,9 @@
 # Intro scene
 label intro1:
 
-    scene bg black
+    scene bg black with fade
+
+    pause 3.0
 
     play music "audio/OST_Spaced_Out.mp3" volume 0.3
 
@@ -108,7 +110,7 @@ label intro1:
 
     scene bg bedroom with fade
 
-    play music "audio/OST_Retrograding_With_You.mp3" volume 0.1
+    play music "audio/SFX_Birds_1.mp3" volume 0.1
 
     "{i}Alright, I'm as ready as I'll ever be. Uniform and everything...{/i}"
 
