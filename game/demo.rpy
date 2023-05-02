@@ -6,7 +6,7 @@ label demo:
 
     play music "audio/OST_When_Stars_Align.mp3" fadein 0.5 volume 0.1
 
-    centered "{b}{color=#ffffff}Thank you so much for trying out our demo for \"Planetary Pursuits\"!{/b}{/color}" with dissolve
+    centered "{b}{color=#ffffff}Thank you so much for trying out our demo for {i}Planetary Pursuits{/i}}!{/b}{/color}" with dissolve
 
     centered "{b}{color=#ffffff}Please be on the look out for more content in the future, such as more dates, activities, and even other planets!{/b}{/color}" with dissolve
 
