@@ -36,7 +36,7 @@ label pluto_date2a:
 
     mc "Maybe we could try sledding!"
 
-    show pluto shy
+    show pluto winter shy
     
     pluto "Um..."
 
@@ -50,7 +50,7 @@ label pluto_date2a:
 
     theo "{i}Ahem."
 
-    show pluto shy:
+    show pluto winter shy:
         linear 0.5 xalign 0.125
     
     show theo neutral with dissolve:
@@ -64,7 +64,7 @@ label pluto_date2a:
 
     mc "Sorry Pluto, was there something you wanted to say?"
 
-    show pluto shy:
+    show pluto winter shy:
         linear 0.5 xalign 0.5
     
     hide theo with dissolve
@@ -95,7 +95,7 @@ label pluto_date2a:
 
             mc "Not an actual dog, it's an Earth expression--- it means coward or chump, but in a nicer way." 
 
-            show pluto shy
+            show pluto winter shy
 
             pluto "O-oh..."
 
@@ -109,7 +109,7 @@ label pluto_date2a:
         
         "\"I'm not too sure what you're getting at.\"":
 
-            show pluto shy:
+            show pluto winter shy:
                 linear 0.5 xalign 0.125
     
             show theo sweat with dissolve:
@@ -131,7 +131,7 @@ label pluto_date2a:
 
             pluto "M-me? I hadn't really thought about it..."
 
-            show pluto shy
+            show pluto winter shy
 
             pluto "But if I had to choose, then maybe somewhere more... secluded?"
 
@@ -174,7 +174,7 @@ label pluto_date2a:
         show theo sweat:
             linear 0.5 xalign 0.125
         
-        show pluto shy with dissolve:
+        show pluto winter shy with dissolve:
             xalign 0.875
             yalign 0.005
             zoom 0.60
@@ -251,7 +251,7 @@ label pluto_date2a:
 
                 $ snowman_choice = 1
             
-        show pluto shy with dissolve:
+        show pluto winter shy with dissolve:
             xalign 0.5
             yalign 0.005
             zoom 0.60
@@ -280,7 +280,7 @@ label pluto_date2a:
 
                 stop music fadeout 0.5
 
-                show pluto shy
+                show pluto winter shy
 
                 pluto "No."
 
@@ -318,7 +318,7 @@ label pluto_date2a:
 
                 mc "Oh Pluto, my Pluto---"
 
-                show pluto shy
+                show pluto winter shy
 
                 mc "---Wherefore art thou, Pluto?"
 
@@ -332,7 +332,7 @@ label pluto_date2a:
 
                 mc "Be it books or looks, my thoughts betray me with thine hooks."
 
-                show pluto shy
+                show pluto winter shy
 
                 pluto "{cps=10}{size=-5}... mid..."
 
@@ -356,7 +356,7 @@ label pluto_date2a:
 
                 stop music
 
-                show pluto shy
+                show pluto winter shy
 
                 pluto "... Didn't you already ask me this before?"
 
@@ -433,7 +433,7 @@ label pluto_date2a:
 
                         mc "She’s no longer with me now but it brings back good memories."
 
-                        show pluto shy
+                        show pluto winter shy
 
                         pluto "Sorry, I must have made you uncomfortable talking about that then, I’ll just keep that to myself next time..."
 
@@ -452,9 +452,9 @@ label pluto_date2a:
     scene bg ski resort ext with dissolve:
         zoom 1.2 
     
-    play music "audio/OST_Chill_Theme.mp3" fadeout 1 fadein 2 volume 0.1
-    
     mc "And with that, my snowman is complete!"
+
+    play music "audio/OST_Chill_Theme.mp3" fadeout 1 fadein 2 volume 0.1
 
     "Wiping my hands, I can't help but admire my work, a mass of snow, no taller than 3 feet with a few touches here and there for an added flare and depth, and to top it all off, some rocks for a smiley face."
 
@@ -467,7 +467,7 @@ label pluto_date2a:
 
     pluto "I-I'm done, too."
 
-    show pluto shy
+    show pluto winter shy
 
     pluto "It's nothing special..."
 
@@ -590,7 +590,7 @@ label pluto_date2a:
     
     "Actually... it even looks kind of fluffy..."
 
-    show pluto shy with dissolve:
+    show pluto winter shy with dissolve:
         xalign 0.125
         yalign 0.005
         zoom 0.60
