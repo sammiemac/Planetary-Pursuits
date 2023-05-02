@@ -151,6 +151,10 @@ label pluto_date2a:
 
         mc "THEO STOP THE CAR!"
 
+        play sound "audio/SFX_brake_on_snow.wav" volume 0.1
+
+        pause 2.0
+
         play music "audio/OST_A_Thawing_Heart.mp3" fadein 0.5 volume 0.1
         
         scene bg ski resort ext with dissolve:
@@ -293,6 +297,8 @@ label pluto_date2a:
                 show pluto winter cry
 
                 mc "Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep."
+
+                play sound "audio/SFX_ironic.wav" volume 0.1
                 
                 mc "Ironic."
 
@@ -363,13 +369,13 @@ label pluto_date2a:
                     yalign 0.005
                     zoom 0.60
                 
-                #play sound "audio/SFX_Gun_Click.mp3"
+                play sound "audio/SFX_gun_cock.wav" volume 0.1
 
                 theo "Sorry boss, but you know too much."
 
                 show theo gun
 
-                #play sound "audio/SFX_Gun_Shot.mp3"
+                play sound "audio/SFX_gun_shot.wav" volume 0.1
 
                 scene bg black
 
