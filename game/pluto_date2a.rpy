@@ -274,7 +274,7 @@ label pluto_date2a:
 
             "\"Have you ever heard the tragedy of Darth Plagueis the Wise?\"":
 
-                stop music fadeout 2.0
+                stop music fadeout 0.5
 
                 show pluto shy
 
@@ -367,9 +367,13 @@ label pluto_date2a:
 
                 theo "Sorry boss, but you know too much."
 
+                show theo gun
+
                 #play sound "audio/SFX_Gun_Shot.mp3"
 
                 scene bg black
+
+                pause 2
 
                 jump stop_car
 
