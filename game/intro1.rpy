@@ -1,6 +1,8 @@
 
 # Intro scene
 label intro1:
+    
+    stop music fadeout 2.0
 
     scene bg black with fade
 
