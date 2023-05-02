@@ -145,7 +145,7 @@ label pluto_date2a:
 
     stop music fadeout 2
         
-    "Just then, I notice sometihng outside the window that catches my eye."
+    "Just then, I notice something outside the window that catches my eye."
 
     label stop_car:
 
@@ -266,7 +266,7 @@ label pluto_date2a:
 
         mc "Um..."
 
-        "She doesn't seem to be listening. She just started but her snowman is looking a lot better than mine already... I have to distrct her somehow if I want to win."
+        "She doesn't seem to be listening. She just started but her snowman is looking a lot better than mine already... I have to distract her somehow if I want to win."
 
         mc "So Pluto..."
 
