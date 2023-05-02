@@ -594,3 +594,33 @@ label pluto_date2a:
         xalign 0.125
         yalign 0.005
         zoom 0.60
+    
+    pluto "I know, it's not that good... I really wanted to make something I liked, but... I knew I couldn't do it..."
+
+    mc "That's not true! This might be the greatest snow sculpture I've ever seen! It looks so realistic that you would think it's a real dog!"
+
+    show pluto winter flustered
+
+    pluto "S-so you like it then?"
+
+    mc "Yeah, I think you won our competition by a landslide."
+
+    show pluto winter joy
+
+    pluto "Yippee! I'm glad by poodle came out alright. That we really fun!"
+
+    mc "Yeah, it was actually! And to think we would have never done this if you hadn't spoken up."
+
+    show pluto winter flustered
+
+    pluto "I didn't do anything special..."
+
+    mc "This amazing snow poodle sculpture exists thanks to you! It wouldn't hurt you to be more confident in yourself sometimes, y'know."
+
+    show pluto winter joy
+
+    "Th-thanks...!"
+
+    show pluto winter neutral
+
+    mc "Well, I think it's time we wake up Theo and head home for the day. His pay better get docked for sleeping on the job..."
