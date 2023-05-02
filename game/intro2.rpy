@@ -231,7 +231,7 @@ label intro2:
 
     play music "audio/OST_A_Thawing_Heart.mp3" fadein 0.5 volume 0.07
 
-    show pluto flustered with dissolve:
+    show pluto pose think with dissolve:
         xalign 0.5
         yalign 0.005
         zoom 0.60
@@ -262,15 +262,21 @@ label intro2:
     menu:
         "\"Mercury.\"":
 
+            show pluto pose think
+
             "Female Stranger" "N-no, that’s... that’s not it… I’m Pluto."
 
         "\"Jupiter.\"":
             
             "The stranger shakes her head."
 
+            show pluto pose think
+
             "Female Stranger" "Ha, I’m not nearly as... as big, or loud enough to be Jupiter. I’m Pluto."
 
         "\"Uranus.\"":
+
+            show pluto pose think
 
             "Female Stranger" "N-no, that’s... that’s not it… I’m Pluto."
 
@@ -282,9 +288,9 @@ label intro2:
 
             pluto "Mhm."
 
-    show pluto neutral
-
     "She looks down at her feet and does a little bow."
+
+    show pluto neutral
 
     pluto "It’s... good to meet you."
 
@@ -508,7 +514,7 @@ label intro2:
 
     "She falls back down into the chair, a brief squeaking sound coming out as she lands. Whether it was from her or the chair was unclear."
 
-    show pluto flustered with dissolve:
+    show pluto pose blush with dissolve:
         xalign 0.5
         yalign 0.005
         zoom 0.60

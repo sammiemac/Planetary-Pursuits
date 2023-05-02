@@ -11,7 +11,7 @@ label intro2a:
 
     "Pluto’s looks towards me as I ask that."
 
-    show pluto shy
+    show pluto pose think
 
     pluto "Oh, I... well, I mean, only if you want to... I probably wouldn’t understand it anyways..."
 
@@ -40,7 +40,7 @@ label intro2a:
     menu:
         "\"No, go on.\"":
 
-            show pluto shy
+            show pluto pose blush
 
             "Pluto inhales sharply before quickly exhaling again, her face flushed."
 
@@ -59,6 +59,8 @@ label intro2a:
             "Pluto sighs, seemingly with relief, as I take over the conversation yet again."
 
             mc "We have a lot of lights around here. Not... stars, but street lights, lamps, electric billboards and all that. I don’t think anyone sees them as stars, though. In fact, the lights we have on Earth make it a lot harder to see the actual stars."
+
+            show pluto shy
 
             "Pluto frowns, but doesn’t say anything."
 
@@ -82,7 +84,7 @@ label intro2a:
 
     "{i}That should be about noon, five days from now.{/i}"
 
-    show pluto flustered
+    show pluto pose think
 
     "She appears to think for a bit before looking back at me."
 

@@ -13,7 +13,7 @@ label intro2b:
 
     "She begins to levitate ever so slightly."
 
-    show pluto shy
+    show pluto pose think
 
     pluto "W-We can all do that. The planets. Neptune and Uranus a-and Saturn and Jupiter, they can become sort of intangible, too. B-but Earth told us not to do that kind of thing if we were down here, s-so I’m sorry about that..."
 
@@ -23,11 +23,13 @@ label intro2b:
 
     mc "No, no, it’s okay. I actually thought it was kind of cool."
 
-    show pluto shy
+    show pluto pose blush
 
     pluto "Well, it’s not that cool, I guess it’s kind of like... like, walking for you guys."
 
     mc "Just because it’s normal for you doesn’t mean it’s not impressive to us."
+
+    show pluto shy
 
     "Pluto shrugs."
 
@@ -80,10 +82,7 @@ label intro2b:
 
         "\"We build really big buildings.\"":
 
-            mc "Ones that go way, way high. Way higher than
-            this building, and way higher than like a
-            dozen of these buildings. The tallest ones
-            are called skyscrapers for a reason."
+            mc "Ones that go way, way high. Way higher than this building, and way higher than like a dozen of these buildings. The tallest ones are called skyscrapers for a reason."
 
             show pluto neutral
 
@@ -105,7 +104,7 @@ label intro2b:
     
     mc "The other planets, you interact with them a lot?"
 
-    show pluto shy
+    show pluto pose think
 
     "Pluto appears to think for a while, then looks towards me with a shrug."
 
@@ -162,7 +161,7 @@ label intro2b:
 
     "{i}That should be about noon, five days from now.{/i}"
 
-    show pluto shy
+    show pluto pose think
 
     "She appears to think for a bit before looking back at me."
 
