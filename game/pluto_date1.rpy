@@ -133,7 +133,7 @@ label pluto_date1:
 
     "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
 
-    queue sound "<loop 0.1>audio/SFX_Crowd_Talking_Long.mp3" volume 0.1
+     
 
     "{i}She probably doesn’t like crowds too much.{/i}"
 
@@ -237,9 +237,11 @@ label pluto_date1:
         yalign 1.0
         zoom 1.2
 
-    "An instant gush of frigid air hits us as soon as we enter and I pull my coat closer."
-
     play music "audio/OST_A_Thawing_Heart.mp3" fadein 0.5 volume 0.1
+
+    $ renpy.sound.play("audio/SFX_ice_skate_ambience.wav", loop=True, fadein=0.5, relative_volume=0.2)
+
+    "An instant gush of frigid air hits us as soon as we enter and I pull my coat closer."
 
     "{i}I haven't been to an ice rink since I was a kid, were they always this cold?{/i}"
 
@@ -253,8 +255,6 @@ label pluto_date1:
     "To my surprise, it's actually the opposite. She seems... happy? At least judging by the slight twinkle in her eye."
 
     "For now though, I decide not to make a comment on it."
-
-    #play sound "<from 0 to 2.5>audio/SFX_ice_skate.wav" volume 0.05
 
     hide pluto with dissolve
 
@@ -418,6 +418,8 @@ label pluto_date1:
 
     scene bg ice rink int with fade
 
+    $ renpy.sound.stop(fadeout=1)
+
     "Well, that was an experience. Skating had left both Pluto and I more exhausted than we wanted to admit, a break was more than needed. Suddenly, a familiar noise began to fill the building; its source coming from the outside."
 
     menu:
@@ -456,6 +458,8 @@ label pluto_date1:
         zoom 0.16
 
     play music "audio/OST_Ice_Cream_Jingle.mp3" fadein 0.5 volume 0.05
+
+    $ renpy.sound.play("audio/SFX_Crowd_Talking_Long.mp3", loop=True, fadein=0.5, relative_volume=0.2)
 
     "We exit the ice rink, the hot sun and warm air letting us know that the day isn’t over yet."
 
@@ -890,6 +894,8 @@ label pluto_date1:
     "I notice Theo waiting in the sedan nearby, it looks like it's time to wrap up the date and head home."
 
     stop music fadeout 2
+
+    $ renpy.sound.stop(fadeout=1)
 
     scene bg black with dissolve
 

@@ -83,7 +83,7 @@ label intro1:
 
     stop music
 
-    #play sound "SFX_crash.wav"
+    play sound "audio/SFX_satellite_impact_1.wav" volume 0.5
 
     mc "AHHHHHHHH--!!!"
 

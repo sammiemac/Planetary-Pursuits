@@ -383,9 +383,208 @@ label pluto_date2a:
 
                 pluto "Oh, well there have been a few things I found interesting. There are these little craft activities which I have started to learn a lot about."
 
+                show pluto winter joy
 
+                pluto "Things like knitting, crocheting, sewing, and cross-stitching... and I’ve been thinking about making some clothing for dogs to keep them warm."
 
+                menu:
 
+                    "\"That’s pretty lame.\"":
 
+                        mc "Out of all the cool things we have here on Earth and you choose things like knitting and crocheting to learn? You would get along great with my grandma, not so much with normal people."
 
+                        show pluto winter cry
 
+                        pluto "Y-you're right, I'm sorry..."
+
+                        mc "As long as you understand."
+
+                        $ renpy.notify("Pluto starts tearing up.")
+
+                        $ pluto_aff -= 1
+
+                    "\"That’s really cool.\"":
+
+                        mc "Not many people are brave enough to take on activities like that."
+
+                        show pluto winter flustered
+
+                        pluto "B-brave?! No, I think a lot of people actually would think I’m weird for doing stuff like this. I’m usually the odd one out..."
+
+                        mc "I honestly think they are just too lazy to put in the effort and so they put others down to make themselves look better."
+                        
+                        show pluto winter joy
+
+                        pluto "Oh, when you put it that way, it doesn't sound so bad after all."
+
+                        $ renpy.notify("Pluto looks relieved.")
+
+                        $ pluto_aff += 1
+
+                    "\"Sounds a lot like something my grandma would do.\"":
+
+                        mc "She used to make me different hats and gloves for me to wear when it was snowing."
+
+                        mc "She’s no longer with me now but it brings back good memories."
+
+                        show pluto shy
+
+                        pluto "Sorry, I must have made you uncomfortable talking about that then, I’ll just keep that to myself next time..."
+
+                        mc "No no, it’s the opposite actually! I’d be happy to talk to you more about it anytime."
+
+                        show pluto winter flustered
+
+                        pluto "R-really?!"
+
+                        mc "Yup!"
+
+                        $ renpy.notify("Pluto looks excited.")
+
+                        $ pluto_aff += 1
+
+    scene bg ski resort ext with dissolve:
+        zoom 1.2 
+    
+    play music "audio/OST_Chill_Theme.mp3" fadeout 1 fadein 2 volume 0.1
+    
+    mc "And with that, my snowman is complete!"
+
+    "Wiping my hands, I can't help but admire my work, a mass of snow, no taller than 3 feet with a few touches here and there for an added flare and depth, and to top it all off, some rocks for a smiley face."
+
+    "It's definitely something alright."
+
+    show pluto winter neutral with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
+    pluto "I-I'm done, too."
+
+    show pluto shy
+
+    pluto "It's nothing special..."
+
+    mc "Wait, where's Theo?"
+
+    show pluto winter flustered
+
+    pluto "I think he fell asleep in the car while we were building the snowmen."
+
+    theo "{i}*honk mi mi mi mi mi*"
+
+    mc "Theo..."
+
+    show pluto winter joy
+
+    pluto "Hehe, I think we should let him rest."
+
+    mc "We're going to have to wake him up eventually anyway, but okay. I think we can just determine the winner ourselves, and I think the winner is clear."
+
+    if snowman_choice is 1:
+
+        scene bg snow and man with dissolve:
+            zoom 1.2
+        
+        pause 2.0
+
+        show pluto winter joy with dissolve:
+            xalign 0.125
+            yalign 0.005
+            zoom 0.60
+        
+        pluto "Wow, it looks just like the snowman I’ve seen in all the Earth picture books!"
+
+        mc "You can’t go wrong with the classics. I’d give him a scarf and a hat but I don’t exactly want him coming to life."
+
+        show pluto winter flustered
+
+        pluto "That sounds like a really amazing snowman!"
+
+        mc "It’s a bit complicated to explain but yeah, Frosty is {i}pretty{/i} awesome."
+
+        show pluto winter neutral
+
+        pluto "It was a good effort! I’m not sure how well mine will match up to yours..."
+
+        scene bg snowdog and man with dissolve:
+            zoom 1.2
+        
+        pause 2.0
+    
+    elif snowman_choice is 2:
+
+        scene bg snow and tower with dissolve:
+            zoom 1.2
+        
+        pause 2.0
+
+        show pluto winter flustered with dissolve:
+            xalign 0.125
+            yalign 0.005
+            zoom 0.60
+        
+        pluto "Wow, you built a nice... pile of snow?"
+
+        mc "O-oh! Uh, well--- You see--- the thing is... yeah."
+
+        "{i}Now that I think about it, I might have been voted most creative because of how {/i}bad{i} I was at making art..."
+
+        show pluto winter joy
+
+        pluto "It was a good effort!"
+
+        show pluto winter neutral
+        
+        pluto "... Why does it have a smiley face?"
+
+        mc "{i}*ahem*{/i} Well, my creation aside, let's take a look at yours."
+
+        scene bg snowdog and tower with dissolve:
+            zoom 1.2
+        
+        pause 2.0
+    
+    elif snowman_choice is 3:
+
+        scene bg snow and dog with dissolve:
+            zoom 1.2
+        
+        pause 2.0
+
+        show pluto winter flustered with dissolve:
+            xalign 0.125
+            yalign 0.005
+            zoom 0.60
+        
+        pluto "Wow! You built a nice... raccoon?"
+
+        mc "... It's a dog."
+
+        "{i}Now that I think about it, I might have been voted most creative because of how {/i}bad{i} I was at making art..."
+
+        show pluto winter joy
+
+        pluto "It was a good effort!"
+
+        show pluto winter stern
+        
+        pluto "... Poor dog, may your soul rest in peace."
+
+        mc "{i}*ahem*{/i} Well, my creation aside, let's take a look at yours."
+
+        scene bg snowdog and dog with dissolve:
+            zoom 1.2
+        
+        pause 2.0
+    
+    mc "Oh... Wow."
+
+    "Upon gazing at her snowman--- or snowdog--- I can almost see it glistening in beauty. Her snowdog looks leagues better than mine!"
+    
+    "Actually... it even looks kind of fluffy..."
+
+    show pluto shy with dissolve:
+        xalign 0.125
+        yalign 0.005
+        zoom 0.60
