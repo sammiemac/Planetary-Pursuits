@@ -280,17 +280,27 @@ label pluto_date2a:
 
                 stop music fadeout 0.5
 
+                play music "audio/OST_Darth_Plagueis.mp3" fadein 0.5 volume 0.1
+
                 show pluto winter shy
 
                 pluto "No."
 
                 mc "I thought not. It's not a story the Jedi would tell you."
                 
-                mc "It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and wise he could use the Force to influence the midichlorians to create life..."
+                mc "It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create... life."
 
-                mc "He had such a knowledge of the dark side that he could even keep the ones he cared about from dying."
+                mc "He had such a knowledge of the dark side, he could even keep the ones he cared about from dying."
+
+                show pluto winter flustered
+
+                pluto "He could actually... save people from death?"
 
                 mc "The dark side of the Force is a pathway to many abilities some consider to be... unnatural."
+
+                show pluto winter shy
+
+                pluto "Well, what happened to him...?"
                 
                 mc "He became so powerful, the only thing he was afraid of was losing his power, which eventually, of course, he did."
 
@@ -298,7 +308,7 @@ label pluto_date2a:
 
                 mc "Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep."
 
-                play sound "audio/SFX_ironic.wav" volume 0.1
+                play sound "audio/SFX_ironic.wav" volume 0.2
                 
                 mc "Ironic."
 
@@ -308,7 +318,7 @@ label pluto_date2a:
 
                 pluto "Is it possible to learn this power?"
 
-                mc "No, at least, not from a Jedi."
+                mc "Not from a Jedi."
 
             "\"How about I recite a poem I wrote for you?\"":
 

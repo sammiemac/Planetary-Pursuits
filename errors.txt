@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 307: 'pause' is not a keyword argument or valid child for the textbutton statement.
-    pause 3
-         ^
+File "game/pluto_date2a.rpy", line 283: expected end of line
+    play music "audio/OST_Darth_Plagueis.mp3" fadeing 0.5 volume 0.1
+                                              ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon May  1 22:23:42 2023
+Tue May  2 23:26:16 2023
