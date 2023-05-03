@@ -151,9 +151,11 @@ label pluto_date2a:
 
         mc "THEO STOP THE CAR!"
 
-        play sound "audio/SFX_brake_on_snow.wav" volume 0.1
+        play sound "audio/SFX_brake_on_snow.wav" volume 0.5
 
         pause 2.0
+
+        play sound "audio/SFX_Car_Door_1.mp3" volume 0.1
 
         play music "audio/OST_A_Thawing_Heart.mp3" fadein 0.5 volume 0.1
         
@@ -378,14 +380,16 @@ label pluto_date2a:
                     xalign 0.5
                     yalign 0.005
                     zoom 0.60
-                
-                play sound "audio/SFX_gun_cock.wav" volume 0.1
 
                 theo "Sorry boss, but you know too much."
 
+                play sound "audio/SFX_gun_cock.wav" volume 0.5
+
                 show theo gun
 
-                play sound "audio/SFX_gun_shot.wav" volume 0.1
+                pause 0.2
+
+                queue sound "audio/SFX_gun_shot.wav" volume 0.5
 
                 scene bg black
 
@@ -461,10 +465,12 @@ label pluto_date2a:
 
     scene bg ski resort ext with dissolve:
         zoom 1.2 
+
+    stop music fadeout 1
     
     mc "And with that, my snowman is complete!"
 
-    play music "audio/OST_Chill_Theme.mp3" fadeout 1 fadein 2 volume 0.1
+    play music "audio/OST_Retrograding_With_You.mp3" fadein 0.5 volume 0.1
 
     "Wiping my hands, I can't help but admire my work, a mass of snow, no taller than 3 feet with a few touches here and there for an added flare and depth, and to top it all off, some rocks for a smiley face."
 
@@ -629,8 +635,10 @@ label pluto_date2a:
 
     show pluto winter joy with Dissolve(0.2)
 
-    "Th-thanks...!"
+    pluto "Th-thanks...!"
 
     show pluto winter neutral with Dissolve(0.2)
 
     mc "Well, I think it's time we wake up Theo and head home for the day. His pay better get docked for sleeping on the job..."
+
+    stop music fadeout 2

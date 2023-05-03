@@ -451,9 +451,7 @@ label pluto_date1:
     
     stop music fadeout 2
     
-    scene bg ice rink ext with fade:
-        xalign 0.5
-        zoom 0.16
+    scene bg park bench with fade
 
     play music "audio/OST_Ice_Cream_Jingle.mp3" fadein 0.5 volume 0.05
 
