@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/pluto_date2a.rpy", line 283: expected end of line
-    play music "audio/OST_Darth_Plagueis.mp3" fadeing 0.5 volume 0.1
-                                              ^
+File "game/intro2.rpy", line 358: end of line expected.
+    hide pluto with dissolve with dissolve
+                             ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue May  2 23:26:16 2023
+Wed May  3 00:29:35 2023

@@ -44,20 +44,20 @@ label intro2:
 
     "{i}When I saw “President” in the email communications, I thought they meant the President of ISAAC, not Renee Whitaker Jiang, President of the United States…{/i}"
 
-    show theo sweat
+    show theo sweat with Dissolve(0.2)
 
     theo "Yeah. I’m, uh, legally obligated to remind you of that part. I’ll be giving her progress reports, that sort of thing."
 
     menu:
         "\"Got it. Anything else?\"":
 
-            show theo neutral
+            show theo neutral with Dissolve(0.2)
 
             theo "Nothing I’m legally bound to say. We’re kind of charting new territory here, so it’s up to you to set the standard. Just... handle it how you think you should. ISAAC didn’t choose you for nothin’."
 
         "\"Honestly, Theo? I had no idea...\"":
 
-            show theo neutral
+            show theo neutral with Dissolve(0.2)
 
             theo "I get it. Government communications are a lot vaguer than I thought they would be going into this job. I guess this whole communicating with planets thing is... a shot in the dark for everyone involved."
 
@@ -82,7 +82,7 @@ label intro2:
 
     "As he takes his hand off the door, he reaches into his pocket and pulls out a key before holding it out to me."
 
-    show theo smile
+    show theo smile with Dissolve(0.2)
 
     theo "Honor’s all yours."
 
@@ -107,15 +107,15 @@ label intro2:
 
     "I nod, my eyes still on the machine in front of me. It’s strange to see it in a setting like this, but I can already tell operating it will be a breeze."
 
-    show theo sweat
+    show theo sweat with Dissolve(0.2)
 
     theo "You’re looking at this like it’s a beauty but it just looks like something out of some sci-fi video game to me."
 
-    show theo smile
+    show theo smile with Dissolve(0.2)
 
     "Theo crosses his arms and chuckles. However, as I start reaching for some of the device’s implements, his expression becomes more stoic."
 
-    show theo neutral
+    show theo neutral with Dissolve(0.2)
 
     theo "Once you start that thing up, I’m legally obligated to leave the room, as to not affect your communications with the planets. So if you’ve got any burning questions, hit me with them."
 
@@ -129,13 +129,13 @@ label intro2:
         menu:
             "\"Any specific way I should handle things?\"" if not already_asked_1:
 
-                show theo smile
+                show theo smile with Dissolve(0.2)
                 
                 "Theo laughs."
 
                 theo "If there was an agenda, I would have told you by now. Just... be yourself. As Disney as that fucking sounds. Just don’t immediately tank our relations with them and we should be in the clear."
 
-                show theo neutral
+                show theo neutral with Dissolve(0.2)
 
                 theo "Anything else?"
 
@@ -171,13 +171,13 @@ label intro2:
 
                 "His stoic expression becomes a smirk, then a hearty laugh."
 
-                show theo smile
+                show theo smile with Dissolve(0.2)
 
                 theo "It’s a work expense, so it’s basically given to me. Anything else?"
 
                 $ already_asked_4 = True
 
-                show theo neutral
+                show theo neutral with Dissolve(0.2)
 
                 jump theo_question
 
@@ -249,7 +249,7 @@ label intro2:
 
             "The stranger moves her extended hand behind her back and shies away as I get up."
     
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     "Female Stranger" "Sorry about that, I-I didn’t mean for that to happen..."
 
@@ -262,7 +262,7 @@ label intro2:
     menu:
         "\"Mercury.\"":
 
-            show pluto pose think
+            show pluto pose think with Dissolve(0.2)
 
             "Female Stranger" "N-no, that’s... that’s not it… I’m Pluto."
 
@@ -270,19 +270,19 @@ label intro2:
             
             "The stranger shakes her head."
 
-            show pluto pose think
+            show pluto pose think with Dissolve(0.2)
 
             "Female Stranger" "Ha, I’m not nearly as... as big, or loud enough to be Jupiter. I’m Pluto."
 
         "\"Uranus.\"":
 
-            show pluto pose think
+            show pluto pose think with Dissolve(0.2)
 
             "Female Stranger" "N-no, that’s... that’s not it… I’m Pluto."
 
         "\"Pluto.\"":
 
-            show pluto joy
+            show pluto joy with Dissolve(0.2)
 
             "The stranger nods, a small smile gracing her lips."
 
@@ -290,7 +290,7 @@ label intro2:
 
     "She looks down at her feet and does a little bow."
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     pluto "It’s... good to meet you."
 
@@ -298,13 +298,13 @@ label intro2:
 
     pluto "..."
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     "Pluto starts glancing around a bit, silently taking in her surroundings."
 
     mc "So you’re... the actual planet Pluto. Right?"
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     "She nods, her focus returning to me. There’s a bout of silence before she goes to pick up the chair that I just fell out of. As she moves to do that, there’s a knock at the door."
 
@@ -337,19 +337,19 @@ label intro2:
     menu:
         "A friend of mine.":
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             "Pluto nods, seeming a bit relieved."
 
         "My secretary.":
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             "Pluto nods."
 
         "Just my lackey.":
 
-            show pluto flustered
+            show pluto flustered with Dissolve(0.2)
 
             "Pluto looks to me, then towards the door, then back to me, her glasses slightly fogged."
     
@@ -370,7 +370,7 @@ label intro2:
 
     mc "Hey, Pluto, just... give me a second, okay? And don’t... don’t touch anything in here."
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     pluto "Oh, o-okay."
 
@@ -409,7 +409,7 @@ label intro2:
 
             "Theo hands me my choice of donut, then takes a bite of the one remaining."
 
-            theo "You know, these things are actually called long johns. I  never knew that. Anyways, you need something?"
+            theo "You know, these things are actually called long johns. I never knew that. Anyways, you need something?"
 
             $ theo_donut = True
 
@@ -424,7 +424,7 @@ label intro2:
 
             "Theo hands me my choice of donut, then takes a bite of the one remaining."
             
-            theo "You know, these things are actually called long johns. I  never knew that. Anyways, you need something?"
+            theo "You know, these things are actually called long johns. I never knew that. Anyways, you need something?"
 
             $ theo_donut = True
 
@@ -447,13 +447,13 @@ label intro2:
 
     if theo_donut:
 
-        show theo neutral
+        show theo neutral with Dissolve(0.2)
 
         "Theo swallows the piece of donut in his mouth before nodding."
 
     else: 
 
-        show theo neutral
+        show theo neutral with Dissolve(0.2)
 
         "Theo looks at me blankly before wrapping one of the donuts in a napkin and pocketing it."
 
@@ -490,7 +490,7 @@ label intro2:
 
         "\"Can I still have the donut?\"" if not theo_donut:
 
-            show theo smile
+            show theo smile with Dissolve(0.2)
 
             theo "Sure."
             
@@ -510,7 +510,7 @@ label intro2:
 
     "As I enter, I’m met with Pluto sitting down in one of the chairs. Upon closer inspection, she’s actually... in a sitting position, floating just an inch or two above the chair."
 
-    mc "Sorry about that- are you floating?"
+    mc "Sorry about that--- are you floating?"
 
     "She falls back down into the chair, a brief squeaking sound coming out as she lands. Whether it was from her or the chair was unclear."
 
@@ -525,7 +525,7 @@ label intro2:
 
     "I gesture to the Astroplacation device next to her. It still hums ever so slightly."
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     pluto "Oh, I-I’m sorry, I probably should have got that..."
 

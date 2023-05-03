@@ -25,13 +25,13 @@ label mars:
 
     mc "Oh! Uh, hi...? This is a little unexpected. I haven’t mentally prepared myself for another introduction..."
 
-    show mars neutral
+    show mars neutral with Dissolve(0.2)
 
     mars "Not to worry! I {i}maaay{/i} have secretly overheard you talking about Pluto earlier and just knew we would get along fast! Any friend of Pluto is a friend of mine."
 
     mc "Not sure if friends is the right word, but yeah I guess you could say that. Was there something you wanted that couldn't wait 'til later?"
 
-    show mars smug
+    show mars smug with Dissolve(0.2)
 
     mars "Nope!"
 
@@ -46,25 +46,25 @@ label mars:
 
     label mars_choices:
 
-        show mars neutral
+        show mars neutral with Dissolve(0.2)
 
         menu:
 
             "\"So... ya like jazz?\"" if not asked_jazz:
 
-                show mars tired
+                show mars tired with Dissolve(0.2)
 
                 mars "\'Jazz\'? What's that?"
 
-                show mars excited
+                show mars excited with Dissolve(0.2)
 
                 mars "OH! Are they a part of those jacuzzis I've heard so much about? I've really wanted to try one out!"
 
-                show mars tired
+                show mars tired with Dissolve(0.2)
 
                 mc "No no, I think you're confusing jacuzzis with jazz, those are two totally separate things. One is a small, hot body of water usually accompanied by bubbles, and the other is a banger type of music."
 
-                show mars excited
+                show mars excited with Dissolve(0.2)
 
                 mars "BUBBLES?! BANGER MUSIC?! Now I really want to visit a jazzcuzzi!"
 
@@ -76,17 +76,17 @@ label mars:
 
             "\"Nice camo shorts.\"" if not asked_shorts:
 
-                show mars excited
+                show mars excited with Dissolve(0.2)
 
                 mars "{i}*gasp*{/i} RIGHT?! Finally, someone who gets me! I've been showing it off to all the other planets like Pluto, but she says that the length was \"too short\" for her."
 
-                show mars smug
+                show mars smug with Dissolve(0.2)
 
                 mars "But honestly, the color! The style! The pattern!"
 
                 mars "Everything about it was just shouting my name!"
 
-                show mars neutral
+                show mars neutral with Dissolve(0.2)
 
                 mc "Your shorts were shouting for Mars?"
 
@@ -98,7 +98,7 @@ label mars:
 
             "\"Pluto's pretty shy, huh?\"" if not asked_pluto:
 
-                show mars tired
+                show mars tired with Dissolve(0.2)
 
                 mars "{i}*sigh*{/i} She is... I've been trying to tell her to be more confident in herself, to speak louder and to stop weaning a coat in the middle of summer!"
 
@@ -106,13 +106,13 @@ label mars:
 
                 mc "Huh, I can see you two are really good friends."
 
-                show mars neutral
+                show mars neutral with Dissolve(0.2)
 
                 "Of course! She’s the only one who doesn’t laugh at my shorts!"
 
                 mc "That's... not the {i}best{/i} way to measure a friendship..."
 
-                show mars excited
+                show mars excited with Dissolve(0.2)
 
                 mars "{i}*gasp*{/i} Speaking of my shorts, just the other day, I---"
 
@@ -124,7 +124,7 @@ label mars:
 
             "\"Can you float, too?\"" if not asked_float:
 
-                show mars smug
+                show mars smug with Dissolve(0.2)
 
                 mars "Well, of course I can, dummy!"
 
@@ -143,7 +143,7 @@ label mars:
                 
                 mc "Plus, you're pretty cute."
 
-                show mars blush
+                show mars blush with Dissolve(0.2)
 
                 mars "C-C-CUTE?!"
 
@@ -151,7 +151,7 @@ label mars:
 
                 "Mars quickly ran up, hiding her face, and started hitting me before I could even finish, apparently no longer listening."
 
-                show mars baka
+                show mars baka with Dissolve(0.2)
 
                 mars "Y-YOU BIG DUMMY!!!"
 
@@ -174,7 +174,7 @@ label mars:
 
     mc "That's...?!"
 
-    show mars smug
+    show mars smug with Dissolve(0.2)
 
     mars "MINESWEEPER BABY!!!"
 
@@ -210,13 +210,13 @@ label mars:
 
         mc "Honestly, I think I am a little tired from such intense Minesweeping. I might need to take a rain check on that one. Maybe next semester instead?"
 
-        show mars tired
+        show mars tired with Dissolve(0.2)
 
         mars "Awww, but waiting is boooring... Oh well, I guess I can wait. I know it will be an even better date next time!"
 
         "The thought of a hard and eventual expert level difficulty of Minesweeper scares me to no end... It looks like I have a lot of training to do."
 
-        show mars neutral
+        show mars neutral with Dissolve(0.2)
 
         mc "Haha yeah, I'm looking forward to it, too."
         
@@ -258,13 +258,13 @@ label mars:
 
         mars "Mhm! I can picture the next date already: you, reaching a new highscore under my direct tutelage..."
         
-        show mars smug
+        show mars smug with Dissolve(0.2)
 
         mars "From now on, it's nonstop training!"
 
         "Somehow, the thought of that scares me more than clearing out bombs..."
 
-        show mars neutral
+        show mars neutral with Dissolve(0.2)
 
         mc "I’ll be looking forward to next time."
 

@@ -163,7 +163,7 @@ label intro1:
 
     "I nod."
 
-    show theo smile
+    show theo smile with Dissolve(0.2)
 
     "???" "Theodore Guydon, at your service. I’ll be your secretary during your time at ISAAC."
 
@@ -212,7 +212,7 @@ label intro1:
     menu:
         "\"You’d do best to stop talking to me like that, Guydon.\"":
 
-            show theo smile
+            show theo smile with Dissolve(0.2)
 
             "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
 
@@ -222,7 +222,7 @@ label intro1:
 
         "\"Yeah, and I wish some of that scholarship money went towards getting you a razor.\"":
 
-            show theo smile
+            show theo smile with Dissolve(0.2)
 
             "Theodore lets out a hearty laugh before grinning at me through the rearview mirror."
 
@@ -232,7 +232,7 @@ label intro1:
 
         "\"Sorry, did we get off on a bad foot?\"":
 
-            show theo sweat
+            show theo sweat with Dissolve(0.2)
 
             "Theodore sighs, a bit of his bravado leaving him."
 
@@ -242,7 +242,7 @@ label intro1:
 
         "\"Huh?\"":
 
-            show theo sweat
+            show theo sweat with Dissolve(0.2)
 
             "Theodore sighs, a bit of his bravado leaving him."
 
@@ -253,7 +253,7 @@ label intro1:
 
     "{i}Alright, Theo...{/i}"
 
-    show theo neutral
+    show theo neutral with Dissolve(0.2)
 
     theo "I didn’t mean anything by the astronomy major stuff, by the way. Few of my friends studied the same thing, it’s the only reason I ended up working something like this."
 
@@ -261,7 +261,7 @@ label intro1:
 
     if calm_down:
 
-        show theo smile
+        show theo smile with Dissolve(0.2)
 
         theo "Not some bitch shit like astronomy, that’s what."
 

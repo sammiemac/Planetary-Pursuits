@@ -4,14 +4,14 @@ label intro2a:
     
     mc "Did you want to learn more about it?"
 
-    show pluto flustered:
+    show pluto flustered with dissolve:
         xalign 0.5
         yalign 0.005
         zoom 0.60
 
     "Pluto’s looks towards me as I ask that."
 
-    show pluto pose think
+    show pluto pose think with Dissolve(0.2)
 
     pluto "Oh, I... well, I mean, only if you want to... I probably wouldn’t understand it anyways..."
 
@@ -23,13 +23,13 @@ label intro2a:
 
     mc "That’s the emergency power off switch. Starting up the machine needs like, a lot of power, and there is a small, small chance of something lighting ablaze or blowing up."
 
-    show pluto flustered
+    show pluto flustered with Dissolve(0.2)
 
     "Already anticipating that I was about to worry her, I continue on to the reassuring part."
 
     mc "But it’ll notify us if things get too hot. And that’s why the switch is there, so if things get bad, we flip it. Now that the device has already booted up, it shouldn’t reach any temperature like that."
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     pluto "That’s... good."
 
@@ -40,7 +40,7 @@ label intro2a:
     menu:
         "\"No, go on.\"":
 
-            show pluto pose blush
+            show pluto pose blush with Dissolve(0.2)
 
             "Pluto inhales sharply before quickly exhaling again, her face flushed."
 
@@ -60,13 +60,13 @@ label intro2a:
 
             mc "We have a lot of lights around here. Not... stars, but street lights, lamps, electric billboards and all that. I don’t think anyone sees them as stars, though. In fact, the lights we have on Earth make it a lot harder to see the actual stars."
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             "Pluto frowns, but doesn’t say anything."
 
             mc "Yeah, nowadays you have to go to a park. Or a forest, or the mountains. If you want to see the stars, that is. Or else there’s too much light, which kind of blocks out the stars."
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     pluto "Oh... But those lights, they make Earth look so beautiful, don’t they? Only Jupiter doesn’t like how Earth looks, and Jupiter just hates everything..."
 
@@ -74,7 +74,7 @@ label intro2a:
 
     mc "Well, we could go and see Earth right now. You’re on its surface, anyways, so might as well, don’t you think?"
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     pluto "O-oh, well, I uh... Jupiter said that this was just going to be a short introduction... A-and Neptune, she wanted to stop by too, so maybe not now... I should be free by my next rotation, though..."
 
@@ -84,11 +84,11 @@ label intro2a:
 
     "{i}That should be about noon, five days from now.{/i}"
 
-    show pluto pose think
+    show pluto pose think with Dissolve(0.2)
 
     "She appears to think for a bit before looking back at me."
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     pluto "Okay. I-I can do that. Yeah."
 
@@ -96,7 +96,7 @@ label intro2a:
 
     "There’s a moment of silence."
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     pluto "I-I think that you have to do something with the machine to send me back..."
 
@@ -104,7 +104,7 @@ label intro2a:
 
     "Pluto steps aside as I flip a couple of smaller switches and type a couple of sequences into the number pad."
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     pluto "See you soon..."
 
@@ -143,7 +143,7 @@ label intro2a:
 
     mc "Uh, alright. We’ve got something more... Professional, scheduled in five days. Noon."
 
-    show theo neutral
+    show theo neutral with Dissolve(0.2)
 
     "I’m met with a raised eyebrow and a gesture for me to follow as Theo starts walking towards the elevator."
 
@@ -164,7 +164,7 @@ label intro2a:
     
     "Theo sighs as we enter the elevator. It seems like all the scans were only to get in, as all he has to do this time is press the ground floor button and the elevator doors close."
 
-    show theo neutral
+    show theo neutral with Dissolve(0.2)
 
     theo "I’ll just... do my best to not get in your way, alright? Do your thing. Sounded like you did a fine job here already, though. Don’t think I had any expectations, but you surpassed any I would have had."
 

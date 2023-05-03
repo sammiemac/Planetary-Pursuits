@@ -28,13 +28,13 @@ label pluto_date1:
 
             mc "You look really nice in that dress, Pluto."
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             pluto "You don't need to lie, I know it doesn't suit me..."
 
             mc "No, it's true! It's something only you could pull off."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             $ renpy.notify("Pluto liked your compliment.")
             
@@ -48,7 +48,7 @@ label pluto_date1:
 
             "Deciding not to come off strong and seeing Pluto in a vulnerable state, I choose to let the topic of her choice in dress slide and focus on the task at hand."
 
-            show pluto flustered
+            show pluto flustered with Dissolve(0.2)
 
             "Pluto seems surprised to not be put down for her choice in fashion."
 
@@ -58,11 +58,11 @@ label pluto_date1:
 
             mc "Wow, we’re going ice skating, not to a ball!"
 
-            show pluto flustered
+            show pluto flustered with Dissolve(0.2)
 
             "Just as I finish, Pluto is visibly devastated. A mixture of sadness and confusion on her face."
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             $ renpy.notify("Pluto looks uncomfortable.")
 
@@ -133,8 +133,6 @@ label pluto_date1:
 
     "As soon as we step out of the car, Pluto immediately hides behind my shoulder, keeping her arms and hands close together in a self-hug, hiding from everyone as they walk past."
 
-     
-
     "{i}She probably doesn’t like crowds too much.{/i}"
 
     show pluto shy with dissolve:
@@ -144,7 +142,7 @@ label pluto_date1:
 
     mc "It’s a weekday, so there shouldn’t be too many people."
     
-    show pluto neutral
+    show pluto pose think with Dissolve(0.2)
 
     "Pluto doesn’t respond, but she seems to ease up if only by a little."
 
@@ -216,7 +214,7 @@ label pluto_date1:
 
     pluto "N-no you don’t have to, i-it’s alright."
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     pluto "I know I’m a burden..."
 
@@ -282,7 +280,7 @@ label pluto_date1:
 
     mc "When you walk, kind of push your feet back on the ice."
 
-    show pluto flustered
+    show pluto flustered with Dissolve(0.2)
 
     "As soon as she attempts to move, she starts to lose balance and thus desperately grabs the railing."
 
@@ -292,7 +290,7 @@ label pluto_date1:
 
     "Once again, her eyes focus on the others around us. The only ones who seem to be struggling are children more than half our age... and us."
 
-    show pluto cry
+    show pluto cry with Dissolve(0.2)
 
     "Pluto purses her lips and grows visibly more distressed the more she stares, especially at those who are proficient enough to do flips while we can’t even manage to walk."
 
@@ -358,7 +356,7 @@ label pluto_date1:
 
             mc "That’s embarrassing... Now I’m even more sorry for you being stuck with me."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             $ renpy.notify("Pluto feels a lot better.")
 
@@ -366,7 +364,7 @@ label pluto_date1:
 
             mc "Well, now we’re both on the ground so I guess we’re equal now."
 
-            show pluto joy
+            show pluto joy with Dissolve(0.2)
 
             "Still smiling to ourselves, we slowly get back on our feet."
 
@@ -445,7 +443,7 @@ label pluto_date1:
 
             pluto "O-oh! I’m not sure, but I am a bit curious..."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             "Pluto seemed a bit taken back by my question, but still eager in her own way."
 
@@ -499,35 +497,35 @@ label pluto_date1:
 
     pluto "Eeep!"
 
-    show pluto shy
+    show pluto pose think with Dissolve(0.2)
 
     pluto "Oh sorry, I was a bit distracted..."
 
     mc "You really like dogs, huh?"
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     pluto "Oh, well, they are kind of nice, I guess."
 
     pluto "They are really friendly, and soft, and fluffy, and playful and people really like them and..."
 
-    show pluto shy
+    show pluto pose think with Dissolve(0.2)
 
     pluto "{i}sometimeswhenIseeadogIjustthinkitwouldbereallycooltopetthem--{/i}"
 
     mc "Woah woah, slow down!"
 
-    show pluto flustered
+    show pluto flustered with Dissolve(0.2)
 
     pluto "Ah-- sorry, I did it again didn’t I?"
 
-    show pluto shy
+    show pluto pose think with Dissolve(0.2)
 
     pluto "Dogs are my favorite animals, sometimes I get carried away when talking about them. It really makes me wish I had my own..."
 
     mc "Don’t worry about it, everyone has something they are really passionate about, and I bet we could even help get you a dog."
 
-    show pluto flustered
+    show pluto flustered with Dissolve(0.2)
 
     pluto "R-Really?!"
 
@@ -538,13 +536,13 @@ label pluto_date1:
 
             mc "Why don’t you try and ask the owner if you can pet the dog?"
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             pluto "I-I’m not sure I could pull that off."
 
             mc "Don’t worry! Look, there are a group of kids petting the dog already, I’m sure the owner won’t mind."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             pluto "Alright, I’ll do it, if you think I can..."
 
@@ -561,11 +559,11 @@ label pluto_date1:
 
             "Owner" "Go ahead miss, you can pet him! No need to be shy, he loves the attention."
 
-            show pluto flustered
+            show pluto flustered with Dissolve(0.2)
 
             "Pluto’s eyes light up as she reaches down to pet the excited dog."
 
-            show pluto joy:
+            show pluto joy with Dissolve(0.2):
                 linear 0.5 xalign 0.875
 
             show dog with dissolve:
@@ -582,7 +580,7 @@ label pluto_date1:
 
             hide dog with dissolve
 
-            show pluto joy:
+            show pluto joy with Dissolve(0.2):
                 linear 0.5 xalign 0.5
             
             $ renpy.notify("Pluto looks really happy.")
@@ -597,13 +595,13 @@ label pluto_date1:
 
             mc "Why don’t I go and ask the owner if you can pet the dog?"
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             pluto "I-I wouldn’t want to bother you."
 
             mc "Don’t worry! Look, there are a group of kids petting the dog already, I’m sure the owner wouldn’t mind."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             pluto "Well, then, if you wouldn't mind..."
 
@@ -622,7 +620,7 @@ label pluto_date1:
 
             "Pluto’s eyes light up as she hears the owner's response and comes over, reaching down to pet the excited dog."
 
-            show pluto joy:
+            show pluto joy with Dissolve(0.2):
                 linear 0.5 xalign 0.875
 
             show dog with dissolve:
@@ -639,7 +637,7 @@ label pluto_date1:
 
             hide dog with dissolve
 
-            show pluto joy:
+            show pluto joy with Dissolve(0.2):
                 linear 0.5 xalign 0.5
 
             $ renpy.notify("Pluto looks really happy.")
@@ -671,13 +669,13 @@ label pluto_date1:
 
     mc "For kids, yeah. It’s sort of like candy in the sense of sugary junk food, but more in the form of a cold dairy treat. It comes in all kinds of flavors and shapes."
 
-    show pluto flustered
+    show pluto flustered with Dissolve(0.2)
 
     pluto "Really?"
 
     mc "Speaking of ice cream, did you want to try some?"
 
-    show pluto joy
+    show pluto joy with Dissolve(0.2)
 
     pluto "Sure."
 
@@ -732,7 +730,7 @@ label pluto_date1:
 
             mc "Yeah, of course! So there’s no need to cry anymore, okay?"
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             $ renpy.notify("Pluto is slightly traumatized.")
 
@@ -764,7 +762,7 @@ label pluto_date1:
             
             "Pluto grabs the now melting ice cream and stares intently, seeming a bit confused."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             pluto "Thank you... I didn’t know the animals on earth looked so funny."
 
@@ -774,19 +772,19 @@ label pluto_date1:
 
             mc "Oh wow, I’m really sorry about that, I didn't realize it would melt so fast. Maybe I can get you a new one..."
 
-            show pluto joy
+            show pluto joy with Dissolve(0.2)
 
             pluto "Hehe! No, I like it."
 
             "Pluto licks the melting ice cream."
 
-            show pluto flustered
+            show pluto flustered with Dissolve(0.2)
 
             $ renpy.notify("Pluto really liked the ice cream.")
             
             pluto "Wow, it's really good! I’m glad I got to try it."
 
-            show pluto joy
+            show pluto joy with Dissolve(0.2)
 
             mc "Hahaha! Ice cream never fails to make any day better."
 
@@ -824,7 +822,7 @@ label pluto_date1:
 
             mc "With a bit more confidence in her eyes, Pluto tastes the popsicle."
 
-            show pluto joy
+            show pluto joy with Dissolve(0.2)
 
             $ renpy.notify("Pluto really liked the popsicle.")
 
@@ -879,13 +877,13 @@ label pluto_date1:
 
             pluto "Mhm, I think I feel better already. Ice cream really is an Earth specialty."
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             $ renpy.notify("Pluto is slightly embarrassed.")
             
-            pluto "I don’t think I will try another one anytime soon, though."
+            pluto "I don’t think I will try another one anytime soon, though..."
 
-            mc "Fair enough."
+            mc "Fair enough..."
 
             $ pluto_aff -= 1
     
@@ -934,7 +932,7 @@ label pluto_date1:
         
         mc "I think it went alright. As far as I can tell I feel like she had fun, but it’ll be awhile before she gets comfortable with me I think."
 
-        show theo smile
+        show theo smile with Dissolve(0.2)
 
         theo "Then I guess either you or me should start arranging another date huh? If you ever need a lady’s man for help, I’m your guy."
 
@@ -956,7 +954,7 @@ label pluto_date1:
 
         mc "I can tell. I’ll still try though. It’s my job after all."
 
-        show theo smile
+        show theo smile with Dissolve(0.2)
 
         theo "Don’t sound so defeated, it was just the first date. I’m sure the second one will go better now that you’ve got a better grasp on how to talk to her."
 
@@ -968,7 +966,7 @@ label pluto_date1:
 
         mc "I really messed that up... I don’t know if she’s going to want to help our mission at all, honestly..."
 
-        show theo sweat
+        show theo sweat with Dissolve(0.2)
 
         theo "Come on man, you were the negotiator! For the sake of both of our jobs I hope that you can pull something together."
 
@@ -1012,19 +1010,19 @@ label pluto_date1:
 
             "[[{i}A loud car drives by and completely drowns out what you were trying to say. You feel as if the writing gods did not want you to make this choice yet...{/i}]"
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             pluto "Sorry, I didn't catch that..."
 
             if pluto_aff > 3:
 
-                show pluto joy
+                show pluto joy with Dissolve(0.2)
 
                 pluto "But today was really fun."
             
             else:
 
-                show pluto neutral
+                show pluto neutral with Dissolve(0.2)
 
                 "Pluto gives a small nod and shyly waves her hand."
 
@@ -1032,13 +1030,13 @@ label pluto_date1:
 
             if pluto_aff > 3:
 
-                show pluto joy
+                show pluto joy with Dissolve(0.2)
 
                 pluto "Y-yeah, it was! Thank you..."
             
             else:
 
-                show pluto neutral
+                show pluto neutral with Dissolve(0.2)
 
                 "Pluto gives a small nod and shyly waves her hand."
 
@@ -1053,7 +1051,7 @@ label pluto_date1:
 
             if pluto_aff > 3:
 
-                show pluto joy
+                show pluto joy with Dissolve(0.2)
 
                 "Pluto giggles to herself."
 
@@ -1061,11 +1059,11 @@ label pluto_date1:
             
             else:
 
-                show pluto neutral
+                show pluto neutral with Dissolve(0.2)
 
                 "Pluto gives a small nod and shyly waves her hand."
     
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     if pluto_aff > 3:
 

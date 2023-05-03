@@ -13,23 +13,23 @@ label intro2b:
 
     "She begins to levitate ever so slightly."
 
-    show pluto pose think
+    show pluto pose think with Dissolve(0.2)
 
     pluto "W-We can all do that. The planets. Neptune and Uranus a-and Saturn and Jupiter, they can become sort of intangible, too. B-but Earth told us not to do that kind of thing if we were down here, s-so I’m sorry about that..."
 
-    show pluto flustered
+    show pluto flustered with Dissolve(0.2)
 
     "I can’t help but laugh."
 
     mc "No, no, it’s okay. I actually thought it was kind of cool."
 
-    show pluto pose blush
+    show pluto pose blush with Dissolve(0.2)
 
     pluto "Well, it’s not that cool, I guess it’s kind of like... like, walking for you guys."
 
     mc "Just because it’s normal for you doesn’t mean it’s not impressive to us."
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     "Pluto shrugs."
 
@@ -44,7 +44,7 @@ label intro2b:
 
             mc "Like paintings, books, and music. Things that introduce images or feelings or sounds that you yourself could never have imagined, ones you would have never even known existed until you came across them."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             "Pluto nods, seeming to put some genuine thought into my words."
 
@@ -54,13 +54,13 @@ label intro2b:
 
             mc "Dogs and cats and stuff like that. They’re like, furry little animals you can nourish and take care of and watch them grow up, like having a kid."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             "Pluto nods, looking upwards towards the ceiling. Her expression is indifferent as she looks back towards me."
 
             pluto "That sounds like Saturn with all of her moons. Except her moons aren’t furry. Or little. And they... never mind... "
 
-            show pluto shy
+            show pluto shy with Dissolve(0.2)
 
             "She looks away, almost as if she was about to say something embarrassing."
 
@@ -74,7 +74,7 @@ label intro2b:
 
             mc "Like, really cool ones. Ones that can make you feel like you’re in a whole different world, with different people, ones that put people to the test with other people to see who can press buttons faster or know the game better, give you experiences you couldn’t have otherwise."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             "Pluto nods, but tilts her head midway through my explanation."
 
@@ -84,7 +84,7 @@ label intro2b:
 
             mc "Ones that go way, way high. Way higher than this building, and way higher than like a dozen of these buildings. The tallest ones are called skyscrapers for a reason."
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             "Pluto nods."
 
@@ -104,7 +104,7 @@ label intro2b:
     
     mc "The other planets, you interact with them a lot?"
 
-    show pluto pose think
+    show pluto pose think with Dissolve(0.2)
 
     "Pluto appears to think for a while, then looks towards me with a shrug."
 
@@ -114,18 +114,18 @@ label intro2b:
 
     pluto "Sorry, th-that makes it sound depressing. It’s really not... I just... made it sound worse than... than it really is. They’re nice. Maybe not the most... pleasant company sometimes, but I’m glad they’re there."
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     "Her more contemplative face curls into a small smile as her thoughts seem to wander. The smile quickly disappears, however, as her glasses fog up and she looks away."
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     pluto "I... hope that wasn’t confusing, o-or anything like that."
 
     menu:
         "\"It wasn’t.\"":
 
-            show pluto neutral
+            show pluto neutral with Dissolve(0.2)
 
             "Pluto’s face puts back on the hint of a smile she had worn before."
 
@@ -141,7 +141,7 @@ label intro2b:
 
             pass
     
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     pluto "I’m just not as... not as good at talking or whatever as some of the other planets. A-and that’s especially... especially for someone I’ve never met."
 
@@ -149,7 +149,7 @@ label intro2b:
 
     mc "Well, we could... get to know each other more, if you wanted to. Probably outside of this box, though."
 
-    show pluto flustered
+    show pluto flustered with Dissolve(0.2)
 
     "Pluto looks around before looking back towards me."
 
@@ -161,11 +161,11 @@ label intro2b:
 
     "{i}That should be about noon, five days from now.{/i}"
 
-    show pluto pose think
+    show pluto pose think with Dissolve(0.2)
 
     "She appears to think for a bit before looking back at me."
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     pluto "Okay. I-I can do that. Yeah."
 
@@ -173,7 +173,7 @@ label intro2b:
 
     "There’s a moment of silence."
 
-    show pluto shy
+    show pluto shy with Dissolve(0.2)
 
     pluto "I-I think that you have to do something with the machine to send me back..."
 
@@ -181,7 +181,7 @@ label intro2b:
 
     "Pluto steps aside as I flip a couple of smaller switches and type a couple of sequences into the number pad."
 
-    show pluto neutral
+    show pluto neutral with Dissolve(0.2)
 
     pluto "See you soon..."
 
@@ -220,7 +220,7 @@ label intro2b:
 
     mc "Uh, alright. We’ve got something more... Professional, scheduled in five days. Noon."
 
-    show theo neutral
+    show theo neutral with Dissolve(0.2)
 
     "I’m met with a raised eyebrow and a gesture for me to follow as Theo starts walking towards the elevator."
 
@@ -241,7 +241,7 @@ label intro2b:
     
     "Theo sighs as we enter the elevator. It seems like all the scans were only to get in, as all he has to do this time is press the ground floor button and the elevator doors close."
 
-    show theo neutral
+    show theo neutral with Dissolve(0.2)
 
     theo "I’ll just... do my best to not get in your way, alright? Do your thing. Sounded like you did a fine job here already, though. Don’t think I had any expectations, but you surpassed any I would have had."
 
