@@ -93,7 +93,7 @@ label intro1:
 
     play sound "audio/SFX_Alarm.mp3" volume 0.02
 
-    #show phone
+    show phone with dissolve
 
     mc "6:16… 16 minutes past the alarm…"
 
@@ -112,7 +112,7 @@ label intro1:
 
     scene bg bedroom with fade
 
-    play music "audio/SFX_Birds_1.mp3" volume 0.1
+    play music "audio/SFX_Birds_1.mp3" volume 1
 
     "{i}Alright, I'm as ready as I'll ever be. Uniform and everything...{/i}"
 
