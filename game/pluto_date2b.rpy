@@ -122,3 +122,67 @@ label pluto_date2b:
     "By the time we get there, there’s already a swarm of people in the lobby with all forms of winter themed athletic equipment ranging from snowboards to skis."
     
     "Mostly families and groups of friends are present with only a few couples scattered here and there, but they all share the same traits: covered in snow and completely exhausted--- us no different."
+
+    show theo neutral with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+    
+    theo "You two wait here, I'll go ahead and get you guys a room."
+
+    hide theo with dissolve
+
+    "Theo heads off to the receptionist counter. In the meantime, I look to see how Pluto is doing."
+
+    show pluto winter shy with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
+    "Her brows are in an uneven knit and she’s watching the people with shaky pupils, gravitating closer and closer to me by the second until she’s full on hugging my arm."
+
+    mc "Sorry, hopefully it won't be all that long."
+
+    "She responds in the form of more unease and a tighter grip on my arm to cope."
+
+    "{i}I hope she’ll be alright..."
+
+    "For someone who dislikes crowds, this is most definitely a nightmare."
+
+    hide pluto with dissolve
+
+    "A majority of the residents seem to be in some form of argument with an employee, which is to be expected with a sudden snow-in."
+    
+    "Those who aren’t arguing are trying to get by to their already-reserved rooms without setting off a nerve with the agitated masses."
+
+    "After some extensive arguing himself, Theo returns with two sets of key cards and hands me one of them."
+
+    show theo smile with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
+    theo "Told you, government jobs. This one's for you guys."
+
+    mc "And the other?"
+
+    theo "For me. Or did you expect me to sleep in the car?"
+
+    "He boisterously laughs to further mock me, and if the overreaction didn’t help calm Pluto down, I would’ve fought back with a jab at his previous slumber session. Or maybe it’s the fatigue finally getting to me."
+
+    show theo neutral with Dissolve(0.2)
+
+    theo "I got us some good rooms, so there should be a change of clothes for you guys so you don’t have to sleep in all that. They serve breakfast, too, so I’ll see you in the morning."
+
+    hide theo with dissolve
+    
+    "With that, we part ways from Theo as I try to get Pluto away from the simmering swarm as quickly as possible."
+
+    scene bg cabin room with dissolve:
+        xalign 0.0
+        pause 1
+        linear 0.5 xalign 0.3
+        pause 1
+        linear 0.5 xalign 0.99
+
+    "test"

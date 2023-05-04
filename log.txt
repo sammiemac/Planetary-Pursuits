@@ -1,41 +1,56 @@
-Tue May  2 22:51:56 2023
+Thu May  4 00:01:26 2023
 Windows-10-10.0.22621
 Ren'Py 8.0.3.22090809
  
 
 Bootstrap to the start of init.init took 0.02s
 Early init took 0.00s
-Loader init took 0.03s
+Loader init took 0.02s
 Loading error handling took 0.03s
-Loading script took 0.41s
-Loading save slot metadata. took 0.04s
+game/intro2a.rpy:123: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if mars_encounter is 1:
+game/intro2b.rpy:200: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if mars_encounter is 1:
+game/mars.rpy:193: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if mars_outcome is 1:
+game/mars.rpy:195: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif mars_outcome is 2:
+game/mars.rpy:197: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif mars_outcome is 3:
+game/pluto_date2a.rpy:506: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if snowman_choice is 1:
+game/pluto_date2a.rpy:537: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif snowman_choice is 2:
+game/pluto_date2a.rpy:570: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif snowman_choice is 3:
+Loading script took 0.48s
+Loading save slot metadata. took 0.07s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
+Running init code took 0.09s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
-Dump and make backups. took 0.03s
+Dump and make backups. took 0.02s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.01s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.14s
+Creating interface object took 0.16s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.00s
+Load screen analysis took 0.01s
 Analyze screens took 0.00s
-Save screen analysis took 0.01s
+Save screen analysis took 0.00s
 Prepare screens took 0.02s
-Save pyanalysis. took 0.01s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.05s
+Interface start took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -48,95 +63,11 @@ Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 93.42s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
-Dump and make backups. took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.15s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.02s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2059.91s
+Bootstrap to the start of init.init took 54.04s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
-game/pluto_date2a.rpy:492: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if snowman_choice is 1:
-game/pluto_date2a.rpy:523: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  elif snowman_choice is 2:
-game/pluto_date2a.rpy:556: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  elif snowman_choice is 3:
 Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/pluto_date2a.rpy", line 283: expected end of line
-    play music "audio/OST_Darth_Plagueis.mp3" fadeing 0.5 volume 0.1
-                                              ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2075.14s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-game/pluto_date2a.rpy:490: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  mc "We're going to have to wake him up eventually anyway, but okay. I think we can just determine the winner ourselves, and I think the winner is clear."
-game/pluto_date2a.rpy:521: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  pause 2.0
-game/pluto_date2a.rpy:554: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  pause 2.0
-Loading script took 0.11s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -160,7 +91,7 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.02s
-Save pyanalysis. took 0.01s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
@@ -177,11 +108,11 @@ Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 2154.47s
+Bootstrap to the start of init.init took 61.77s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
-Loading script took 0.10s
+Loading script took 0.08s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -202,106 +133,10 @@ Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.02s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2297.53s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-game/pluto_date2a.rpy:500: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if snowman_choice is 1:
-game/pluto_date2a.rpy:531: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  elif snowman_choice is 2:
-game/pluto_date2a.rpy:564: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  elif snowman_choice is 3:
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.01s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
-Dump and make backups. took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.02s
 Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2446.55s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.01s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
-Dump and make backups. took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.15s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.02s
-Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
@@ -317,3 +152,549 @@ Version: b'4.6.0 NVIDIA 528.24'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
 Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 89.05s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 101.28s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 235.32s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 243.06s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 247.81s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 34, in script call
+    call pluto_date2b
+  File "game/pluto_date2b.rpy", line 181, in script
+    scene bg cabin room with dissolve:
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1542, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\exports.py", line 712, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\display\core.py", line 1165, in add
+    thing.visit_all(lambda d : None)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\display\core.py", line 572, in visit_all
+    for d in self.visit():
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\atl.py", line 614, in visit
+    block = self.compile()
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\atl.py", line 521, in compile
+    block = self.atl.compile(self.context)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\atl.py", line 721, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\atl.py", line 721, in <listcomp>
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\atl.py", line 969, in compile
+    child = ctx.eval(expr)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\atl.py", line 259, in eval
+    return renpy.python.py_eval(expr, locals=self.context)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\sammiemac\Documents\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/pluto_date2b.rpy", line 185, in <module>
+    pause1
+NameError: name 'pause1' is not defined
+
+Compiling ATL code at game/pluto_date2b.rpy:185
+  File "game/script.rpy", line 34, in script call
+    call pluto_date2b
+  File "game/pluto_date2b.rpy", line 181, in script
+    scene bg cabin room with dissolve:
+  File "game/pluto_date2b.rpy", line 185, in <module>
+    pause1
+NameError: name 'pause1' is not defined
+Resetting cache.
+Bootstrap to the start of init.init took 263.05s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 279.93s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 302.72s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 315.09s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 333.32s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 345.58s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\sammiemac\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.01s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\sammiemac\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.02s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
