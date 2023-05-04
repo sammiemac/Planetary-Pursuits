@@ -124,66 +124,64 @@ label intro2:
     $ already_asked_3 = False
     $ already_asked_4 = False
 
-    label theo_question:
+    menu theo_question:
+        "\"Any specific way I should handle things?\"" if not already_asked_1:
 
-        menu:
-            "\"Any specific way I should handle things?\"" if not already_asked_1:
+            show theo smile with Dissolve(0.2)
+            
+            "Theo laughs."
 
-                show theo smile with Dissolve(0.2)
-                
-                "Theo laughs."
+            theo "If there was an agenda, I would have told you by now. Just... be yourself. As Disney as that fucking sounds. Just don’t immediately tank our relations with them and we should be in the clear."
 
-                theo "If there was an agenda, I would have told you by now. Just... be yourself. As Disney as that fucking sounds. Just don’t immediately tank our relations with them and we should be in the clear."
+            show theo neutral with Dissolve(0.2)
 
-                show theo neutral with Dissolve(0.2)
+            theo "Anything else?"
 
-                theo "Anything else?"
+            $ already_asked_1 = True
 
-                $ already_asked_1 = True
+            jump theo_question
 
-                jump theo_question
+        "\"How long should I maintain communication with them?\"" if not already_asked_2:
 
-            "\"How long should I maintain communication with them?\"" if not already_asked_2:
+            theo "As long as you feel necessary, boss. I think the time slot is pretty much until 8 tonight, so we’ve pretty much got the whole day ahead of us."
 
-                theo "As long as you feel necessary, boss. I think the time slot is pretty much until 8 tonight, so we’ve pretty much got the whole day ahead of us."
+            theo "Anything else?"
 
-                theo "Anything else?"
+            $ already_asked_2 = True
 
-                $ already_asked_2 = True
+            jump theo_question
 
-                jump theo_question
+        "\"Am I going to be talking to every planet?\"" if not already_asked_3:
 
-            "\"Am I going to be talking to every planet?\"" if not already_asked_3:
+            theo "We issued an initial contact message to all of them not long ago, but the only ones who you’ll be speaking with are the “ones willing”, according to your old boss. Whatever that means."
 
-                theo "We issued an initial contact message to all of them not long ago, but the only ones who you’ll be speaking with are the “ones willing”, according to your old boss. Whatever that means."
+            theo "Anything else?"
 
-                theo "Anything else?"
+            $ already_asked_3 = True
 
-                $ already_asked_3 = True
+            jump theo_question
+            
+        "\"Was that suit of yours government-issued or did you have to buy it?\"" if not already_asked_4:
 
-                jump theo_question
-                
-            "\"Was that suit of yours government-issued or did you have to buy it?\"" if not already_asked_4:
+            "Theo thinks for a second, as if trying to discern how much he should divulge."
 
-                "Theo thinks for a second, as if trying to discern how much he should divulge."
+            theo "First one was government issued, but I ripped it after a night with your mom."
 
-                theo "First one was government issued, but I ripped it after a night with your mom."
+            "His stoic expression becomes a smirk, then a hearty laugh."
 
-                "His stoic expression becomes a smirk, then a hearty laugh."
+            show theo smile with Dissolve(0.2)
 
-                show theo smile with Dissolve(0.2)
+            theo "It’s a work expense, so it’s basically given to me. Anything else?"
 
-                theo "It’s a work expense, so it’s basically given to me. Anything else?"
+            $ already_asked_4 = True
 
-                $ already_asked_4 = True
+            show theo neutral with Dissolve(0.2)
 
-                show theo neutral with Dissolve(0.2)
+            jump theo_question
 
-                jump theo_question
+        "\"I don’t have anything else.\"":
 
-            "\"I don’t have anything else.\"":
-
-                theo "Then break a leg, boss."
+            theo "Then break a leg, boss."
 
     hide theo with dissolve
 

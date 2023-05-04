@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/pluto_date2b.rpy", line 116: end of line expected.
-    sound "audio/SFX_Transition_Scene.mp3" volume 0.2
-                                           ^
+File "game/pluto_date2b.rpy", line 408: choice menuitem expects a non-empty block.
+    "Ask about the other planets." if fireplace_4:
+                                                  ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed May  3 02:45:11 2023
+Thu May  4 13:54:08 2023

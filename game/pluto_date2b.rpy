@@ -175,14 +175,244 @@ label pluto_date2b:
     theo "I got us some good rooms, so there should be a change of clothes for you guys so you don’t have to sleep in all that. They serve breakfast, too, so I’ll see you in the morning."
 
     hide theo with dissolve
+
+    stop music fadeout 2.0
     
     "With that, we part ways from Theo as I try to get Pluto away from the simmering swarm as quickly as possible."
 
     scene bg cabin room with dissolve:
         xalign 0.0
-        pause 1
-        linear 0.5 xalign 0.3
-        pause 1
-        linear 0.5 xalign 0.99
 
-    "test"
+    play music "audio/OST_A_Thawing_Heart_CabinVer.mp3" fadein 2.0 volume 0.1
+
+    $ renpy.sound.play("audio/SFX_Fire_Crackle_Long.mp3", loop=True, fadein=2.0, relative_volume=0.2)
+
+    "The moment I open the door, I'm greeted with the homely warth of an electric fireplace already permeating from the room."
+    
+    "And...?!"
+
+    scene bg cabin room:
+        xalign 0.0
+        linear 0.5 xalign 0.3
+
+    "{i}ONE BED?!?!?!"
+
+    scene bg cabin room:
+        xalign 0.3
+        linear 1 xalign 1.0
+    
+    pause 1.5
+    
+    "{i}Oh. Phew!"
+
+    "There’s a set of {i}two{/i} queen sized beds parted by an oak nightstand and a rug. In fact, most of the dark wooden floors are covered by soft rugs."
+
+    scene bg cabin room:
+        xalign 1.0
+        linear 2 xalign 0.0
+    
+    "By the fireplace is a set of armchairs, while the rest of the room has all forms of cozy country imagery. Furs, plants, candles, you name it."
+
+    show pluto winter flustered with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
+    "From how mesmerized Pluto seems to be, she’s clearly not been in something as extravagant as this, and neither have I quite frankly."
+
+    "{i}Government jobs..."
+
+    "On top of the sheets are what I assume to be our loungewear, so I hand a set over to Pluto."
+
+    mc "You can change here, I’ll change in the bathroom."
+
+    show pluto winter neutral with Dissolve(0.2)
+
+    "Pluto gives an acknowledging nod so I head over to change."
+
+    scene bg black with dissolve
+
+    play sound "audio/SFX_Clothes.wav" volume 0.1
+
+    pause 2.0
+
+    scene bg cabin room with dissolve:
+        xalign 0.0
+    
+    "If I thought the clothes were a little large on me, they were completely oversized on Pluto."
+    
+    "The sleeves dangled over and concealed her hands, with the hem of her pants dragging across the floor. It seems like she gave up on trying to roll them to her wrists and ankles judging by the loose wrinkles."
+
+    show pluto pj shy with dissolve:
+        xalign 0.5
+        yalign 0.005
+        zoom 0.60
+
+    pluto "I-I'm sorry, it doesn't fit very well..."
+
+    mc "No, no it’s fine! Mine doesn’t really fit either."
+
+    "I flaunt the loose sleeves to help comfort her."
+
+    mc "We can sit by the fire if you want?"
+
+    pluto "S-sure."
+
+    hide pluto with dissolve
+
+    "Rather than sitting on the provided armchairs, Pluto sits on the floor hugging her knees against her face no more than a few feet from the fireplace, so I sit right next to her so she doesn’t feel out of place."
+
+    $ fireplace_1 = True
+    $ fireplace_2 = True
+    $ fireplace_3 = True
+    $ fireplace_4 = True
+    $ fireplace_5 = True
+    $ fireplace_6 = True
+    if pluto_aff > 3:
+        $ fireplace_7 = True
+
+    menu fireplace_choice:
+
+        "{i}This feels like a good opportunity to get to know her better."
+
+        "Ask what she thinks about global warming." if fireplace_1:
+
+            show pluto pj shy with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+            
+            pluto "I-I know some of the other planets aren’t too happy about it, some are even scared of you guys because of it."
+
+            show pluto pj neutral with Dissolve(0.2)
+
+            pluto "But I think everything will work out! I think what’s important is that you’re trying to fix it now right?"
+
+            "{i}Barely, with how little politicians seem to care about the issue..."
+
+            "I nod although a bit hesitant."
+
+            mc "Slowly but surely."
+
+            pluto "Y-yeah! I hope that I can help... I would hate for something to happen to Earth. Or dogs."
+
+            if pluto_aff > 3:
+
+                show pluto pj flustered with Dissolve(0.2)
+
+                pluto "O-or you...!"
+            
+            show pluto pj shy with Dissolve(0.2)
+
+            pluto "But... it scares me sometimes. I wonder if the other planets are right. That maybe humans are really planning on taking everything or inhabiting us."
+
+            show pluto pj stern with Dissolve(0.2)
+
+            pluto "Especially with Jupiter, they always phrase things in a way that makes me feel dumb for believing in you all..."
+
+            if pluto_aff > 3:
+
+                show pluto pj neutral with Dissolve(0.2)
+
+                pluto "But if humans are like you, then I think it's worth helping you guys out!"
+
+                mc "Now you're making me blush, haha. I'm glad you think I'm a decent person, Theo would probably say otherwise."
+            
+            else:
+
+                "Pluto mumbles to herself."
+
+                show pluto pj shy with Dissolve(0.2)
+
+                pluto "I'll have to think about it though..."
+
+                "{i}Fuck. Did I mess up somewhere?"
+
+            $ fireplace_1 = False
+            
+            jump fireplace_choice
+
+        "Ask about the \"Pluto not being a planet\" debate." if fireplace_2:
+
+            show pluto pj shy with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
+            "Pluto’s eyebrows raise then droop into a tight knit with pursed lips to match. After a few excruciating moments of silence, she finally speaks albeit in a hardly audible jumble."
+
+            pluto "It doesn’t really bother me. Everyone tells me that."
+
+            pluto "Sometimes, I think... maybe they’re right, maybe I’m not a planet... I mean, no one even cared about me until a century ago. And even then, some moons are bigger than me and {i}they’re{/i} not planets... I don’t even know myself..."
+
+            show pluto pj cry with Dissolve(0.2)
+            
+            pluto "I wish..."
+
+            "Pluto’s voice trails off until it folds back into herself."
+
+            show pluto pj shy with Dissolve(0.2)
+
+            "Ummm... Why don’t we talk about something else? T-this cabin is really c-cozy right...?"
+
+            mc "Yep...!"
+
+            "{i}Man, she looks so stiff. It seems like a sour spot for her, I should avoid saying anything about that..."
+
+        "Ask what she’s been up to since the last date." if fireplace_3:
+
+            show pluto pj stern with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
+            pluto "... Dogs..."
+
+            menu:
+
+                "\"Dogs?\"":
+
+                    show pluto pj flustered with Dissolve(0.2)
+
+                    pluto "Dogs?"
+                
+                "\"Dogs.\"":
+
+                    show pluto pj neutral with Dissolve(0.2)
+
+                    pluto "Dogs."
+                
+                "\"Dogs!\"":
+
+                    show pluto pj joy with Dissolve(0.2)
+
+                    pluto "Dogs!"
+                
+                "\"Woof!\"":
+
+                    show pluto pj joy with Dissolve(0.2)
+
+                    pluto "Woof!"
+                
+                "\"Cats.\"":
+
+                    show pluto chopper with dissolve:
+                        xalign 0.5
+                        yalign 0.005
+                        zoom 1.0
+
+                    pluto "CATS?!?!?!"
+
+
+
+        "Ask about the other planets." if fireplace_4:
+
+        "Ask her opinion on humans." if fireplace_5:
+
+        "Ask why she agreed to meet with us." if fireplace_6:
+
+        "Ask about what she thinks about me." if fireplace_7:
+
+        "Stay silent.":
+
+
