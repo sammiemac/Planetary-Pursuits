@@ -837,7 +837,7 @@ label pluto_date2b:
 
     if pluto_aff > 3:
 
-        "Pluto avoids eye contact with me, fiddling wiht the hem of her dress."
+        "Pluto avoids eye contact with me, fiddling with the hem of her dress."
 
         show pluto pose blush with dissolve:
             xalign 0.5
@@ -885,9 +885,9 @@ label pluto_date2b:
 
         show theo sweat with Dissolve(0.2)
 
-        theo "Y'think?"
+        theo "Ya think?"
 
-        show theo smile with dissolve(0.2)
+        show theo smile with Dissolve(0.2)
 
         "Theo scoffs."
 
@@ -946,3 +946,7 @@ label pluto_date2b:
         hide theo with dissolve
 
         "Reluctantly, we make our way back to ISAAC, our fates already drifting away."
+    
+    scene bg black with fade
+
+    stop music fadeout 1.0

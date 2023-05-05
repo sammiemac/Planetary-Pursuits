@@ -1,22 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/intro2.rpy", line 3, in script
-    label intro2:
-Exception: Could not find return label ('game/intro1.rpy', 1668398102, 357).
+  File "game/script.rpy", line 34, in script call
+    call pluto_date2b
+  File "game/pluto_date2b.rpy", line 890, in script
+    show theo smile with dissolve(0.2)
+TypeError: 'Dissolve' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/intro2.rpy", line 3, in script
-    label intro2:
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\ast.py", line 1782, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\execution.py", line 726, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label ('game/intro1.rpy', 1668398102, 357).
+  File "game/script.rpy", line 34, in script call
+    call pluto_date2b
+  File "game/pluto_date2b.rpy", line 890, in script
+    show theo smile with dissolve(0.2)
+  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\ast.py", line 1658, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\exports.py", line 1653, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\display\core.py", line 2798, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
+  File "C:\Users\samma\Downloads\renpy-8.0.2-sdk\renpy\display\core.py", line 3746, in interact_core
+    trans = self.ongoing_transition[None](
+TypeError: 'Dissolve' object is not callable
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.0.2.22081402
 Planetary Pursuits ver.0.2
-Thu May  4 22:32:29 2023
+Thu May  4 23:23:47 2023
