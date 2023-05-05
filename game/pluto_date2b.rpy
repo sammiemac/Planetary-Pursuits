@@ -236,6 +236,8 @@ label pluto_date2b:
 
     pause 2.0
 
+    $ renpy.sound.play("audio/SFX_Fire_Crackle_Long.mp3", loop=True, fadein=2.0, relative_volume=0.2)
+
     scene bg cabin room with dissolve:
         xalign 0.0
     
@@ -267,16 +269,14 @@ label pluto_date2b:
     $ fireplace_3 = True
     $ fireplace_4 = True
     $ fireplace_5 = True
-    if pluto_aff > 3:
-        $ fireplace_6 = True
+    $ fireplace_6 = True
+    $ fireplace_count = 0
 
     menu fireplace_choice:
 
         "{i}This feels like a good opportunity to get to know her better."
 
         "Ask what she thinks about global warming." if fireplace_1:
-
-            hide pluto with dissolve
 
             show pluto pj shy with dissolve:
                 xalign 0.5
@@ -330,12 +330,14 @@ label pluto_date2b:
                 "{i}Fuck. Did I mess up somewhere?"
 
             $ fireplace_1 = False
+
+            $ fireplace_count += 1
+
+            hide pluto with dissolve
             
             jump fireplace_choice
 
         "Ask about the \"Pluto not being a planet\" debate." if fireplace_2:
-
-            hide pluto with dissolve
 
             show pluto pj shy with dissolve:
                 xalign 0.5
@@ -362,9 +364,15 @@ label pluto_date2b:
 
             "{i}Man, she looks so stiff. It seems like a sour spot for her, I should avoid saying anything about that..."
 
-        "Ask what she’s been up to since the last date.":
+            $ fireplace_2 = False
+
+            $ fireplace_count += 1
 
             hide pluto with dissolve
+
+            jump fireplace_choice
+
+        "Ask what she’s been up to since the last date." if fireplace_3:
 
             show pluto pj stern with dissolve:
                 xalign 0.5
@@ -401,7 +409,13 @@ label pluto_date2b:
                 
                 "\"Cats.\"":
 
-                    show pluto chopper with dissolve:
+                    stop music
+
+                    $ renpy.sound.stop()
+
+                    pluto "..."
+
+                    show pluto chopper:
                         xalign 0.5
                         yalign 0.005
                         zoom 1.0
@@ -412,11 +426,23 @@ label pluto_date2b:
 
                     scene bg you died with fade
 
+                    play sound "audio/SFX_dark_souls_death.mp3" volume 0.1
+
+                    pause 5.0
+
+                    scene bg black with fade
+
                     jump stop_car
                 
-        "Ask about the other planets." if fireplace_3:
+            $ fireplace_3 = False
+
+            $ fireplace_count += 1
 
             hide pluto with dissolve
+
+            jump fireplace_choice
+                
+        "Ask about the other planets." if fireplace_4:
 
             show pluto pj stern with dissolve:
                 xalign 0.5
@@ -447,9 +473,15 @@ label pluto_date2b:
 
             "Pluto gives a warm smile in return."
 
-        "Ask her opinion on humans." if fireplace_4:
+            $ fireplace_4 = False
+
+            $ fireplace_count += 1
 
             hide pluto with dissolve
+
+            jump fireplace_choice
+
+        "Ask her opinion on humans." if fireplace_5:
 
             show pluto pj neutral with dissolve:
                 xalign 0.5
@@ -478,15 +510,21 @@ label pluto_date2b:
 
             mc "Yeah, but instead of thinking he looks like a lion in a suit, try thinking he looks like a {i}golden retriever{/i} in a suit."
 
-            show pluto pg joy with Dissolve(0.2)
+            show pluto pj joy with Dissolve(0.2)
 
             "Pluto giggles."
 
             pluto "I think I'll try that! Hehe. Fluffy man-dog..."
 
-        "Ask why she agreed to meet with us." if fireplace_5:
+            $ fireplace_5 = False
+
+            $ fireplace_count += 1
 
             hide pluto with dissolve
+
+            jump fireplace_choice
+
+        "Ask why she agreed to meet with us." if fireplace_6:
 
             show pluto pj shy with dissolve:
                 xalign 0.5
@@ -515,7 +553,15 @@ label pluto_date2b:
 
             "{i}I think she was trying to make a joke just then, so why do I feel so intimidated...?!"
 
-        "Ask what she thinks about me." if fireplace_6:
+            $ fireplace_6 = False
+
+            $ fireplace_count += 1
+
+            hide pluto with dissolve
+
+            jump fireplace_choice
+
+        "Ask what she thinks about me." if pluto_aff > 4 and fireplace_count is 6:
 
             hide pluto with dissolve
 
@@ -552,11 +598,11 @@ label pluto_date2b:
 
             show pluto pj shy with Dissolve(0.2)
 
-            pluto "I thought I would have a rough time visting Earth and humans in this form, and in a way that's true..."
+            pluto "I thought I would have a rough time visting Earth and meeting humans in this form, and in a way that's true..."
 
             show pluto pj joy with Dissolve(0.2)
 
-            pluto "But somehow, when I'm with you, I feel a lot better..."
+            pluto "But somehow, when I'm with you, I feel a lot better."
 
             show pluto pj flustered with Dissolve(0.2)
 
@@ -594,13 +640,15 @@ label pluto_date2b:
                 
                 "I reach out my hand and place it on top of Pluto's. She blushes in response, but doesn't withdraw her hand."
 
-                show pluto pj flustered with Dissolve(0.2)
+                show pluto pj joy with Dissolve(0.2)
 
                 mc "I'm having a lot of fun spending time with you, too."
 
-                "She"
+                "She scooches in a little closer, leaning her head against my shoulder."
 
-        "Stay silent.":
+        "Stay silent." if fireplace_count is not 6:
+
+            "Pluto and I stare at the crackle of the vibrant fire in mutual understanding. Well, fake fire. But it’s still quite relaxing."
 
     # Start of code Devon wrote yyyyyyyyyyyyyyyyyyeeeeeeeeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh plz review
 
