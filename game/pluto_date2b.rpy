@@ -602,4 +602,210 @@ label pluto_date2b:
 
         "Stay silent.":
 
+    # Start of code Devon wrote yyyyyyyyyyyyyyyyyyeeeeeeeeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh plz review
 
+    "Pluto and I stare at the crackle of the vibrant fire in mutual understanding. Well, fake fire. But it's still quite relaxing."
+
+    # (contemplative)
+    pluto "... Do you mind if I ask you something?"
+
+    mc "Shoot."
+
+    # (surprised)
+    pluto "S-Shoot?!!"
+
+    mc "No-no, not actually shoot, it's a saying, like go for it."
+
+    # (surprised then neutral)
+    pluto "O-Oh. U-um... Why did they ask you to meet with me? I mean {i}you{/i} you, and not someone else."
+
+    mc "Well, I worked with the Professor that made the machine to contact planets and I'm also an astronomy major."
+
+    # (surprised/intrigued)
+    pluto "An astronomy... major?"
+
+    mc "Like I studied the solar system, planets, stars, everything in that sense."
+
+    pluto "So you're an expert then?"
+
+    mc "I thought I was, but meeting an actual planet is beyond what we're taught so I don't even know anymore hahaha."
+
+    # (smiles)
+    pluto "I could say the same about you guys too! Jupiter always said \"{i}Humans are monsters{/i}\" and things like that, so I was really scared to meet with you. But Neptune reassured me they were exaggerating and to follow what I believe."
+
+    if pluto_aff > 3:
+
+        pluto "And, I believe you're a good person [first_name]. Whenever I get scared you always comfort me and it feels like you really care."
+
+        pluto "Most of the other planets don't even really look at me, let alone talk. In that sense, you remind me of Neptune. Or Mars, if Mars calmed down haha."
+
+        "{i}Astronomy could've neer prepared me for a situation like this, maybe Theo really is right..."
+
+        "For once, I'm the nervous one as I stumble for something to say in reponse to the flattery."
+
+        mc "With how much you look up to her, I'll take that as a compliment, but I hope that doesn't mean you see me as a sibling."
+
+        "I try to laugh it off, but Pluto immediately getes flustered and perks up."
+
+        pluto "N-No! O-O-Of c-course n-not! W-We're like-"
+
+        "Head spinning, she shakes her head like a puppy trying to shake off a bath."
+
+        pluto "AHHHHH! N-Nevermind!!!!!!!!!!"
+
+        "Feeling it's for the better, I drop the topic since neither of us can seem to speak through our nerves."
+
+    else:
+
+        mc "You really look up to her huh?"
+
+        # (sad)
+        pluto "Yeah..."
+
+    "From my peripherals, I see Pluto begin to nod off as she fights to keep her eyes open."
+
+    mc "We shold probably go to bed, it's getting late."
+
+    "She seems serveral steps ahead of me already with her eyes closing for longer durations at a time."
+
+    "Not even having the energy left to answer me verbally, she murmurs a response."
+
+    pluto "M-Mmm..."
+
+    "Pluto slugs herself up from the comfort of the carpet and sinks into the sheets of her bed. Very faintly, she speaks from under the covers."
+
+    pluto "Goodnight [first_name]............"
+
+    mc "Night Pluto."
+
+    # Fade to black
+
+    # INT. CABIN - ROOM - MIDNIGHT
+
+    "I wake up in the middle of the night..."
+
+    # HEEEEEEEEEEEEEYYYYYYYYYYYYYYYYYYYYYYYYYYY PLZ REPLACE THESE IF STATEMENTS WITH WHAT YOU NEED!!!!!!!!!!!!!!!!!!!
+
+    # if mc did dog ice cream:
+
+        "... to Pluto moping her sleep."
+
+        # (chopping crying)
+        pluto "WAHHHHHHHH DOG ICE CREAAAAMMMMMM!!!!"
+
+        "{i}I still feel terrible about that..."
+
+    # else if mc took a donut
+
+        # show Theo with a rose in his mouth
+        "... from a dream with Theo in his ISAAC underwear with a rose in his mouth. Or a nightmare I suppose."
+
+        "He tried proposing to me saying, \"You're the only planet {i}I{/i} need baby. Let me colonize your moons and show you the milky way~\""
+
+        "I retch just recalling it."
+
+        "{i}I am NOT telling him about that..."
+
+    # else
+
+        "... to Pluto levitating in her sleep."
+
+        mc "What the fuckkkkkkkk?!!!!"
+
+        "As terrifying as that looks, I try my best to ignore it and go back to sleep."
+
+    # INT. CABIN - LOBBY - MORNING
+
+    "In the morning, Pluto and I change into our regular clothes then meet up with Theo."
+
+    "After scarfing down our breakfast we say our goodbyes to the cabin and head back home."
+
+    "The storm's cleared up for the most part, at least enough for the drive to be safe, although the city is still working on clearing the roads from the heavy snowfall of the previous night."
+
+    "Multiple times throughout the car ride I can see Pluto try to ask me something but then glanece at Theo and stop. Likewise, he glances at me to try and prompt me to speak first, but whatever she wants to say se probably wants to say in private."
+
+    # INT. PLUTO'S HOUSE - MIDDAY
+
+    "After an unexpectedly silent trip, we arrive at Pluto's house with relative ease, save for a few traffic stops here and there."
+
+    "I walk her to her front door while Theo waits in the car, pretending like he isn't watching all the while."
+
+    if pluto_aff > 3:
+
+        "Pluto avoids eye contact with me, fiddling wiht the hem of her dress."
+
+        # (shy af boi)
+        pluto "I-umm-... really... enjoyed our time together today..! If we could go out again... together... soon... I would... really like that..! I could even choose where if you want..?"
+
+        mc "I'd really like that Pluto. I'm glad I didn't bore you to death with all my questions and stuff."
+
+        # (smile)
+        pluto "No, not at all! I'm glad you find it interesting. I really never thought anyone other than Neptune would care about what I have to say, but you've really shown me that not everyone's a Jupiter. Hehe."
+
+        pluto "Have a good day [first_name]! I hope I get to introduce you to my dogs sometime, they would love you and enjoy your company."
+
+        "Pluto's eyes dart away again and she mumbles."
+
+        pluto "Maybe even as much as I do."
+
+        mc "Huh?"
+
+        # (even more shy af boyo)
+        pluto "NOTHING!!!!!!!!! HAVE A GOOD DAYYYY~~!!!"
+
+        "Face flushed ear to ear, she darts off into her house. In an alternate reality, I'd follow after her but she's had enough of me for the day and then some."
+
+        "Theo is waiting inside the car, so I hop in shotgun right beside him."
+
+        # (neutral)
+        theo "So?"
+
+        mc "... I think she likes meee..?"
+
+        # (surprised)
+        theo "Think?"
+
+        "Theo scoffs."
+
+        # (smirk)
+        theo "Astronomy majors."
+
+        "With a smug smile, Theo starts the sedan and begins to drive."
+
+    else:
+
+        # (closed off/sad/shy/whatever works lol)
+        pluto "U-Umm... I'm sorry... I don't know how to say this, but... I think it's best if we don't see each other again."
+
+        "{i}Crap..."
+
+        "{i}ISAAC is gonna fucking kill me. Or even worse, Theo..."
+
+        "Theo is waiting inside the car. I slump into the passenger seat beside him, and I could feel his gaze weighing down heavily on me."
+
+        # (dread)
+        theo "What did you do..."
+
+        mc "I BLEW IT!!!"
+
+        theo "YOU WHATTT?!!!!"
+
+        mc "I don't know where I went wrong..."
+
+        # (angry)
+        theo "You damn right it's your fault! Nu-uh, I'm not losing my job over this. I have a wife back at home!"
+
+        theo "You better hope that weird machine you nerds cooked up can let us talk to another planet! Hell, if they'd even want to after you messed up! Otherwise..."
+
+        "A look of dread clouds his face."
+
+        # (dread)
+        theo "The Prez..-!"
+
+        "I can already picture the subsequent loss of my job in the best case, and in the worst case? All I can hope for is that the horror stories of the FBI and CIA aren't true..."
+
+        "Reluctantly, we make our way back to ISAAC, our fates already drifting away."
+
+        # Lock off Pluto's route
+
+# end Date 2b
