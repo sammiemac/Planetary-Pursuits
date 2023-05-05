@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/pluto_date2b.rpy", line 408: choice menuitem expects a non-empty block.
-    "Ask about the other planets." if fireplace_4:
-                                                  ^
+File "game/pluto_date2b.rpy", line 810: expected statement.
+    sce
+       ^
 
-Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu May  4 13:54:08 2023
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Thu May  4 22:37:52 2023

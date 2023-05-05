@@ -12,7 +12,7 @@ label demo:
 
     centered "{b}{color=#ffffff}This game was made for the CPP Game Development Club.{/b}{/color}" with dissolve
  
-    centered "{b}{color=#ffffff}Programmers: \nSam M. \nRob R.{/b}{/color}" with dissolve
+    centered "{b}{color=#ffffff}Programmers: \nSam M. \nRob R. \nDevon M.{/b}{/color}" with dissolve
 
     centered "{b}{color=#ffffff}Writers: \nLouis \nMaryam D. \nDaniel Appel{/b}{/color}" with dissolve
 

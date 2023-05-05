@@ -683,6 +683,8 @@ label pluto_date1:
 
     "Choosing what ice cream to buy can be overwhelming for her with the amount of choices. I should probably..."
 
+    $ dog_icecream = False
+
     menu:
         "Buy Pluto the dog-shaped ice cream.":
 
@@ -737,6 +739,8 @@ label pluto_date1:
             mc "Me neither..."
 
             $ pluto_aff -= 1
+
+            $ dog_icecream = True
 
         "Buy Pluto the blue hedgehog ice cream with a smiley face and the gumball eyes.":
 
