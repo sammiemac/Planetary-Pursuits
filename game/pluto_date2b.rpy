@@ -267,15 +267,16 @@ label pluto_date2b:
     $ fireplace_3 = True
     $ fireplace_4 = True
     $ fireplace_5 = True
-    $ fireplace_6 = True
     if pluto_aff > 3:
-        $ fireplace_7 = True
+        $ fireplace_6 = True
 
     menu fireplace_choice:
 
         "{i}This feels like a good opportunity to get to know her better."
 
         "Ask what she thinks about global warming." if fireplace_1:
+
+            hide pluto with dissolve
 
             show pluto pj shy with dissolve:
                 xalign 0.5
@@ -334,6 +335,8 @@ label pluto_date2b:
 
         "Ask about the \"Pluto not being a planet\" debate." if fireplace_2:
 
+            hide pluto with dissolve
+
             show pluto pj shy with dissolve:
                 xalign 0.5
                 yalign 0.005
@@ -359,7 +362,9 @@ label pluto_date2b:
 
             "{i}Man, she looks so stiff. It seems like a sour spot for her, I should avoid saying anything about that..."
 
-        "Ask what she’s been up to since the last date." if fireplace_3:
+        "Ask what she’s been up to since the last date.":
+
+            hide pluto with dissolve
 
             show pluto pj stern with dissolve:
                 xalign 0.5
@@ -403,15 +408,197 @@ label pluto_date2b:
 
                     pluto "CATS?!?!?!"
 
+                    "All of a sudden, Pluto lunges towards me, and everything goes black..."
 
+                    scene bg you died with fade
 
-        "Ask about the other planets." if fireplace_4:
+                    jump stop_car
+                
+        "Ask about the other planets." if fireplace_3:
 
-        "Ask her opinion on humans." if fireplace_5:
+            hide pluto with dissolve
 
-        "Ask why she agreed to meet with us." if fireplace_6:
+            show pluto pj stern with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+            
+            pluto "I don’t really talk to anyone, but most of them are super fancy like Jupiter. I feel like a lot of them follow what they do because they’re really intimidating."
 
-        "Ask about what she thinks about me." if fireplace_7:
+            show pluto pj joy with Dissolve(0.2)
+
+            pluto "But Neptune and I hang out often! Although it’s kind of her just dragging me along but it’s still fun. I kind of miss her to be honest, but I know she’d tell me I’m doing the right thing. She’s like an older sister to me."
+
+            show pluto pj neutral with Dissolve(0.2)
+
+            pluto "Mars is super energetic and talks at me a lot, and I really wish I could match their energy because it makes them nice to be around. I don’t think I’m all that nice to be with though..."
+
+            mc "If you weren't, I wouldn't have asked to go out with you again. I honestly really enjoy our time together!"
+
+            show pluto pj flustered with Dissolve(0.2)
+
+            pluto "R-really?"
+
+            mc "Of course! Much better than Theo, anyhow."
+
+            show pluto pj joy with Dissolve(0.2)
+
+            pluto "Hehe, thanks..."
+
+            "Pluto gives a warm smile in return."
+
+        "Ask her opinion on humans." if fireplace_4:
+
+            hide pluto with dissolve
+
+            show pluto pj neutral with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+            
+            pluto "People don’t seem too different from us planets. There’s good ones, and there’s bad ones, and some are in the middle! But most of the people I’ve seen seem okay..."
+
+            show pluto pj shy with Dissolve(0.2)
+
+            pluto "... even if crowds scare me..."
+
+            show pluto pj neutral with Dissolve(0.2)
+
+            pluto "You're okay though, [first_name]! And Theo seems okay, too..."
+
+            show pluto pj shy with Dissolve(0.2)
+
+            pluto "... but he kind of scares me sometimes..."
+
+            mc "It's alright, he scares me, too."
+
+            show pluto pj flustered with Dissolve(0.2)
+
+            pluto "R-really?!"
+
+            mc "Yeah, but instead of thinking he looks like a lion in a suit, try thinking he looks like a {i}golden retriever{/i} in a suit."
+
+            show pluto pg joy with Dissolve(0.2)
+
+            "Pluto giggles."
+
+            pluto "I think I'll try that! Hehe. Fluffy man-dog..."
+
+        "Ask why she agreed to meet with us." if fireplace_5:
+
+            hide pluto with dissolve
+
+            show pluto pj shy with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+            
+            pluto "I-I think people should help others if they can. Sometimes people get themselves in those situtations, but that doesn't mean you shouldn't help them!"
+
+            pluto "I just want to be sure just so the others don't get mad at me if I mess up again..."
+
+            show pluto pj neutral with Dissolve(0.2)
+
+            pluto "I know I don't have as much as the other planets, but I hope whatever you all need, that I can help!"
+
+            mc "I appreciate you saying that, with how much it feels like the other planets hate us."
+
+            show pluto pj flustered with Dissolve(0.2)
+
+            pluto "Hate is a strong word. Maybe loathe?"
+
+            mc "... Loathe is even stronger, though."
+
+            show pluto pj joy with Dissolve(0.2)
+
+            pluto "I know."
+
+            "{i}I think she was trying to make a joke just then, so why do I feel so intimidated...?!"
+
+        "Ask what she thinks about me." if fireplace_6:
+
+            hide pluto with dissolve
+
+            mc "Ummm..."
+
+            mc "I hope this doesn't sound {i}too{/i} narcissistic, but..."
+
+            show pluto pj flustered with dissolve:
+                xalign 0.5
+                yalign 0.005
+                zoom 0.60
+
+            pluto "What is it?"
+
+            mc "Well... what do you think about me...?"
+
+            "Pluto stares at me in surprise, and I can't help but feel a warmth on my cheeks."
+
+            show pluto pj shy with Dissolve(0.2)
+
+            pluto "Um, well..."
+
+            mc "Y'know what, it's fine! That was a weird question anyways..."
+
+            show pluto pj flustered with Dissolve(0.2)
+
+            pluto "N-no, it's fine! I was just thinking..."
+
+            "Pluto's lips slowly curl into a small, comforting smile."
+
+            show pluto pj neutral with Dissolve(0.2)
+
+            pluto "I'm having a lot of fun with you, [first_name]."
+
+            show pluto pj shy with Dissolve(0.2)
+
+            pluto "I thought I would have a rough time visting Earth and humans in this form, and in a way that's true..."
+
+            show pluto pj joy with Dissolve(0.2)
+
+            pluto "But somehow, when I'm with you, I feel a lot better..."
+
+            show pluto pj flustered with Dissolve(0.2)
+
+            pluto "I-I mean...! Um, well... I hope you feel the same way..."
+
+            mc "Haha, it's no worries!"
+
+            show pluto pj neutral with Dissolve(0.2)
+
+            if pluto_aff > 6:
+
+                "With my heart pounding against my chest, I lean over to Pluto... and give her a small kiss on her cheek."
+
+                show pluto pj flustered with Dissolve(0.2)
+
+                mc "I feel the same way. I'm having a lot of fun spending time with you, and with your permission, I would like to keep going out with you."
+
+                mc "On, um, government-mandated dates, of course."
+
+                show pluto pj joy with Dissolve(0.2)
+
+                "Pluto laughs quietly to herself, and something about the sound makes my heart flutter."
+
+                pluto "Hehe, of course!"
+
+                show pluto pj neutral with Dissolve(0.2)
+
+                pluto "... But how about we go on normal dates, too...?"
+
+                mc "... I would like that."
+
+                "Pluto places her hand on top of mine, and I let our fingers intertwine with one another. She scooches in a little closer, leaning her head against my shoulder."
+            
+            else:
+                
+                "I reach out my hand and place it on top of Pluto's. She blushes in response, but doesn't withdraw her hand."
+
+                show pluto pj flustered with Dissolve(0.2)
+
+                mc "I'm having a lot of fun spending time with you, too."
+
+                "She"
 
         "Stay silent.":
 
