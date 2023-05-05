@@ -352,7 +352,7 @@ label pluto_date2b:
 
             pluto "Sometimes, I think... maybe they’re right, maybe I’m not a planet... I mean, no one even cared about me until a century ago. And even then, some moons are bigger than me and {i}they’re{/i} not planets... I don’t even know myself..."
             
-            As the words leave her mouth, they go from a jumble to a tirade to a whine.
+            "As the words leave her mouth, they go from a jumble to a tirade to a whine."
 
             show pluto pj cry with Dissolve(0.2)
             
@@ -479,7 +479,7 @@ label pluto_date2b:
 
             pluto "Neptune and I hang out a lot! Even though it’s kind of her just dragging me along, it’s still fun."
             
-            if pluto_aff > 4
+            if pluto_aff > 4:
             
                 pluto "I... kind of miss her to be honest, but I know she’d tell me I’m doing the right thing. She’s like an older sister to me."
 
@@ -569,11 +569,11 @@ label pluto_date2b:
             
             if pluto_aff <= 0:
             
-                pluto "...or make fun of me if this goes wrong..."
+                pluto "Or make fun of me if this goes wrong..."
 
             show pluto pj neutral with Dissolve(0.2)
 
-            pluto "I know I don't have as much as the other planets, but I hope whatever you all need, that I can help!"
+            pluto "I know I don't... have as much as the other planets, but I hope whatever you all need, that I can help!"
 
             mc "I appreciate you saying that, with how much it seems like some of the other planets hate us."
 
