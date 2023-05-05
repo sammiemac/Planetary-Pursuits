@@ -9,17 +9,19 @@ label pluto_date2a:
 
     centered "{b}{color=#ffffff}A few days after the first \"date\"...{/b}{/color}"
 
-    centered "{color=#ffffff}After the ice rink date didn't go as planned, I felt like I needed to make it up to Pluto somehow, so I decided to take her to a ski resort."
+    centered "{color=#ffffff}After the ice rink date didn't go as planned, I felt like I needed to make it up to Pluto somehow. So, I decided to take her to a ski resort."
 
     centered "{color=#ffffff}She didn't seem to know much about skiing or resorts, but she loved the idea of being surrounded by snow and large open spaces."
 
-    centered "{color=#ffffff}Once again we set a date and let Theo know so that he could come along and chauffeur. On the day of the trip, we picked her up and set off on a long ride to the resort..."
+    centered "{color=#ffffff}Once again, we set a date and let Theo know so that he could come along and chauffeur. On the day of, we picked her up and set off on the long ride to the resort..."
 
-    centered "{color=#ffffff}When we arrived at the resort, the snow-covered landscape took her breath away. She had never seen anything like it before, and her eyes lit up with wonder and amazement."
+    centered "{color=#ffffff}When we arrived to the mountains leading to the resort, the snow-covered landscape took Pluto's breath away. She had never seen anything like it before, and her eyes lit up with wonder and amazement."
 
     play music "audio/OST_Mr_Secretary_You_Have_A_Call.mp3" fadein 0.5 volume 0.1
 
     scene bg theo sedan winter with dissolve:
+    
+    pluto "I-I thought Earth only looked like this closer to her poles…"
 
     "I can’t help but feel a sense of excitement and nervousness at the same time as we get closer to the resort."
 
@@ -58,7 +60,7 @@ label pluto_date2a:
         yalign 0.005
         zoom 0.60
     
-    "Theo glares at me from the rear-view mirror."
+    "Looking to the rearview mirror, I see Theo glaring daggers at me so sharp they pierce through his sunglasses."
 
     "{i}Looks like I was totally talking over Pluto..."
 
@@ -75,7 +77,7 @@ label pluto_date2a:
 
     pluto "{size=-5}... too many people..."
 
-    "Pluto isn't looking too excited aobut this date anymore... Maybe I should try a different approach."
+    "Pluto isn't looking too excited about this date anymore... Maybe I should try a different approach."
 
     menu:
 
@@ -103,7 +105,9 @@ label pluto_date2a:
 
             pluto "{size=-5}... I guess I am a weenie."
 
-            mc "Yeah, you're kind of killing the vibe, but I suppose we could do something else instead then."
+            mc "Yeah, you're kind of killing the vibe, but I suppose we could do something else instead, then."
+            
+            "Theo shakes his head and mutters something under his breath."
 
             $ renpy.notify("Pluto looks to be on the verge of tears.")
         
@@ -117,7 +121,7 @@ label pluto_date2a:
                 yalign 0.005
                 zoom 0.60
 
-            theo "Maybe she'd prefer a different activity around here?"
+            theo "Maybe she'd prefer a different activity around here."
 
             mc "O-oh yeah...! I know that... How about we do something else then?"
 
@@ -125,7 +129,7 @@ label pluto_date2a:
 
             $ pluto_aff += 1
 
-            $ renpy.notify("Pluto appreciates you asking.")
+            $ renpy.notify("Pluto lightens up a bit when you ask that.")
 
             show pluto winter flustered with Dissolve(0.2)
 
@@ -135,7 +139,7 @@ label pluto_date2a:
 
             pluto "But if I had to choose, then maybe somewhere more... secluded?"
 
-            pluto "I'm not too sure what else we could do in the snow, I am not really experienced with outside activities..."
+            pluto "I'm not too sure what else we could do in the snow... I-I'm not sure what we could even do, I usually don't make these kind of decisions..."
 
             mc "Hmmm..."
 
@@ -169,9 +173,11 @@ label pluto_date2a:
             yalign 0.005
             zoom 0.60
 
-        theo "Uh boss, we are kind of in the middle of nowhere..."
+        theo "Uh, boss?" 
+        
+        theo "We're kind of in the middle of nowhere..."
 
-        mc "Let's get out here Pluto, we can keep heading to the cabin later."
+        mc "Let's get out here Pluto, we can head to the cabin later."
 
         show theo sweat:
             linear 0.5 xalign 0.125
@@ -191,13 +197,15 @@ label pluto_date2a:
 
         pluto "A snowman?!"
 
-        mc "That's right! It's basically an activity where we make sculptures made out of snow and ice."
+        mc "That's right! It's basically an activity where you make a little guy made out of snow and ice."
+        
+        mc "It doesn't have to be a man, it could be a woman. Or a house. Just anything like that."
 
         show pluto winter neutral with Dissolve(0.2)
 
-        pluto "T-that sounds like fun! I like making things."
+        pluto "T-that sounds like fun! I-I like making things."
 
-        mc  "Then why don't we have a competition and see who can make the best snowman? Theo can even be the judge."
+        mc  "Then why don't we have a competition and see who can make the best snowman? Theo can be the judge."
 
         show theo smile with Dissolve(0.2)
 
@@ -260,7 +268,7 @@ label pluto_date2a:
         
         pluto "Hmmm..."
 
-        mc "Whoa, are you alright? You haven't moved in the last 3 minutes, your snowman is never going to be built at this rate."
+        mc "Whoa, are you alright? You haven't moved in the last 3 minutes, your snowman is never gonna be built at this rate."
 
         show pluto winter flustered with Dissolve(0.2)
 
@@ -286,7 +294,7 @@ label pluto_date2a:
 
                 show pluto winter shy with Dissolve(0.2)
 
-                pluto "No."
+                pluto "No..."
 
                 mc "I thought not. It's not a story the Jedi would tell you."
                 
@@ -316,11 +324,13 @@ label pluto_date2a:
 
                 mc "He could save others from death, but not himself."
 
-                show pluto winter stern with Dissolve(0.2)
+                show pluto winter flustered with Dissolve(0.2)
+                
+                stop music
 
-                pluto "Is it possible to learn this power?"
+                pluto "W-Why are you telling me this? That sounds... really disturbing..."
 
-                mc "Not from a Jedi."
+                mc "S-Sorry. Something came over me..."
 
             "\"How about I recite a poem I wrote for you?\"":
 
@@ -346,17 +356,17 @@ label pluto_date2a:
 
                 show pluto winter shy with Dissolve(0.2)
 
-                pluto "{cps=10}{size=-5}... mid..."
+                pluto "{cps=10}{size=-5}... hooks..."
 
                 show pluto winter flustered with Dissolve(0.2)
 
-                pluto "I-I mean, that was... something else. Interesting, but it was sweet... I think..."
+                pluto "I-I mean, that was... interesting... it was sweet... I think..."
 
                 mc "Thank you, thank you. Perhaps an encore will do nicely?"
 
                 show pluto winter stern with Dissolve(0.2)
 
-                pluto "N-no!"
+                pluto "Nothatsfine!"
 
                 show pluto winter neutral with Dissolve(0.2)
 
@@ -405,19 +415,17 @@ label pluto_date2a:
 
                 show pluto winter joy with Dissolve(0.2)
 
-                pluto "Things like knitting, crocheting, sewing, and cross-stitching... and I’ve been thinking about making some clothing for dogs to keep them warm."
+                pluto "Things like knitting, crocheting, sewing, and cross-stitching, I think that last one is called... and I’ve been thinking about making some clothing for dogs. To keep them warm."
 
                 menu:
 
                     "\"That’s pretty lame.\"":
 
-                        mc "Out of all the cool things we have here on Earth and you choose things like knitting and crocheting to learn? You would get along great with my grandma, not so much with normal people."
+                        mc "Out of all the cool things we have here on Earth and you choose things like knitting and crocheting to learn? A-and for dogs, too? Dogs don't need clothes, they grow fur for a reason."
 
                         show pluto winter cry with Dissolve(0.2)
 
                         pluto "Y-you're right, I'm sorry..."
-
-                        mc "As long as you understand."
 
                         $ renpy.notify("Pluto starts tearing up.")
 
@@ -425,17 +433,17 @@ label pluto_date2a:
 
                     "\"That’s really cool.\"":
 
-                        mc "Not many people are brave enough to take on activities like that."
+                        mc "Not many people are talented enough to take on activities like that."
 
                         show pluto winter flustered with Dissolve(0.2)
 
-                        pluto "B-brave?! No, I think a lot of people actually would think I’m weird for doing stuff like this. I’m usually the odd one out..."
+                        pluto "Huh?! I-I just copied some stuff from some online... what was the word, too... tutorials! I just copied from those..."
 
-                        mc "I honestly think they are just too lazy to put in the effort and so they put others down to make themselves look better."
+                        mc "No one really crochets anymore. People are too lazy to put in the effort. So I actually think it's really cool that you've taken it up."
                         
                         show pluto winter joy with Dissolve(0.2)
 
-                        pluto "Oh, when you put it that way, it doesn't sound so bad after all."
+                        pluto "I-I think it's cool too."
 
                         $ renpy.notify("Pluto looks relieved.")
 
@@ -445,23 +453,25 @@ label pluto_date2a:
 
                         mc "She used to make me different hats and gloves for me to wear when it was snowing."
 
-                        mc "She’s no longer with me now but it brings back good memories."
+                        mc "She... passed away a while ago. But it brings back good memories."
 
                         show pluto winter shy with Dissolve(0.2)
 
-                        pluto "Sorry, I must have made you uncomfortable talking about that then, I’ll just keep that to myself next time..."
+                        pluto "Sorry, I must have made you uncomfortable talking about that then..."
 
-                        mc "No no, it’s the opposite actually! I’d be happy to talk to you more about it anytime."
+                        mc "No no, it’s the opposite actually! I’d be happy to talk to you more about it anytime. She actually taught me a couple of things, so maybe we could exchange tips sometime."
 
                         show pluto winter flustered with Dissolve(0.2)
 
                         pluto "R-really?!"
 
                         mc "Yup!"
+                        
+                        pluto "I think I'd like that."
 
                         $ renpy.notify("Pluto looks excited.")
 
-                        $ pluto_aff += 1
+                        $ pluto_aff += 2
 
     scene bg ski resort ext with dissolve:
         zoom 1.2 
@@ -499,7 +509,7 @@ label pluto_date2a:
 
     show pluto winter joy with Dissolve(0.2)
 
-    pluto "Hehe, I think we should let him rest."
+    pluto "Hehe, I think we should let him rest. He was driving for a while..."
 
     mc "We're going to have to wake him up eventually anyway, but okay. I think we can just determine the winner ourselves, and I think the winner is clear."
 
@@ -554,7 +564,7 @@ label pluto_date2a:
 
         show pluto winter joy with Dissolve(0.2)
 
-        pluto "It was a good effort!"
+        pluto "It's... unique!"
 
         show pluto winter neutral with Dissolve(0.2)
         
@@ -579,7 +589,7 @@ label pluto_date2a:
             yalign 0.005
             zoom 0.60
         
-        pluto "Wow! You built a nice... raccoon?"
+        pluto "Wow! You built a nice... creature?"
 
         mc "... It's a dog."
 
@@ -602,7 +612,7 @@ label pluto_date2a:
     
     mc "Oh... Wow."
 
-    "Upon gazing at her snowman--- or snowdog--- I can almost see it glistening in beauty. Her snowdog looks leagues better than mine!"
+    "Upon gazing at her snowman--- or snowdog--- I can almost see it glistening in beauty. Her creation looks leagues better than mine!"
     
     "Actually... it even looks kind of fluffy..."
 
@@ -613,7 +623,7 @@ label pluto_date2a:
     
     pluto "I know, it's not that good... I really wanted to make something I liked, but... I knew I couldn't do it..."
 
-    mc "That's not true! This might be the greatest snow sculpture I've ever seen! It looks so realistic that you would think it's a real dog!"
+    mc "Pluto, this might be the greatest snow sculpture I've ever seen! It looks so realistic that you would think it's a real dog!"
 
     show pluto winter flustered with Dissolve(0.2)
 
@@ -623,7 +633,7 @@ label pluto_date2a:
 
     show pluto winter joy with Dissolve(0.2)
 
-    pluto "Yippee! I'm glad by poodle came out alright. That we really fun!"
+    pluto "Yippee! I'm glad my dog came out well!"
 
     mc "Yeah, it was actually! And to think we would have never done this if you hadn't spoken up."
 
@@ -631,11 +641,11 @@ label pluto_date2a:
 
     pluto "I didn't do anything special..."
 
-    mc "This amazing snow poodle sculpture exists thanks to you! It wouldn't hurt you to be more confident in yourself sometimes, y'know."
+    mc "This amazing snow poodle sculpture exists thanks to you! Come on, it can't hurt to congratulate yourself once in a while."
 
     show pluto winter joy with Dissolve(0.2)
 
-    pluto "Th-thanks...!"
+    pluto "Y-yeah! It doesn't hurt at all."
 
     show pluto winter neutral with Dissolve(0.2)
 
