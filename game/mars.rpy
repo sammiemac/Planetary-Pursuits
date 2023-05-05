@@ -192,9 +192,9 @@ label mars:
     $ mars_outcome = renpy.random.randint(1, 3)
     if mars_outcome is 1:
         jump outcome_good
-    elif mars_outcome is 2:
+    if mars_outcome is 2:
         jump outcome_neutral
-    elif mars_outcome is 3:
+    if mars_outcome is 3:
         jump outcome_bad
 
     label outcome_good:
