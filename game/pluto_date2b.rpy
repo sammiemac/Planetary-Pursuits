@@ -34,13 +34,13 @@ label pluto_date2b:
         yalign 0.005
         zoom 0.60
 
-    theo "You want the good news or bad news first?"
+    theo "You want the good news or bad news first, boss?"
 
     "I sigh, already imagining the disastrous scenarios that could spill out of his mouth, but judging from his still somewhat nonchalant demeanor, it can’t be {i}that{/i} bad."
 
     mc "Bad news, I suppose."
 
-    theo "Snow’s getting really heavy, so unless you wanna risk her---"
+    theo "Snow’s getting really heavy, so unless you wanna risk us---"
 
     "Theo glances at the car to make sure the windows are closed but whispers anyways."
 
@@ -64,21 +64,21 @@ label pluto_date2b:
 
     show theo neutral with Dissolve(0.2)
 
-    theo  "Unless your superpowered girlfriend can change the weather, nope."
+    theo  "Unless Elsa over there can change the weather, nope."
 
     "I look back at Pluto, who's peacefully resting against the car door in blissful ignorance."
 
-    "{i}I'd really hate for her to be stuck outdoors, let alone with {/i}me{i} more than she'd have to, but there really aren't any other options, so..."
+    "{i}I'd really hate for her to be kept out here more than she'd have to, let alone with {/i}me{i}, but there really aren't any other options, so..."
 
     mc "Alright... I'll tell her then. I'll at least let her choose what kind of room she wants."
 
     theo "And if she throws it back at you?"
 
-    mc "Then whatever you come up with."
+    mc "Then it's... up to you."
 
     show theo smile with Dissolve(0.2)
 
-    "Theo snickers at my comment, but I ignore him altogether. Whatever he has floating around in his mind probably isn’t any good, and it makes me regret my choice nearly instantly."
+    "Theo snickers at my comment, but I ignore him altogether. Whatever he has floating around in his mind probably isn’t any good, and it makes me regret my choice instantly."
 
     scene bg theo sedan night with dissolve
 
@@ -95,17 +95,17 @@ label pluto_date2b:
 
     pluto "I-I don't mind."
 
-    mc "... Do you have a preference for what kind of room you want, ooor...?"
+    mc "... Do you have a preference for what kind of room you want, or...?"
 
     show pluto winter neutral with Dissolve(0.2)
     
-    pluto "Whatever you decide."
+    pluto "...Whatever you decide."
 
     hide pluto with dissolve
 
     "Judging from her fairly quick and light response, she seems genuine enough which lessens my guilt if only by a bit."
 
-    "Giving a slight nod to Theo from the mirror, he understands to get the car going."
+    "I glance to Theo, who gets the sedan started with a devious grin creeping onto his face."
 
     stop music fadeout 2
 
@@ -151,11 +151,11 @@ label pluto_date2b:
 
     hide pluto with dissolve
 
-    "A majority of the residents seem to be in some form of argument with an employee, which is to be expected with a sudden snow-in."
+    "A group of the residents seem to be in some form of argument with an employee, which is to be expected with a sudden snow-in."
     
-    "Those who aren’t arguing are trying to get by to their already-reserved rooms without setting off a nerve with the agitated masses."
+    "Those who aren’t arguing are trying to get by to their already-reserved rooms without striking a nerve with the agitated masses."
 
-    "After some extensive arguing himself, Theo returns with two sets of key cards and hands me one of them."
+    "After some extensive discourse himself, Theo returns with two sets of key cards and tosses me one of them."
 
     show theo smile with dissolve:
         xalign 0.5
@@ -165,20 +165,22 @@ label pluto_date2b:
     theo "Told you, government jobs. This one's for you guys."
 
     mc "And the other?"
+    
+    "Theo snorts with a smile."
 
     theo "For me. Or did you expect me to sleep in the car?"
 
-    "He boisterously laughs to further mock me, and if the overreaction didn’t help calm Pluto down, I would’ve fought back with a jab at his previous slumber session. Or maybe it’s the fatigue finally getting to me."
+    "The snort becomes boisterous laugher. If the overreaction didn’t seem to lighten Pluto's mood, I would’ve fought back with a jab at his previous slumber session. Or maybe it’s the fatigue finally getting to me."
 
     show theo neutral with Dissolve(0.2)
 
-    theo "I got us some good rooms, so there should be a change of clothes for you guys so you don’t have to sleep in all that. They serve breakfast, too, so I’ll see you in the morning."
+    theo "I got us some good rooms. There should be a change of clothes for you guys so you don’t have to sleep in... all that. They serve breakfast, too, so I’ll see you in the morning."
 
     hide theo with dissolve
 
     stop music fadeout 2.0
     
-    "With that, we part ways from Theo as I try to get Pluto away from the simmering swarm as quickly as possible."
+    "With that, we part ways from Theo as I get Pluto away from the simmering swarm as quickly as possible."
 
     scene bg cabin room with dissolve:
         xalign 0.0
@@ -187,7 +189,7 @@ label pluto_date2b:
 
     $ renpy.sound.play("audio/SFX_Fire_Crackle_Long.mp3", loop=True, fadein=2.0, relative_volume=0.2)
 
-    "The moment I open the door, I'm greeted with the homely warth of an electric fireplace already permeating from the room."
+    "The moment I open the door, I'm greeted with the homely warmth of an electric fireplace permeating throughout the room."
     
     "And...?!"
 
@@ -196,6 +198,8 @@ label pluto_date2b:
         linear 0.5 xalign 0.3
 
     "{i}ONE BED?!?!?!"
+    
+    "{i}Theo is turning into PASTE next time I-"
 
     scene bg cabin room:
         xalign 0.3
@@ -218,17 +222,17 @@ label pluto_date2b:
         yalign 0.005
         zoom 0.60
 
-    "From how mesmerized Pluto seems to be, she’s clearly not been in something as extravagant as this, and neither have I quite frankly."
+    "From how mesmerized Pluto seems to be, she’s clearly not been in something as extravagant as this. Neither have I, quite frankly."
 
     "{i}Government jobs..."
 
-    "On top of the sheets are what I assume to be our loungewear, so I hand a set over to Pluto."
+    "On top of the sheets are what I assume to be our loungewear. I walk over and hand a set to Pluto."
 
     mc "You can change here, I’ll change in the bathroom."
 
     show pluto winter neutral with Dissolve(0.2)
 
-    "Pluto gives an acknowledging nod so I head over to change."
+    "Pluto gives an acknowledging nod, and I head over to change."
 
     scene bg black with dissolve
 
@@ -256,7 +260,7 @@ label pluto_date2b:
 
     "I flaunt the loose sleeves to help comfort her."
 
-    mc "We can sit by the fire if you want?"
+    mc "We can sit... by the fire if you want?"
 
     pluto "S-sure."
 
@@ -283,17 +287,17 @@ label pluto_date2b:
                 yalign 0.005
                 zoom 0.60
             
-            pluto "I-I know some of the other planets aren’t too happy about it, some are even scared of you guys because of it."
+            pluto "I-I know some of the other planets aren’t too happy about it... But some don't care: they see having life at all as a kind of... blessing. And it's tough to be jealous and worried at the same time."
 
             show pluto pj neutral with Dissolve(0.2)
 
-            pluto "But I think everything will work out! I think what’s important is that you’re trying to fix it now right?"
+            pluto "...But I think everything will work out! Earth's strong, she'll make it through. And... I think what’s important is that you’re trying to fix it now right?"
 
-            "{i}Barely, with how little politicians seem to care about the issue..."
+            "{i}Mental note: inform Pluto of the current political state of the country. Or probably... don't."
 
             "I nod although a bit hesitant."
 
-            mc "Slowly but surely."
+            mc "Slowly, but surely."
 
             pluto "Y-yeah! I hope that I can help... I would hate for something to happen to Earth. Or dogs."
 
@@ -301,11 +305,11 @@ label pluto_date2b:
 
                 show pluto pj flustered with Dissolve(0.2)
 
-                pluto "O-or you...!"
+                pluto "O-or you..."
             
             show pluto pj shy with Dissolve(0.2)
 
-            pluto "But... it scares me sometimes. I wonder if the other planets are right. That maybe humans are really planning on taking everything or inhabiting us."
+            pluto "But... it scares me sometimes. I wonder if they're right. That maybe humans are really planning on taking everything or inhabiting us."
 
             show pluto pj stern with Dissolve(0.2)
 
@@ -315,9 +319,9 @@ label pluto_date2b:
 
                 show pluto pj neutral with Dissolve(0.2)
 
-                pluto "But if humans are like you, then I think it's worth helping you guys out!"
+                pluto "But if humans are like you, then... I think it's worth helping you guys out."
 
-                mc "Now you're making me blush, haha. I'm glad you think I'm a decent person, Theo would probably say otherwise."
+                mc "I'm... glad to hear you think that way of me."
             
             else:
 
@@ -325,9 +329,7 @@ label pluto_date2b:
 
                 show pluto pj shy with Dissolve(0.2)
 
-                pluto "I'll have to think about it though..."
-
-                "{i}Fuck. Did I mess up somewhere?"
+                pluto "I guess I just need to think about it more..."
 
             $ fireplace_1 = False
 
@@ -344,25 +346,41 @@ label pluto_date2b:
                 yalign 0.005
                 zoom 0.60
 
-            "Pluto’s eyebrows raise then droop into a tight knit with pursed lips to match. After a few excruciating moments of silence, she finally speaks albeit in a hardly audible jumble."
+            "Pluto’s eyebrows raise, then droop into a tight knit with pursed lips to match. After a few excruciating moments of silence, she finally speaks, albeit in a hardly audible jumble."
 
-            pluto "It doesn’t really bother me. Everyone tells me that."
+            pluto "It doesn’t really bother me. Almost everyone tells me that."
 
             pluto "Sometimes, I think... maybe they’re right, maybe I’m not a planet... I mean, no one even cared about me until a century ago. And even then, some moons are bigger than me and {i}they’re{/i} not planets... I don’t even know myself..."
+            
+            As the words leave her mouth, they go from a jumble to a tirade to a whine.
 
             show pluto pj cry with Dissolve(0.2)
             
-            pluto "I wish..."
+            pluto "I-I'm sorry... I wish..."
 
             "Pluto’s voice trails off until it folds back into herself."
 
             show pluto pj shy with Dissolve(0.2)
+            
+            if pluto_aff > 4:
+            
+                pluto "I wish it just didn't matter to people, those... labels. Neptune says we're all orbiting around the same rock, so it shouldn't matter..." 
+                
+                pluto "She's the only one who still calls me a planet. She visits sometimes: not... down here, but when I'm out there."
+                
+                "Pluto stares off towards a particular direction. The talk about Neptune seems to have distracted her from the original topic a bit. After a few seconds, she seems to return to her senses."
+                
+                pluto "Huh? S-sorry, I... I think I zoned out for a bit... W-what were we talking about?"
+                
+                "I should probably switch the topic."
+                
+            else:
 
-            pluto "Ummm... Why don’t we talk about something else? T-this cabin is really c-cozy right...?"
+                pluto "...Why don’t we talk about something else? T-this cabin is really c-cozy right...?"
 
-            mc "Yep...!"
+                mc "Yep...!"
 
-            "{i}Man, she looks so stiff. It seems like a sour spot for her, I should avoid saying anything about that..."
+                "{i}Man, she looks so stiff. It seems like a sour spot for her, I should avoid saying anything about that..."
 
             $ fireplace_2 = False
 
@@ -400,12 +418,16 @@ label pluto_date2b:
                     show pluto pj joy with Dissolve(0.2)
 
                     pluto "Dogs!"
+                    
+                    $ pluto_aff += 1
                 
                 "\"Woof!\"":
 
                     show pluto pj joy with Dissolve(0.2)
 
                     pluto "Woof!"
+                    
+                    $ pluto_aff += 1
                 
                 "\"Cats.\"":
 
@@ -432,7 +454,7 @@ label pluto_date2b:
 
                     scene bg black with fade
 
-                    jump stop_car
+                    jump pluto_date2b
                 
             $ fireplace_3 = False
 
@@ -449,27 +471,33 @@ label pluto_date2b:
                 yalign 0.005
                 zoom 0.60
             
-            pluto "I don’t really talk to anyone, but most of them are super fancy like Jupiter. I feel like a lot of them follow what they do because they’re really intimidating."
+            pluto "I don’t really talk to anyone, but most of them are super fancy like Jupiter, and pretty like Earth. I feel like a lot of them follow what those two do. Jupiter's all intimidating and Earth just..."
+            
+            pluto "It's hard to describe if you've never... met her... you're living on her, but you haven't really met her..."
 
             show pluto pj joy with Dissolve(0.2)
 
-            pluto "But Neptune and I hang out often! Even though it’s kind of her just dragging me along, it’s still fun. I kind of miss her to be honest, but I know she’d tell me I’m doing the right thing. She’s like an older sister to me."
+            pluto "Neptune and I hang out a lot! Even though it’s kind of her just dragging me along, it’s still fun."
+            
+            if pluto_aff > 4
+            
+                pluto "I... kind of miss her to be honest, but I know she’d tell me I’m doing the right thing. She’s like an older sister to me."
 
             show pluto pj neutral with Dissolve(0.2)
 
-            pluto "Mars is super energetic and talks with me a lot, and I really wish I could match their energy because it makes them nice to be around."
+            pluto "Mars is super energetic and talks with me a lot, and I really wish I could match his energy because it makes him nice to be around."
             
             show pluto pj shy with Dissolve(0.2)
             
-            pluto "I don’t think I’m all that nice to be with though..."
+            pluto "I'm... pretty uninteresting, compared to... all of them..."
 
-            mc "If you weren't, I wouldn't have asked to go out with you again. I honestly really enjoy our time together!"
+            mc "I think you're plenty interesting. I honestly really enjoy our time together! You're great company."
 
             show pluto pj flustered with Dissolve(0.2)
 
             pluto "R-really?"
 
-            mc "Of course! Much better than Theo, anyhow."
+            mc "Of course! Better company than Theo, anyways."
 
             show pluto pj joy with Dissolve(0.2)
 
@@ -492,7 +520,7 @@ label pluto_date2b:
                 yalign 0.005
                 zoom 0.60
             
-            pluto "People don’t seem too different from us planets. There’s good ones, and there’s bad ones, and some are in the middle! But most of the people I’ve seen seem okay..."
+            pluto "They don’t seem too different from us planets. There’s good ones, and there’s bad ones, and some are in the middle! But most of the people I’ve seen seem okay..."
 
             show pluto pj shy with Dissolve(0.2)
 
@@ -504,7 +532,7 @@ label pluto_date2b:
 
             show pluto pj shy with Dissolve(0.2)
 
-            pluto "... but he kind of scares me sometimes..."
+            pluto "... but he kind of scares me sometimes, he looks like a lion in a suit..."
 
             mc "It's alright, he scares me, too."
 
@@ -537,13 +565,17 @@ label pluto_date2b:
             
             pluto "I-I think people should help others if they can. Sometimes people get themselves in those situtations, but that doesn't mean you shouldn't help them!"
 
-            pluto "I just want to be sure just so the others don't get mad at me if I mess up again..."
+            pluto "I just hope the others don't get mad at me if I mess up...
+            
+            if pluto_aff <= 0:
+            
+                pluto "...or make fun of me if this goes wrong..."
 
             show pluto pj neutral with Dissolve(0.2)
 
             pluto "I know I don't have as much as the other planets, but I hope whatever you all need, that I can help!"
 
-            mc "I appreciate you saying that, with how much it feels like the other planets hate us."
+            mc "I appreciate you saying that, with how much it seems like some of the other planets hate us."
 
             show pluto pj flustered with Dissolve(0.2)
 
@@ -602,33 +634,35 @@ label pluto_date2b:
 
             show pluto pj shy with Dissolve(0.2)
 
-            pluto "I thought I would have a rough time visting Earth and meeting humans in this form, and in a way that's true..."
+            pluto "I thought I would have a rough time visting Earth and meeting humans in this form, a-and in a way that's true..."
 
             show pluto pj joy with Dissolve(0.2)
 
-            pluto "But somehow, when I'm with you, I feel a lot better."
+            pluto "But, when I'm with you, I feel a lot better."
 
             show pluto pj flustered with Dissolve(0.2)
 
-            pluto "I-I mean...! Um, well... I hope you feel the same way..."
+            pluto "I-I mean...! Um, well... I hope you feel the same way... I-I, you probably don't, since you live here..."
 
             mc "Haha, it's no worries!"
 
             show pluto pj neutral with Dissolve(0.2)
 
-            if pluto_aff > 5:
+            if pluto_aff > 6:
 
                 "With my heart pounding against my chest, I lean over to Pluto... and give her a small kiss on her cheek."
 
                 show pluto pj flustered with Dissolve(0.2)
 
-                mc "I feel the same way. I'm having a lot of fun spending time with you, and with your permission, I would like to keep going out with you."
+                mc "I feel the same way. I'm having a lot of fun spending time with you, and with your permission, I think I'd like to keep going out with you."
 
                 mc "On, um, government-mandated dates, of course."
+                
+                "I pull away ever so slightly as I say those words."
 
                 show pluto pj joy with Dissolve(0.2)
 
-                "Pluto laughs quietly to herself, and something about the sound makes my heart flutter."
+                "Pluto laughs quietly to herself, and something about the sound spawns butterflies in me."
 
                 pluto "Hehe, of course!"
 
@@ -636,7 +670,7 @@ label pluto_date2b:
 
                 pluto "... But how about we go on normal dates, too...?"
 
-                mc "... I would like that."
+                mc "... I think I'd like that."
 
                 "Pluto places her hand on top of mine, and I let our fingers intertwine with one another. She scooches in a little closer, leaning her head against my shoulder."
             
@@ -673,9 +707,9 @@ label pluto_date2b:
 
     show pluto pj shy with Dissolve(0.2)
     
-    pluto "Why did they ask you to meet with me? I mean {i}you{/i} you, and not someone else."
+    pluto "Why did they ask you to meet with me? I mean {i}you{/i} you, a-and not someone else."
 
-    mc "Well, I worked with the professor that made the machine to contact planets, and I'm also an astronomy major."
+    mc "Well, I... I guess it's because I was part of the group that helped make the technology to contact you. It was my thesis for my astronomy major."
 
     show pluto pj flustered with Dissolve(0.2)
 
@@ -687,27 +721,29 @@ label pluto_date2b:
 
     pluto "So, you're an expert then?"
 
-    mc "I thought I was, but meeting an actual planet is beyond what we were taught, so I don't even know anymore, haha."
+    mc "I thought I was, but... meeting an actual planet is beyond what we were taught, so I don't even know anymore, haha."
 
     show pluto pj flustered with Dissolve(0.2)
 
-    pluto "I could say the same about you guys, too! Jupiter always said, \"Humans are monsters,\" and things like that, so I was really scared to meet with you. But Neptune reassured me they were exaggerating and to follow what I believe."
+    pluto "I could say the same about you guys, too! Jupiter always said, \"Humans are monsters,\" and things like that, so I was really scared to meet with you."
+    
+    pluto "But Neptune reassured me they were exaggerating and to... follow what I believe."
 
-    if pluto_aff > 3:
+    if pluto_aff > 4:
 
         show pluto pj neutral with Dissolve(0.2)
 
-        pluto "And I believe you're a good person, [first_name]. Whenever I get scared, you always comfort me, and it feels like you really care."
+        pluto "And I believe you're a good person, [first_name]. It feels like you... really care about me."
 
         show pluto pj shy with Dissolve(0.2)
 
-        pluto "Most of the other planets don't even really look at me, let alone talk. In that sense, you remind me of Neptune. Or Mars, if Mars calmed down, hehe."
+        pluto "Most of the other planets don't even really look at me, let alone talk. I-In that sense, you remind me of Neptune. Or Mars, if Mars was a little less hyper, hehe."
 
         "{i}Astronomy could've never prepared me for a situation like this, maybe Theo really is right..."
 
         "For once, I'm the nervous one as I stumble for something to say in response to the flattery."
 
-        mc "With how much you look up to her, I'll take that as a compliment, but I hope that doesn't mean you see me as a sibling."
+        mc "With how much you seem to look up to her, I'll take that as a compliment, but I hope that doesn't mean you see me as a sibling."
 
         "I try to laugh it off, but Pluto immediately gets flustered and perks up."
 
@@ -717,7 +753,7 @@ label pluto_date2b:
 
         "Head spinning, she shakes her head like a puppy trying to shake off a bath."
 
-        pluto "AHHHHH! {i}N-nevermind!!!"
+        pluto "{i}N-nevermind!!!"
 
         "Feeling it's for the better, I drop the topic since neither of us can seem to speak through our nerves."
 
@@ -735,15 +771,21 @@ label pluto_date2b:
 
     mc "We should probably go to bed, it's getting late."
 
-    "She seems serveral steps ahead of me already, with her eyes closing for longer durations at a time."
+    "She seems several steps ahead of me already, with her eyes closing for longer durations at a time."
 
     "Not even having the energy left to answer me verbally, she murmurs a response."
 
     pluto "Mmm..."
 
     "Pluto slugs herself up from the comfort of the carpet and sinks into the sheets of her bed. Very faintly, she speaks from under the covers."
+    
+    if pluto_aff > 4:
 
-    pluto "Goodnight, [first_name]..."
+        pluto "Goodnight, [first_name]..."
+      
+    else:
+        
+        pluto "Night..."
 
     mc "Night, Pluto..."
 
@@ -803,7 +845,7 @@ label pluto_date2b:
 
         "... to Pluto levitating in her sleep."
 
-        mc "What the {i}fuckkkkkkkkk{i}?!?!?!"
+        mc "What the {i}fuck{i}?!?!?!"
 
         "As terrifying as that looks, I try my best to ignore it and go back to sleep."
 
@@ -817,9 +859,9 @@ label pluto_date2b:
 
     scene bg cabin lobby with fade
 
-    "In the morning, Pluto and I change into our regular clothes then meet up with Theo."
+    "In the morning, Pluto and I change into our regular clothes and meet up with Theo."
 
-    "After scarfing down our breakfast, we say our goodbyes to the cabin and head back home."
+    "After wolfing down our breakfast, we say our goodbyes to the cabin and head back home."
 
     scene bg theo sedan winter with fade
 
@@ -835,7 +877,7 @@ label pluto_date2b:
 
     "I walk her to her front door while Theo waits in the car, pretending like he isn't watching all the while."
 
-    if pluto_aff > 3:
+    if pluto_aff > 4:
 
         "Pluto avoids eye contact with me, fiddling with the hem of her dress."
 
@@ -870,7 +912,7 @@ label pluto_date2b:
 
         hide pluto with dissolve
 
-        "Face flushed ear to ear, she darts off into her house. In an alternate reality, I would've followed after her, but she's had enough of me for the day and then some."
+        "Face flushed ear to ear, she darts off into her house. In an alternate reality, I would've followed after her, but she's had enough of me for the time being."
 
         "Theo is waiting inside the car, so I hop in shotgun right beside him."
 
@@ -903,6 +945,14 @@ label pluto_date2b:
             zoom 0.60
 
         pluto "Um, I'm sorry... I don't know how to say this, but... I think it's best if we don't see each other again."
+        
+        if pluto_aff > 0:
+        
+            pluto "I didn't... {i}hate{/i} the time we spend together... if that's any... consolation. I-I just... I think I just want to be back out there, i-it's more my scene..."
+            
+        else:
+        
+            pluto "I... I hope not all humans are like you... For Earth's sake..."
 
         "{i}Crap..."
 
@@ -933,7 +983,7 @@ label pluto_date2b:
 
         theo "You're damn right it's your fault! Nuh-uh, I'm not losing my job over this. I have a wife back at home!"
 
-        theo "You better hope that weird machine you nerds cooked up can let us talk to another planet! Hell, if they'd even want to after you messed up! Otherwise..."
+        theo "You better hope that weird machine you nerds cooked up can let us talk to another planet! Hell, if they'd even want to after that... stunt! Otherwise..."
 
         "A look of dread clouds his face."
 
