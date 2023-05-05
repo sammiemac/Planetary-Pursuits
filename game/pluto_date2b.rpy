@@ -565,7 +565,7 @@ label pluto_date2b:
             
             pluto "I-I think people should help others if they can. Sometimes people get themselves in those situtations, but that doesn't mean you shouldn't help them!"
 
-            pluto "I just hope the others don't get mad at me if I mess up...
+            pluto "I just hope the others don't get mad at me if I mess up..."
             
             if pluto_aff <= 0:
             

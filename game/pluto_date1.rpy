@@ -286,7 +286,7 @@ label pluto_date1:
 
     mc "Just small steps are fine!"
 
-    "After an extended pause to regain her footing, she tries again and has the same result"
+    "After an extended pause to regain her footing, she tries again and has the same result."
 
     "Once again, her eyes focus on the others around us. The only ones who seem to be struggling are children more than half our age... and us."
 
@@ -478,7 +478,7 @@ label pluto_date1:
 
     show dog with dissolve
     
-    "A dog sitting near a bench, right across from the ice cream truck, with the owner weaning a pair of sunglasses and eating an ice cream sandwich."
+    "A dog sitting near a bench, right across from the ice cream truck, with the owner wearing a pair of sunglasses and eating an ice cream sandwich."
 
     "The dog was a fluffy golden retriever, medium sized, tongue out as it attempted to cool itself off from the hot sun."
 
@@ -572,6 +572,8 @@ label pluto_date1:
 
             play sound "audio/SFX_Dog_2.mp3" volume 0.1
 
+            $ renpy.sound.play("audio/SFX_Crowd_Talking_Long.mp3", loop=True, fadein=0.5, relative_volume=0.2)
+
             "Dog" "Borf!"
 
             "The two share a close moment of friendship as Pluto has a big smile on her face, eventually standing back up, satisfied."
@@ -628,6 +630,8 @@ label pluto_date1:
             pluto "Hehe, what a good boy!"
 
             play sound "audio/SFX_Dog_2.mp3" volume 0.1
+
+            $ renpy.sound.play("audio/SFX_Crowd_Talking_Long.mp3", loop=True, fadein=0.5, relative_volume=0.2)
 
             "Dog" "Borf!"
 
@@ -932,7 +936,7 @@ label pluto_date1:
 
         $ renpy.notify("You feel like today was successful.")
         
-        mc "I think it went alright. As far as I can tell I feel like she had fun, but it’ll be awhile before she gets comfortable with me I think."
+        mc "I think it went alright. As far as I can tell I feel like she had fun, but it’ll be a while before she gets comfortable with me I think."
 
         show theo smile with Dissolve(0.2)
 

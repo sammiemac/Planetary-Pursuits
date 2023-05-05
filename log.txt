@@ -1,4 +1,4 @@
-Thu May  4 23:28:15 2023
+Fri May  5 14:54:10 2023
 Windows-10-10.0.22621
 Ren'Py 8.0.2.22081402
  
@@ -6,14 +6,212 @@ Ren'Py 8.0.2.22081402
 Bootstrap to the start of init.init took 0.03s
 Early init took 0.00s
 Loader init took 0.03s
-Loading error handling took 0.09s
-Loading script took 1.30s
+Loading error handling took 0.04s
+game/pluto_date2a.rpy:516: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if snowman_choice is 1:
+game/pluto_date2a.rpy:547: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif snowman_choice is 2:
+game/pluto_date2a.rpy:580: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif snowman_choice is 3:
+Loading script took 0.32s
+Loading save slot metadata. took 0.06s
+Loading persistent took 0.01s
+
+File "game/pluto_date2b.rpy", line 568: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    pluto "I just hope the others don't get mad at me if I mess up...
+                
+                if pluto_aff <= 0:
+                
+                    pluto "Or make fun of me if this goes wrong..."
+                               ^
+    
+                show pluto pj neutral with Dissolve(0.2)
+    
+                pluto "I know I don't... have as much as the other planets, but I hope whatever you all need, that I can help!"
+    
+                mc "I appreciate you saying that, with how much it seems like some of the other planets hate us."
+    
+                show pluto pj flustered with Dissolve(0.2)
+    
+                pluto "Hate is a strong word. Maybe loathe?"
+    
+                mc "... Loathe is even stronger, though."
+    
+                show pluto pj joy with Dissolve(0.2)
+    
+                pluto "I know."
+    
+                "{i}I think she was trying to make a joke just then, so why do I feel so intimidated...?!"
+    
+                $ fireplace_6 = False
+    
+                $ fireplace_count += 1
+    
+                hide pluto with dissolve
+    
+                jump fireplace_choice
+    
+            "Ask what she thinks about me." if pluto_aff > 4 and fireplace_count is 6:
+    
+                hide pluto with dissolve
+    
+                mc "Ummm..."
+    
+                mc "I hope this doesn't sound {i}too{/i} narcissistic, but..."
+    
+                show pluto pj flustered with dissolve:
+                    xalign 0.5
+                    yalign 0.005
+                    zoom 0.60
+    
+                pluto "What is it?"
+    
+                mc "Well... what do you think about me...?"
+    
+                "Pluto stares at me in surprise, and I can't help but feel a warmth on my cheeks."
+    
+                show pluto pj shy with Dissolve(0.2)
+    
+                pluto "Um, well..."
+    
+                mc "Y'know what, it's fine! That was a weird question anyways..."
+    
+                show pluto pj flustered with Dissolve(0.2)
+    
+                pluto "N-no, it's fine! I was just thinking..."
+    
+                "Pluto's lips slowly curl into a small, comforting smile."
+    
+                show pluto pj neutral with Dissolve(0.2)
+    
+                pluto "I'm having a lot of fun with you, [first_name]."
+    
+                show pluto pj shy with Dissolve(0.2)
+    
+                pluto "I thought I would have a rough time visting Earth and meeting humans in this form, a-and in a way that's true..."
+    
+                show pluto pj joy with Dissolve(0.2)
+    
+                pluto "But, when I'm with you, I feel a lot better."
+    
+                show pluto pj flustered with Dissolve(0.2)
+    
+                pluto "I-I mean...! Um, well... I hope you feel the same way... I-I, you probably don't, since you live here..."
+    
+                mc "Haha, it's no worries!"
+    
+                show pluto pj neutral with Dissolve(0.2)
+    
+                if pluto_aff > 6:
+    
+                    "With my heart pounding against my chest, I lean over to Pluto... and give her a small kiss on her cheek."
+    
+                    show pluto pj flustered with Dissolve(0.2)
+    
+                    mc "I feel the same way. I'm having a lot of fun spending time with you, and with your permission, I think I'd like to keep going out with you."
+    
+                    mc "On, um, government-mandated dates, of course."
+                    
+                    "I pull away ever so slightly as I say those words."
+    
+                    show pluto pj joy with Dissolve(0.2)
+    
+                    "Pluto laughs quietly to herself, and something about the sound spawns butterflies in me."
+    
+                    pluto "Hehe, of course!"
+    
+                    show pluto pj neutral with Dissolve(0.2)
+    
+                    pluto "... But how about we go on normal dates, too...?"
+    
+                    mc "... I think I'd like that."
+    
+                    "Pluto places her hand on top of mine, and I let our fingers intertwine with one another. She scooches in a little closer, leaning her head against my shoulder."
+                
+                else:
+                    
+                    "I reach out my hand and place it on top of Pluto's. She blushes in response, but doesn't withdraw her hand."
+    
+                    show pluto pj joy with Dissolve(0.2)
+    
+                    mc "I'm having a lot of fun spending time with you, too."
+    
+                    "She scooches in a little closer, leaning her head against my shoulder."
+    
+            "Stay silent." if fireplace_count is not 6:
+    
+                "Pluto and I stare at the crackle of the vibrant fire in mutual understanding. Well, fake fire. But it’s still quite relaxing."
+    
+        show pluto pj shy with Dissolve(0.2):
+            xalign 0.5
+            yalign 0.005
+            zoom 0.60
+    
+        pluto "... Do you mind if I ask you something?"
+    
+        mc "Shoot."
+    
+        show pluto pj flustered with Dissolve(0.2)
+    
+        pluto "Sh-shoot?!"
+    
+        mc "No no, not {i}actually{/i} shoot. It's a saying, like \"go for it.\""
+    
+        pluto "O-oh. U-um..."
+    
+        show pluto pj shy with Dissolve(0.2)
+        
+        pluto "Why did they ask you to meet with me? I mean {i}you{/i} you, a-and not someone else."
+    
+        mc "Well, I... I guess it's because I was part of the group that helped make the technology to contact you. It was my thesis for my astronomy major."
+    
+        show pluto pj flustered with Dissolve(0.2)
+    
+        pluto "An astronomy... major?"
+    
+        mc "Like I studied the solar system, planets, stars... everything in that sense."
+    
+        show pluto pj neutral with Dissolve(0.2)
+    
+        pluto "So, you're an expert then?"
+    
+        mc "I thought I was, but... meeting an actual planet is beyond what we were taught, so I don't even know anymore, haha."
+    
+        show pluto pj flustered with Dissolve(0.2)
+    
+        pluto "I could say the same about you guys, too! Jupiter always said, \"Humans are monsters,\" and things like that, so I was really scared to meet with you."
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.27s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.40'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1598, 899) drawable=(1598, 899)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 40.25s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.02s
+game/pluto_date2b.rpy:600: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  "Ask what she thinks about me." if pluto_aff > 4 and fireplace_count is 6:
+game/pluto_date2b.rpy:687: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  "Stay silent." if fireplace_count is not 6:
+Loading script took 0.17s
 Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
+Loading persistent took 0.01s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\samma\\Downloads\\renpy-8.0.2-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.09s
-Loading analysis data took 0.00s
-Analyze and compile ATL took 0.02s
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\samma\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
 Dump and make backups. took 0.04s
@@ -28,8 +226,22 @@ Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
 Save pyanalysis. took 0.01s
-Save bytecode. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.40'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1598, 899) drawable=(1598, 899)
+Maximum texture size: 4096x4096

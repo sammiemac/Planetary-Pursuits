@@ -100,7 +100,7 @@ label mars:
 
                 show mars tired with Dissolve(0.2)
 
-                mars "{i}*sigh*{/i} She is... I've been trying to tell her to be more confident in herself, to speak louder and to stop weaning a coat in the middle of summer!"
+                mars "{i}*sigh*{/i} She is... I've been trying to tell her to be more confident in herself, to speak louder and to stop wearing a coat in the middle of summer!"
 
                 mars "Pluto always says she isn’t like me and can’t do all those things, but I know she can do it if given the right push."
 
@@ -108,7 +108,7 @@ label mars:
 
                 show mars neutral with Dissolve(0.2)
 
-                "Of course! She’s the only one who doesn’t laugh at my shorts!"
+                mars "Of course! She’s the only one who doesn’t laugh at my shorts!"
 
                 mc "That's... not the {i}best{/i} way to measure a friendship..."
 
