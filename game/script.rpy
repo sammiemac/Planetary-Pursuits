@@ -30,8 +30,8 @@ label start:
     call intro1 from _call_intro1
     call intro2 from _call_intro2
     call pluto_date1 from _call_pluto_date1
-    call pluto_date2a
-    call pluto_date2b
+    call pluto_date2a from _call_pluto_date2a
+    call pluto_date2b from _call_pluto_date2b
     call demo from _call_demo
 
     # This ends the game.

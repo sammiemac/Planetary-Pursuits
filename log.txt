@@ -1,54 +1,35 @@
-Thu May  4 23:26:52 2023
+Thu May  4 23:28:15 2023
 Windows-10-10.0.22621
 Ren'Py 8.0.2.22081402
  
 
-Bootstrap to the start of init.init took 0.04s
+Bootstrap to the start of init.init took 0.03s
 Early init took 0.00s
 Loader init took 0.03s
-Loading error handling took 0.02s
-game/intro2a.rpy:123: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if mars_encounter is 1:
-game/intro2b.rpy:200: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if mars_encounter is 1:
-game/mars.rpy:193: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if mars_outcome is 1:
-game/mars.rpy:195: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if mars_outcome is 2:
-game/mars.rpy:197: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if mars_outcome is 3:
-game/pluto_date2a.rpy:506: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if snowman_choice is 1:
-game/pluto_date2a.rpy:537: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  elif snowman_choice is 2:
-game/pluto_date2a.rpy:570: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  elif snowman_choice is 3:
-game/pluto_date2b.rpy:568: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  "Ask what she thinks about me." if pluto_aff > 4 and fireplace_count is 6:
-game/pluto_date2b.rpy:653: SyntaxWarning: "is not" with a literal. Did you mean "!="?
-  "Stay silent." if fireplace_count is not 6:
-Loading script took 0.21s
+Loading error handling took 0.09s
+Loading script took 1.30s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\samma\\Downloads\\renpy-8.0.2-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.01s
+Running init code took 0.09s
+Loading analysis data took 0.00s
+Analyze and compile ATL took 0.02s
 Index archives took 0.00s
-Dump and make backups. took 0.03s
+Backing up script files to 'C:\\Users\\samma\\AppData\\Roaming/RenPy/backups\\Planetary-Pursuits':
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.02s
+Initial gc. took 0.04s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
 Creating interface object took 0.21s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.03s

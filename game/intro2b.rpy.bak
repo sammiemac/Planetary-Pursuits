@@ -199,7 +199,7 @@ label intro2b:
     $ mars_encounter = renpy.random.randint(1, 3)
     if mars_encounter is 1:
         $ meet_mars = True
-        call mars from _call_mars_1
+        call mars
 
     stop music fadeout 2
 

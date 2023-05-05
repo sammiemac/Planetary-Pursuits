@@ -6,6 +6,7 @@
 define mc = Character("Me")
 define pluto = Character("Pluto", who_color="#ff75d8")
 define theo = Character("Theo", who_color="#e68627")
+define mars = Character("Mars", who_color="#ce3535")
 
 # Declare player's affinites
 default theo_aff = 0
@@ -28,8 +29,10 @@ label start:
     # This starts the game with the intro1.rpy scene
     call intro1 from _call_intro1
     call intro2 from _call_intro2
-    call pluto_date1
-    call demo
+    call pluto_date1 from _call_pluto_date1
+    call pluto_date2a
+    call pluto_date2b
+    call demo from _call_demo
 
     # This ends the game.
     return
